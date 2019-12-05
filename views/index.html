@@ -13,6 +13,7 @@
     <title>The Spin</title>
     <meta name="description" content="The Spin">
     <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,9 +26,14 @@
   </head>
   <body>
     <header>
-      <h1>
-        The Spin
-      </h1>
+<div class="head">
+    <div class="headerobjectswrapper">
+        <div class="weatherforcastbox"><span style="font-style: italic;">Weatherforcast for the next 24 hours: Plenty of Sunshine</span><br><span>Wind: 7km/h SSE; Ther: 21°C; Hum: 82%</span></div>
+        <header>The Spin</header>
+    </div>
+
+    <div class="subhead">York, MA - Thursday August 30, 1978 - Seven Pages</div>
+</div>
     </header>
 
     <main>
@@ -37,7 +43,7 @@
       
       <form>
         <input name="dream" type="text" maxlength="100" placeholder="Dreams!" aria-labelledby="submit-dream">
-        <button type="submit" id="submit-dream">Submit Dream</button>
+        <button type="submit" id="select">Submit Dream</button>
       </form>
       
       <section class="dreams">

@@ -40,3 +40,22 @@ dreamsForm.onsubmit = function(event) {
   dreamInput.value = "";
   dreamInput.focus();
 };
+
+
+const selectCharacter = function(charId) {
+  var xhr = new XMLHttpRequest(),
+      method = "GET",
+      url = 'https://thespin.glitch.me/'+"character/"+encodeURIComponent(charId);
+  console.log();
+  xhr.open(method, url, true);
+  xhr.onreadystatechange = function () {
+    if(xhr.readyState === 4 && xhr.status === 200) {
+      var jsonObj = JSON.parse(xhr.responseText);
+      console.log(jsonObj);
+      if (jsonObj.result == false){
+        window.alert('AMP Version of Article not Available')
+      }
+    }
+  };
+  xhr.send();
+}

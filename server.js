@@ -20,6 +20,12 @@ db.defaults({ characters: [], users: [], count: 0 })
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static("public"));
 
+
+app.get("/character/:id", function(request, response) {
+  console.log("param", request.params);
+});
+
+
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function(request, response) {
   response.sendFile(__dirname + "/views/index.html");
