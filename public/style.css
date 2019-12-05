@@ -71,7 +71,7 @@ footer {
 }
 
 
-/** Newspaper Style **/
+/** Newspaper Style via https://codepen.io/silkine/pen/jldif **/
 
 body{
     font-family: 'Droid Serif', serif;
@@ -79,7 +79,7 @@ body{
     color: #2f2f2f;
     background-color: #f9f7f1;
 }
-#header-old{
+header{
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     font-size: 80px;
@@ -103,7 +103,7 @@ p{
 .headerobjectswrapper{
 }
 
-.subhead{
+.subhead {
     text-transform: uppercase;
     border-bottom: 2px solid #2f2f2f;
     border-top: 2px solid #2f2f2f;
@@ -124,8 +124,9 @@ p{
     font-size: 0;
     line-height: 0;
     word-spacing: -.31em;
-    display: inline-block;
+    display: grid;
     margin: 30px 2% 0 2%;
+   grid-column-gap: 20px;
 
 
 }
