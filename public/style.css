@@ -125,27 +125,29 @@ p{
     line-height: 0;
     word-spacing: -.31em;
     display: grid;
-    margin: 30px 2% 0 2%;
-   grid-column-gap: 20px;
-
+    height: 600px;
 
 }
 .collumns{
-
+   grid-column-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
+  	grid-gap: 1px;
+	justify-self: center; 
 }
 
 .collumn{
     font-size: 14px;
     line-height: 20px;
-    width: 17.5%;
-    display: inline-block;
+    grid-column: auto;
     padding: 0 1% 0 1%;
     vertical-align: top;
-    margin-bottom: 50px;
+    grid-row: 1;
     transition: all .7s;
 }
 .collumn + .collumn { 
-  border-left: 1px solid #2f2f2f;
+  /* border-left: 1px solid #2f2f2f; */
 }
 .collumn .headline{
     text-align: center;
