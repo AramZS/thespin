@@ -125,16 +125,17 @@ p{
     line-height: 0;
     word-spacing: -.31em;
     display: grid;
-    height: 600px;
+    height: 735px;
 
 }
 .collumns{
    grid-column-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   display: inline-grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
   	grid-gap: 1px;
 	justify-self: center; 
+  
 }
 
 .collumn{
@@ -145,9 +146,14 @@ p{
     vertical-align: top;
     grid-row: 1;
     transition: all .7s;
+  border: 10px solid #fff;
+  padding-top: 10px;
+  height: 725px;
+  overflow: hidden;
+  overflow-y: auto;
 }
 .collumn + .collumn { 
-  /* border-left: 1px solid #2f2f2f; */
+  border-left: 1px solid #2f2f2f;
 }
 .collumn .headline{
     text-align: center;
@@ -162,7 +168,7 @@ p{
     font-weight: 700;
     font-size: 30px;
     text-transform: uppercase;
-    padding: 10px 0 10px 0;
+    padding: 0 0 10px 0;
 
 }
 
@@ -171,7 +177,7 @@ p{
     font-style: italic;
     font-size: 24px;
     box-sizing: border-box;
-    padding: 10px 0 10px 0;
+    padding: 0 0 10px 0;
 }
 
 .collumn .headline.hl2:before{
@@ -197,13 +203,13 @@ p{
     font-style: italic;
     font-size: 36px;
     box-sizing: border-box;
-    padding: 10px 0 10px 0;
+    padding: 0 0 10px 0;
 }
 .collumn .headline.hl4{
     font-weight: 700;
     font-size: 12px;
     box-sizing: border-box;
-    padding: 10px 0 10px 0;
+    padding: 0 0 10px 0;
 }
 .collumn .headline.hl4:before{
     border-top: 1px solid #2f2f2f;
@@ -229,13 +235,13 @@ p{
     text-transform: uppercase;
     font-style: italic;
     box-sizing: border-box;
-    padding: 10px 0 10px 0;
+    padding: 0 0 10px 0;
 }
 .collumn .headline.hl6{
     font-weight: 400;
     font-size: 18px;
     box-sizing: border-box;
-    padding: 10px 0 10px 0;
+    padding: 0 0 10px 0;
 }
 .collumn .headline.hl6:before{
     border-top: 1px solid #2f2f2f;
@@ -259,13 +265,13 @@ p{
     font-size: 12px;
     box-sizing: border-box;
     display: block;
-    padding: 10px 0 10px 0;
+    padding: 0 0 10px 0;
 }
 .collumn .headline.hl8{
     font-weight: 700;
     font-size: 12px;
     box-sizing: border-box;
-    padding: 10px 0 10px 0;
+    padding: 0 0 10px 0;
 }
 .collumn .headline.hl9{
     font-weight: 700;
