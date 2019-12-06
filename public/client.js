@@ -26,7 +26,7 @@ const appendNewCharacter = function(character) {
   newListItem.innerHTML = characterBio;
   charList.appendChild(newListItem);
   if (character.player && character.player.length > 0){
-    document.getElementById("select_"+character.id).disabled = true;
+    document.getElementById(character.id).disabled = true;
   }
 };
 

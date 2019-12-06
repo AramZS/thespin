@@ -51,16 +51,19 @@ app.post("/character/:id", function(request, response) {
   if (char.selected) {
     response.json({ result: false });
   } else {
+    char.selected = true;
+    char.player = request.body.user;
     var data = db
       .get("posts")
       .find({ id: request.params.id })
-      .assign({ selected: true, player: request.body.user })
-      .write().then(function(data){
-           response.json({ selected: true, data: data }); 
-      });
+      .assign(char)
+      .write();
+           response.json({ result: true, data: data }); 
+ 
 
   }
   } catch (e) {
+    console.log('error', e);
     response.json({ result: false });
   }
 });
