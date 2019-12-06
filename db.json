@@ -38,9 +38,9 @@
       "id": "monstrous",
       "url": "https://drive.google.com/open?id=10hV1hLcbcKnbCXR1DGDDpmFw17nvXUBsbKirHLMoMlE",
       "brief": "I feel the hunger, the lust to destroy. But I fight it: I never give in. I’m not human anymore, not really, but I have to protect those who still are. That way I can tell myself I’m different to the other monsters. Sometimes I can even believe it. ",
-      "selected": false,
+      "selected": true,
       "name": "The Monstrous",
-      "player": ""
+      "player": "Morgan"
     },
     {
       "id": "flake",
