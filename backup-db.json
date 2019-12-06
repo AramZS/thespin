@@ -14,7 +14,8 @@
       "id": "wronged",
       "url": "https://drive.google.com/open?id=1UayxPeUG7c-KEgbErIDTOaO6YOFvmYxl7mi9Xp_DKqY",
       "brief": "They took my loved ones. Back then I wasn’t strong enough to fight, but I studied, trained, and now I’m ready to cleanse the world of their taint. I’ll kill them all. That’s all I have left.",
-      "selected": false
+      "selected": false,
+      "name": "The Wronged"
     },
     { 
       "id": "spooky",

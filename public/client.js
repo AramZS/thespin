@@ -16,15 +16,16 @@ const dreamsForm = document.forms[0];
 const dreamInput = dreamsForm.elements["dream"];
 
 // a helper function that creates a list item for a given dream
-const appendNewDream = function(dream) {
+const appendNewCharacter = function(character) {
+  var characterBio = `<ul class="selected_${character.name}"><li>Name:${character.name}</li><li>Bio:${character.brief}</li><li><a href="${character.url}" target="_blank">See the Full Description</a></li> </ul>`;
   const newListItem = document.createElement("li");
-  newListItem.innerHTML = dream;
+  newListItem.innerHTML = character;
   dreamsList.appendChild(newListItem);
 };
 
 // iterate through every dream and add it to our page
 dreams.forEach(function(dream) {
-  appendNewDream(dream);
+  //appendNewDream(dream);
 });
 
 // listen for the form to be submitted and add a new dream when it is
@@ -34,8 +35,7 @@ dreamsForm.onsubmit = function(event) {
 
   // get dream value and add it to the list
   dreams.push(dreamInput.value);
-  appendNewDream(dreamInput.value);
-  getCharacters();
+  //appendNewDream(dreamInput.value);
   // reset form
   dreamInput.value = "";
   dreamInput.focus();
@@ -53,7 +53,7 @@ const selectCharacter = function(charId) {
       var jsonObj = JSON.parse(xhr.responseText);
       console.log(jsonObj);
       if (jsonObj.result == false){
-        window.alert('AMP Version of Article not Available')
+        window.alert('Someone has already claimed that character')
       }
     }
   };
@@ -71,9 +71,12 @@ const getCharacters = function() {
       var jsonObj = JSON.parse(xhr.responseText);
       console.log(jsonObj);
       if (jsonObj.result == false){
-        window.alert('Someone has already claimed that character Available')
+        window.alert('All the base belong to someone else')
       }
     }
   };
   xhr.send();
 }
+
+
+getCharacters();

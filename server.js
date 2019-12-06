@@ -26,7 +26,7 @@ app.get("/character/:id", function(request, response) {
 });
 
 app.get("/characters/", function(request, response) {
-  request.json(db.get('characters').value());
+  response.json(db.get('characters').value());
 });
 
 app.post("/character/:id", function(request, response) {
