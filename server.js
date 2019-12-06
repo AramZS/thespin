@@ -51,6 +51,7 @@ app.post("/character/:id", function(request, response) {
   if (char.selected) {
     response.json({ result: false });
   } else {
+    
     char.selected = true;
     char.player = request.body.user;
     var data = db

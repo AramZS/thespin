@@ -62,9 +62,9 @@
       "id": "crooked",
       "url": "https://drive.google.com/open?id=1J16LF5_olrxB6riY2PvPynALhwcmZZEXI7jz4RRfpcc",
       "brief": "Yeah, I’ve been around the block. A bit of this, a bit of that. When I came across the secret underworld of monsters and magic... well... it wasn’t so different from the underworld I already knew. It was easy to find an angle, just like before.",
-      "selected": false,
+      "selected": true,
       "name": "The Crooked",
-      "player": ""
+      "player": "Kate"
     },
     {
       "id": "selfaware",

@@ -69,7 +69,12 @@ const selectCharacter = function(charId, user) {
       var jsonObj = JSON.parse(xhr.responseText);
       console.log(jsonObj);
       if (jsonObj.result == false){
-        window.alert('Someone has already claimed that character')
+        window.alert('Someone has already claimed that character');
+      } else {
+        window.alert('You have selected a character!');
+        document.getElementById(charId).disabled = true;
+        var buttonText = "Selected By "+ user;
+        document.getElementById(charId).innerHTML = buttonText;
       }
     }
   };
