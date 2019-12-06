@@ -13,11 +13,15 @@ const dreams = [
 // define variables that reference elements on our page
 const charList = document.getElementById("select-class-list");
 const charForm = document.forms[0];
-const nameInput = charForm.elements["submit-name"];
+const nameInput = document.getElementById("submit-name");
 
 // a helper function that creates a list item for a given dream
 const appendNewCharacter = function(character) {
-  var characterBio = `<div class="char selected_${character.selected}" augmented-ui="tl-clip br-clip exe"><li><b>Type</b>: ${character.name}</li><li><b>Bio</b>: ${character.brief}</li><li><a href="${character.url}" target="_blank">See the Full Description</a></li><button type="submit" id="select_${character.id}">Select This Role</button> </div>`;
+  var buttonText = "Select This Role";
+  if (character.player && character.player.length > 0){
+    buttonText = "Selected By "+ character.player;
+  }
+  var characterBio = `<div class="char selected_${character.selected}" augmented-ui="tl-clip br-clip exe"><li><b>Type</b>: ${character.name}</li><li><b>Bio</b>: ${character.brief}</li><li><a href="${character.url}" target="_blank">See the Full Description</a></li><button type="submit" id="select_${character.id}" onclick="fnSubmitForm(this);">${buttonText}</button> </div>`;
   const newListItem = document.createElement("li");
   newListItem.innerHTML = characterBio;
   charList.appendChild(newListItem);
@@ -26,17 +30,28 @@ const appendNewCharacter = function(character) {
 // iterate through every dream and add it to our page
 
 // listen for the form to be submitted and add a new dream when it is
-dreamsForm.onsubmit = function(event) {
+charForm.onsubmit = function(event) {
   // stop our form submission from refreshing the page
   event.preventDefault();
 
   // get dream value and add it to the list
-  dreams.push(dreamInput.value);
+  var userName = nameInput.value;
+  console.log(event);
   //appendNewDream(dreamInput.value);
   // reset form
-  dreamInput.value = "";
-  dreamInput.focus();
+  // selectCharacter()
 };
+
+function fnSubmitForm(button) {
+
+  // get dream value and add it to the list
+  var userName = nameInput.value;
+  console.log(button.id);
+  //appendNewDream(dreamInput.value);
+  // reset form
+  selectCharacter(button.id)
+};
+
 
 
 const selectCharacter = function(charId) {
