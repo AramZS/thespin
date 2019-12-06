@@ -17,7 +17,7 @@ const dreamInput = dreamsForm.elements["dream"];
 
 // a helper function that creates a list item for a given dream
 const appendNewCharacter = function(character) {
-  var characterBio = `<div class="selected_${character.selected}"><li>Name:${character.name}</li><li>Bio:${character.brief}</li><li><a href="${character.url}" target="_blank">See the Full Description</a></li><button type="submit" id="select_${character.id}">Select This Role</button> </div>`;
+  var characterBio = `<div class="char selected_${character.selected}"><li>Name: ${character.name}</li><li>Bio: ${character.brief}</li><li><a href="${character.url}" target="_blank">See the Full Description</a></li><button type="submit" id="select_${character.id}">Select This Role</button> </div>`;
   const newListItem = document.createElement("li");
   newListItem.innerHTML = characterBio;
   charList.appendChild(newListItem);

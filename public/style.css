@@ -101,12 +101,19 @@ p{
 }
 
 ul  {
-  padding-left: 25px;
+  padding-left: 0px;
 }
 
-li.div {
-  margin-bottom: 20px;
-  margin-top: 5px;
+li {
+  margin-bottom: 10px;
+  box-sizing: content-box;
+  list-style-position: inside;
+  display: block;
+}
+
+.char {
+    margin: 5px 0 38px 0;
+    border: 1px solid;
 }
 
 .headerobjectswrapper{
