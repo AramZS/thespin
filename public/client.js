@@ -12,21 +12,18 @@ const dreams = [
 
 // define variables that reference elements on our page
 const charList = document.getElementById("select-class-list");
-const dreamsForm = document.forms[0];
-const dreamInput = dreamsForm.elements["dream"];
+const charForm = document.forms[0];
+const nameInput = charForm.elements["submit-name"];
 
 // a helper function that creates a list item for a given dream
 const appendNewCharacter = function(character) {
-  var characterBio = `<div class="char selected_${character.selected}" augmented-ui="tl-clip br-clip exe"><li>Name: ${character.name}</li><li>Bio: ${character.brief}</li><li><a href="${character.url}" target="_blank">See the Full Description</a></li><button type="submit" id="select_${character.id}">Select This Role</button> </div>`;
+  var characterBio = `<div class="char selected_${character.selected}" augmented-ui="tl-clip br-clip exe"><li><b>Type</b>: ${character.name}</li><li><b>Bio</b>: ${character.brief}</li><li><a href="${character.url}" target="_blank">See the Full Description</a></li><button type="submit" id="select_${character.id}">Select This Role</button> </div>`;
   const newListItem = document.createElement("li");
   newListItem.innerHTML = characterBio;
   charList.appendChild(newListItem);
 };
 
 // iterate through every dream and add it to our page
-dreams.forEach(function(dream) {
-  //appendNewDream(dream);
-});
 
 // listen for the form to be submitted and add a new dream when it is
 dreamsForm.onsubmit = function(event) {
