@@ -35,7 +35,7 @@ dreamsForm.onsubmit = function(event) {
   // get dream value and add it to the list
   dreams.push(dreamInput.value);
   appendNewDream(dreamInput.value);
-
+  getCharacters();
   // reset form
   dreamInput.value = "";
   dreamInput.focus();
@@ -44,7 +44,7 @@ dreamsForm.onsubmit = function(event) {
 
 const selectCharacter = function(charId) {
   var xhr = new XMLHttpRequest(),
-      method = "GET",
+      method = "POST",
       url = 'https://thespin.glitch.me/'+"character/"+encodeURIComponent(charId);
   console.log();
   xhr.open(method, url, true);
@@ -54,6 +54,24 @@ const selectCharacter = function(charId) {
       console.log(jsonObj);
       if (jsonObj.result == false){
         window.alert('AMP Version of Article not Available')
+      }
+    }
+  };
+  xhr.send();
+}
+
+const getCharacters = function() {
+  var xhr = new XMLHttpRequest(),
+      method = "GET",
+      url = 'https://thespin.glitch.me/'+"characters/";
+  console.log('GET Characters');
+  xhr.open(method, url, true);
+  xhr.onreadystatechange = function () {
+    if(xhr.readyState === 4 && xhr.status === 200) {
+      var jsonObj = JSON.parse(xhr.responseText);
+      console.log(jsonObj);
+      if (jsonObj.result == false){
+        window.alert('Someone has already claimed that character Available')
       }
     }
   };

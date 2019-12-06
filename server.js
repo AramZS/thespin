@@ -25,6 +25,14 @@ app.get("/character/:id", function(request, response) {
   console.log("param", request.params);
 });
 
+app.get("/characters/", function(request, response) {
+  request.json(db.get('characters').value());
+});
+
+app.post("/character/:id", function(request, response) {
+  console.log("param", request.params);
+});
+
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function(request, response) {
