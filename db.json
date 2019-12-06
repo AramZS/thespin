@@ -30,7 +30,7 @@
       "id": "spellslinger",
       "url": "https://drive.google.com/open?id=1FArnqMOaRu-7Vi5m1OXgYiYv9J39x7_DBVO5wU3NhlE",
       "brief": "Fight fire with fire magic. ",
-      "selected": false,
+      "selected": true,
       "name": "The Spell-Slinger",
       "player": ""
     },
@@ -78,9 +78,9 @@
       "id": "luchador",
       "url": "https://drive.google.com/open?id=1EAuC1N-Bwb-2Ny3gSE-GGdV4hPBVgqiiUgV1H27YPhQ",
       "brief": "Although many in this modern world have forgotten the honor of the old ways, I have not. I am more than an athlete. More than a sports star. More than a mere wrestler. I am a hero of the people in the legendary tradition of El Santo. And, when necessary, a fighter of monsters. I AM A LUCHADOR!",
-      "selected": false,
+      "selected": true,
       "name": "The Luchador",
-      "player": ""
+      "player": "Jon"
     }
   ],
   "users": []
