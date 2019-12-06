@@ -23,6 +23,8 @@ app.use(express.static("public"));
 
 app.get("/character/:id", function(request, response) {
   console.log("param", request.params);
+  var char = db.get('characters').find({id: request.params.id}).value();
+
 });
 
 app.get("/characters/", function(request, response) {

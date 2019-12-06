@@ -25,6 +25,9 @@ const appendNewCharacter = function(character) {
   const newListItem = document.createElement("li");
   newListItem.innerHTML = characterBio;
   charList.appendChild(newListItem);
+  if (character.player && character.player.length > 0){
+    document.getElementById("select_"+character.id).disabled = true;
+  }
 };
 
 // iterate through every dream and add it to our page
@@ -49,12 +52,12 @@ function fnSubmitForm(button) {
   console.log(button.id);
   //appendNewDream(dreamInput.value);
   // reset form
-  selectCharacter(button.id)
+  selectCharacter(button.id, userName)
 };
 
 
 
-const selectCharacter = function(charId) {
+const selectCharacter = function(charId, user) {
   var xhr = new XMLHttpRequest(),
       method = "POST",
       url = 'https://thespin.glitch.me/'+"character/"+encodeURIComponent(charId);
@@ -69,7 +72,7 @@ const selectCharacter = function(charId) {
       }
     }
   };
-  xhr.send();
+  xhr.send(user);
 }
 
 const getCharacters = function() {
