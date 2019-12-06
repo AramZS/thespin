@@ -174,7 +174,7 @@ li {
     padding: 0 5px 0 20px;
     vertical-align: top;
     transition: all .7s;
-  border: 10px solid #fff;
+  border: 10px solid #f9f7f1;
   padding-top: 10px;
   height: 725px;
   overflow: hidden;
@@ -355,7 +355,15 @@ li {
     width: 100%;
 }
 
-
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 7px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    }
 /*________________________________________________________________________________________________________________________________*/
 /*MEDIAQUERIES*/
 @media only all and (max-width: 1300px) {

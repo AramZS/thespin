@@ -77,6 +77,7 @@ const selectCharacter = function(charId, user) {
 }
 
 const getCharacters = function() {
+  try {
   var xhr = new XMLHttpRequest(),
       method = "GET",
       url = 'https://thespin.glitch.me/'+"characters/";
@@ -95,6 +96,10 @@ const getCharacters = function() {
     }
   };
   xhr.send();
+  } catch (e){
+    console.log(e);
+    window.alert('We can not reach the server. Are you sure you are on HTTPS?')
+  }
 }
 
 
