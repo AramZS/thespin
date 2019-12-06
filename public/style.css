@@ -173,7 +173,6 @@ li {
     grid-column: auto;
     padding: 0 5px 0 20px;
     vertical-align: top;
-    grid-row: 1;
     transition: all .7s;
   border: 10px solid #fff;
   padding-top: 10px;
@@ -355,6 +354,8 @@ li {
     mix-blend-mode: multiply;
     width: 100%;
 }
+
+
 /*________________________________________________________________________________________________________________________________*/
 /*MEDIAQUERIES*/
 @media only all and (max-width: 1300px) {
@@ -365,23 +366,32 @@ li {
 }
 @media only all and (max-width: 1200px) {
     .collumn{
-        width: 31%;
+
     }
 
 }
     @media only all and (max-width: 900px) {
     .collumn{
-        width: 47%;
+
     }
 
 }
 @media only all and (max-width: 600px) {
-    .collumn{
+  .collumns{
+   grid-column-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  display: inline-grid;
+  grid-template-rows: repeat(auto-fill, minmax(3, 1fr) );
+  grid-gap: 1px;
+	justify-self: center; 
+  
+}
+  .collumn{
         width: 100%;
-    }
+          border-bottom: 1px solid #2f2f2f;
+  }
 	.collumn + .collumn {
 				border-left: none;
-      	border-bottom: 1px solid #2f2f2f;
 	}
     header{
         max-width: 320px;
