@@ -112,8 +112,16 @@ li {
 }
 
 .char {
-    margin: 5px 0 38px 0;
-    border: 1px solid;
+  margin: 5px 0 38px 0;
+  display: inline-block;
+  --aug-border: 5px;
+  --aug-inset: 5px;
+  padding: 10px; /* mind the gap */
+  text-align: center;
+  --aug-border-bg: rgba(215,215,0,0.53);
+  --aug-inset-bg: rgba(0,0,0,0.25);
+  width:100%
+  
 }
 
 .headerobjectswrapper{
