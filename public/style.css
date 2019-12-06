@@ -23,7 +23,7 @@ p {
   max-width: 600px;
 }
 
-form {
+.form-old {
   margin-bottom: 25px;
   padding: 15px;
   background-color: cyan;
@@ -61,7 +61,7 @@ button:active {
 }
 
 li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 footer {
@@ -98,6 +98,15 @@ p{
     position: relative;
 
 
+}
+
+ul  {
+  padding-left: 25px;
+}
+
+li.div {
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .headerobjectswrapper{

@@ -11,16 +11,16 @@ const dreams = [
 ];
 
 // define variables that reference elements on our page
-const dreamsList = document.getElementById("dreams");
+const charList = document.getElementById("select-class-list");
 const dreamsForm = document.forms[0];
 const dreamInput = dreamsForm.elements["dream"];
 
 // a helper function that creates a list item for a given dream
 const appendNewCharacter = function(character) {
-  var characterBio = `<ul class="selected_${character.name}"><li>Name:${character.name}</li><li>Bio:${character.brief}</li><li><a href="${character.url}" target="_blank">See the Full Description</a></li> </ul>`;
+  var characterBio = `<div class="selected_${character.selected}"><li>Name:${character.name}</li><li>Bio:${character.brief}</li><li><a href="${character.url}" target="_blank">See the Full Description</a></li><button type="submit" id="select_${character.id}">Select This Role</button> </div>`;
   const newListItem = document.createElement("li");
-  newListItem.innerHTML = character;
-  dreamsList.appendChild(newListItem);
+  newListItem.innerHTML = characterBio;
+  charList.appendChild(newListItem);
 };
 
 // iterate through every dream and add it to our page
@@ -70,6 +70,9 @@ const getCharacters = function() {
     if(xhr.readyState === 4 && xhr.status === 200) {
       var jsonObj = JSON.parse(xhr.responseText);
       console.log(jsonObj);
+      jsonObj.forEach(function(characterObj){
+        appendNewCharacter(characterObj);
+      })
       if (jsonObj.result == false){
         window.alert('All the base belong to someone else')
       }
