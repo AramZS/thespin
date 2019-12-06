@@ -49,7 +49,7 @@ function fnSubmitForm(button) {
 
   // get dream value and add it to the list
   var userName = nameInput.value;
-  console.log(button.id);
+  console.log(button.id, userName);
   //appendNewDream(dreamInput.value);
   // reset form
   selectCharacter(button.id, userName)
@@ -72,7 +72,7 @@ const selectCharacter = function(charId, user) {
       }
     }
   };
-  xhr.send(user);
+  xhr.send("{user: "+user+"}");
 }
 
 const getCharacters = function() {

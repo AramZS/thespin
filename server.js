@@ -10,6 +10,8 @@ const FileSync = require('lowdb/adapters/FileSync')
 const adapter = new FileSync('db.json')
 const db = low(adapter)
 
+var bodyParser = require('body-parser')
+
 // Set some defaults (required if your JSON file is empty)
 db.defaults({ characters: [], users: [], count: 0 })
   .write();
@@ -19,12 +21,23 @@ db.defaults({ characters: [], users: [], count: 0 })
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static("public"));
-
+app.use( bodyParser.json() ); 
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+}));
 
 app.get("/character/:id", function(request, response) {
-  console.log("param", request.params);
+  console.log("param", request.params, "datais", request.data);
   var char = db.get('characters').find({id: request.params.id}).value();
-
+  if (char.selected){
+    response.json({ result: false });
+  } else {
+    var data = db.get('posts')
+                .find({id: request.params.id})
+                .assign({ selected: true })
+                .write();
+    response.json({ result: true, data: data });
+  }
 });
 
 app.get("/characters/", function(request, response) {
@@ -32,7 +45,7 @@ app.get("/characters/", function(request, response) {
 });
 
 app.post("/character/:id", function(request, response) {
-  console.log("param", request.params);
+  console.log("param", request.params, "data", request.body.);
 });
 
 
