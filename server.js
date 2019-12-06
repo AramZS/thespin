@@ -4,50 +4,66 @@
 // init project
 const express = require("express");
 const app = express();
-const low = require('lowdb')
-const FileSync = require('lowdb/adapters/FileSync')
+const low = require("lowdb");
+const FileSync = require("lowdb/adapters/FileSync");
 
-const adapter = new FileSync('db.json')
-const db = low(adapter)
+const adapter = new FileSync("db.json");
+const db = low(adapter);
 
-var bodyParser = require('body-parser')
+var bodyParser = require("body-parser");
 
 // Set some defaults (required if your JSON file is empty)
-db.defaults({ characters: [], users: [], count: 0 })
-  .write();
+db.defaults({ characters: [], users: [], count: 0 }).write();
 
 // we've started you off with Express,
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static("public"));
-app.use( bodyParser.json() ); 
-app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
-  extended: true
-}));
+app.use(bodyParser.json());
+app.use(
+  bodyParser.urlencoded({
+    // to support URL-encoded bodies
+    extended: true
+  })
+);
 
 app.get("/character/:id", function(request, response) {
   console.log("param", request.params, "datais", request.data);
-  var char = db.get('characters').find({id: request.params.id}).value();
-  if (char.selected){
-    response.json({ result: false });
-  } else {
-    var data = db.get('posts')
-                .find({id: request.params.id})
-                .assign({ selected: true })
-                .write();
-    response.json({ result: true, data: data });
-  }
+  var char = db
+    .get("characters")
+    .find({ id: request.params.id })
+    .value();
 });
 
 app.get("/characters/", function(request, response) {
-  response.json(db.get('characters').value());
+  response.json(db.get("characters").value());
 });
 
 app.post("/character/:id", function(request, response) {
-  console.log("param", request.params, "data", request.body.);
-});
+  console.log("param", request.params, "data", request.body);
+  var char = db
+    .get("characters")
+    .find({ id: request.params.id })
+    .value();
+  console.log(char);
+  try {
+  if (char.selected) {
+    response.json({ result: false });
+  } else {
+    var data = db
+      .get("posts")
+      .find({ id: request.params.id })
+      .assign({ selected: true, player: request.body.user })
+      .write().then(function(data){
+           response.json({ selected: true, data: data }); 
+      });
 
+  }
+  } catch (e) {
+    response.json({ result: false });
+  }
+});
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function(request, response) {

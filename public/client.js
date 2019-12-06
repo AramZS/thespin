@@ -21,7 +21,7 @@ const appendNewCharacter = function(character) {
   if (character.player && character.player.length > 0){
     buttonText = "Selected By "+ character.player;
   }
-  var characterBio = `<div class="char selected_${character.selected}" augmented-ui="tl-clip br-clip exe"><li><b>Type</b>: ${character.name}</li><li><b>Bio</b>: ${character.brief}</li><li><a href="${character.url}" target="_blank">See the Full Description</a></li><button type="submit" id="select_${character.id}" onclick="fnSubmitForm(this);">${buttonText}</button> </div>`;
+  var characterBio = `<div class="char selected_${character.selected}" augmented-ui="tl-clip br-clip exe"><li><b>Type</b>: ${character.name}</li><li><b>Bio</b>: ${character.brief}</li><li><a href="${character.url}" target="_blank">See the Full Description</a></li><button type="submit" id="${character.id}" onclick="fnSubmitForm(this);">${buttonText}</button> </div>`;
   const newListItem = document.createElement("li");
   newListItem.innerHTML = characterBio;
   charList.appendChild(newListItem);
@@ -63,6 +63,7 @@ const selectCharacter = function(charId, user) {
       url = 'https://thespin.glitch.me/'+"character/"+encodeURIComponent(charId);
   console.log();
   xhr.open(method, url, true);
+  xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
   xhr.onreadystatechange = function () {
     if(xhr.readyState === 4 && xhr.status === 200) {
       var jsonObj = JSON.parse(xhr.responseText);
@@ -72,7 +73,7 @@ const selectCharacter = function(charId, user) {
       }
     }
   };
-  xhr.send("{user: "+user+"}");
+  xhr.send(JSON.stringify({user: user}));
 }
 
 const getCharacters = function() {
