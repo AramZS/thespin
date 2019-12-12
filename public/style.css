@@ -183,7 +183,7 @@ li {
 .collumn + .collumn { 
   border-left: 1px solid #2f2f2f;
 }
-.collumn .headline{
+.collumn .headline, h1, h2, h3, h4, h5, h6 {
     text-align: center;
     line-height: normal;
     font-family: 'Playfair Display', serif;
@@ -192,7 +192,7 @@ li {
 
 
 }
-.collumn .headline.hl1{
+.collumn .headline.hl1, h3 {
     font-weight: 700;
     font-size: 30px;
     text-transform: uppercase;
@@ -200,7 +200,7 @@ li {
 
 }
 
-.collumn .headline.hl2{
+.collumn .headline.hl2, h4 {
     font-weight: 400;
     font-style: italic;
     font-size: 24px;
@@ -208,7 +208,7 @@ li {
     padding: 0 0 10px 0;
 }
 
-.collumn .headline.hl2:before{
+.collumn .headline.hl2:before, h4:before {
     border-top: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -216,7 +216,7 @@ li {
     display: block;
     margin: 0 auto;
 }
-.collumn .headline.hl2:after{
+.collumn .headline.hl2:after, h4:after {
     border-bottom: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -226,20 +226,20 @@ li {
 
 }
 
-.collumn .headline.hl3{
+.collumn .headline.hl3, h2 {
     font-weight: 400;
     font-style: italic;
     font-size: 36px;
     box-sizing: border-box;
     padding: 0 0 10px 0;
 }
-.collumn .headline.hl4{
+.collumn .headline.hl4, h5 {
     font-weight: 700;
     font-size: 12px;
     box-sizing: border-box;
     padding: 0 0 10px 0;
 }
-.collumn .headline.hl4:before{
+.collumn .headline.hl4:before, h5:before {
     border-top: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -247,7 +247,7 @@ li {
     display: block;
     margin: 0 auto;
 }
-.collumn .headline.hl4:after{
+.collumn .headline.hl4:after, h5:after {
     border-bottom: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -257,7 +257,7 @@ li {
 
 }
 
-.collumn .headline.hl5{
+.collumn .headline.hl5, h1 {
     font-weight: 400;
     font-size: 42px;
     text-transform: uppercase;
@@ -265,13 +265,13 @@ li {
     box-sizing: border-box;
     padding: 0 0 10px 0;
 }
-.collumn .headline.hl6{
+.collumn .headline.hl6, h6 {
     font-weight: 400;
     font-size: 18px;
     box-sizing: border-box;
     padding: 0 0 10px 0;
 }
-.collumn .headline.hl6:before{
+.collumn .headline.hl6:before, h6:before {
     border-top: 1px solid #2f2f2f;
     content: '';
     width: 100px;
@@ -279,7 +279,7 @@ li {
     display: block;
     margin: 0 auto;
 }
-.collumn .headline.hl6:after{
+.collumn .headline.hl6:after, h6:after {
     border-bottom: 1px solid #2f2f2f;
     content: '';
     width: 100px;
