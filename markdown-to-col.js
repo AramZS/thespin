@@ -15,16 +15,36 @@ const selectCol = (date, colNum) => {
 
 const myext = function () {
   var myext1 = {
-    type: 'output',
+    type: 'lang',
     regex: /headerStart/g,
-    replace: '<header>'
+    replace: 'headerStart'
   };
   var myext2 = {
-    type: 'output',
+    type: 'lang',
     regex: /headerEnd/g,
+    replace: 'headerEnd'
+  };
+  var myext3 = {
+    type: 'output',
+    regex: /<p>headerStart<\/p>/g,
+    replace: '<header>'
+  };
+  var myext4 = {
+    type: 'output',
+    regex: /<p>headerEnd<\/p>/g,
     replace: '</header>'
   };
-  return [myext1, myext2];
+    var myext5 = {
+    type: 'output',
+    regex: /~fiOpen/g,
+    replace: '<figure class="figure">'
+  };
+    var myext6 = {
+    type: 'output',
+    regex: /~fiClose/g,
+    replace: '</figure>'
+  };
+  return [myext1, myext2, myext3, myext4, myext5, myext6];
 }
 
 const convert = function(text) {
