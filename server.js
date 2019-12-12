@@ -6,6 +6,7 @@ const express = require("express");
 const app = express();
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
+const markdownHandler = require("markdown-to-col");
 
 const adapter = new FileSync("db.json");
 const db = low(adapter);
@@ -67,6 +68,12 @@ app.post("/character/:id", function(request, response) {
     console.log('error', e);
     response.json({ result: false });
   }
+});
+
+app.get("/text/:date/:col", function(request, response) {
+  console.log("param", request.params, "data", request.body);
+  var html = markdownHandler.process(request.params.date, request.params.col);
+  response.json({ result: true, data: html }); 
 });
 
 // http://expressjs.com/en/starter/basic-routing.html
