@@ -185,6 +185,7 @@ li {
   border-left: 1px solid #2f2f2f;
 }
 .collumn .headline, h1, h2, h3, h4, h5, h6 {
+    color: rgb(47, 47, 47);
     text-align: center;
     line-height: normal;
     font-family: 'Playfair Display', serif;
