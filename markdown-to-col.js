@@ -1,24 +1,28 @@
-var showdown  = require('showdown');
+var showdown = require("showdown");
+var fs = require("fs");
 
-/** 
+/**
  * date: 1987-10-30
- * colNum: 1
+ * colNum: 1 || 2 || 3
  *
  */
-const selectCol = (date,colNum) => {
-  var fileName = './text/'+date+'/';
-  var files 
-  return fileName;
-}
+const selectCol = (date, colNum) => {
+  var fileName = "./text/" + date + "/";
+  var files = fs.readdirSync(fileName);
+  return files[colNum - 1];
+};
 
-const process = async function(){
-    var converter = new showdown.Converter(),
-    text      = '# hello, markdown!',
-    html      = converter.makeHtml(text);
-}
+const convert = function(text) {
+  var converter = new showdown.Converter();
+  var html = converter.makeHtml(text);
+  return html;
+};
 
+const process = function(date, colNum) {
+  var text = fs.readFileSync(selectCol(date, colNum));
+  return convert(text);
+};
 
 module.exports = {
-  process,
-  fromOneMany: fromOneMany
+  process
 };
