@@ -9,7 +9,7 @@ var fs = require("fs");
 const selectCol = (date, colNum) => {
   var fileName = "./text/" + date + "/";
   var files = fs.readdirSync(fileName);
-  return files[colNum - 1];
+  return fileName+'/'+files[colNum - 1];
 };
 
 const convert = function(text) {

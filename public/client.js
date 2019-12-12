@@ -168,7 +168,11 @@ const getColHTML = function(colNum) {
 }
 
 function fillHTMLCols(col){
-  var htmlOne = getColHTML(1);
-  var htmlTwo = getColHTML(2);
-  var htmlTwo = getColHTML(3);
+  var colNum = 1;
+  var columns = document.querySelectorAll(".collumn");
+  columns.forEach(function(col){
+    col.innerHTML = getColHTML(colNum++);
+  });
 }
+
+fillHTMLCols();
