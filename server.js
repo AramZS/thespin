@@ -6,7 +6,7 @@ const express = require("express");
 const app = express();
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
-const markdownHandler = require("markdown-to-col");
+const markdownHandler = require("./markdown-to-col");
 
 const adapter = new FileSync("db.json");
 const db = low(adapter);
@@ -79,6 +79,9 @@ app.get("/text/:date/:col", function(request, response) {
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function(request, response) {
   response.sendFile(__dirname + "/views/index.html");
+});
+app.get("/template", function(request, response) {
+  response.sendFile(__dirname + "/views/template.html");
 });
 
 // listen for requests :)

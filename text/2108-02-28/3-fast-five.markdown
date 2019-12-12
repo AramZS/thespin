@@ -6,8 +6,12 @@
 
 **An all new thrillogy** | The Secret Overlords of the Disney bunker that survived California falling into the sea have mass-commed an ad campaign straight to every billboard, webwall and car-side in the Enclave Upper City. Who even wants this anymore? How do the Secret Overlords keep getting food? Is this what they unfroze Walt's head for? More on the latest from the lame kingdom as soon as we re-tune our illegal ad-blocking infection.
 
+<figure class="figure">
 ![Anyone else finally done after Episode 27?](https://i.giphy.com/4fDWVPMoSyhgc.gif)
-*Anyone else finally done after Episode 27?*
+  <figcaption class="figcaption">
+    *Anyone else finally done after Episode 27?*
+  </figcaption>
+</figure>
 
 **Spirits in the Wires** | When The Virtual isn't down, we've been hearing endless reports around The Enclave of what people are calling "flares", things from The Virtual showing up in real life, or ad-vatars walking briefly out of webwalls to wave hello and perform impossible tricks. Normally we'd assume you're all drunk, but perhaps there's some Hot New Tech they're testing to surprise us all.
 

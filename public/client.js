@@ -125,6 +125,7 @@ function getDateline(){
 }
 
 function fillDay(){
+  console.log(fillDay);
   const aDay = document.getElementById('the-dateline');
   var dateIs = new Date(getDateline());
   var options = { month: 'long'};
@@ -132,7 +133,8 @@ function fillDay(){
   var day = window.getWeekDay(dateIs);
   var year = dateIs.getFullYear();
   var date = dateIs.getDate();
-  aDay.innerHtml = `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${month}`;
+  console.log(`The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${month}`);
+  aDay.innerHTML = `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${month}`;
 }
 
 fillDay();
@@ -143,8 +145,8 @@ const getColHTML = function(colNum) {
   const aDay = getDateline();
   var xhr = new XMLHttpRequest(),
       method = "GET",
-      url = 'https://thespin.glitch.me/'+"text/"+aDay;
-  console.log('GET Characters');
+      url = 'https://thespin.glitch.me/'+"text/"+aDay+'/'+colNum;
+  console.log('GET colHTML');
   xhr.open(method, url, true);
   xhr.onreadystatechange = function () {
     if(xhr.readyState === 4 && xhr.status === 200) {
@@ -163,4 +165,10 @@ const getColHTML = function(colNum) {
     console.log(e);
     window.alert('We can not reach the server. Are you sure you are on HTTPS?')
   }
+}
+
+function fillHTMLCols(col){
+  var htmlOne = getColHTML(1);
+  var htmlTwo = getColHTML(2);
+  var htmlTwo = getColHTML(3);
 }
