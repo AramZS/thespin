@@ -1,10 +1,11 @@
-<header>
+headerStart
   
 ## Mysterious Comas Return
 
 ##### by WRAD MARGE
-  
-</header>
+
+headerEnd
+
 Four men and three women have fallen into comas in different areas of The Enclave, all last month. This appears to be a return of whatever put 38 people in comas last year and was believed to have been stopped.
 
 Same as last year, the victims seem in perfect health other than being unable to regain consciousness. City health services have confirmed the same type of non-responsive condition from last year's 38 and have extended additional budget to the facility holding the sufferers from last year.
