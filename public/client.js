@@ -55,8 +55,6 @@ function fnSubmitForm(button) {
   selectCharacter(button.id, userName)
 };
 
-
-
 const selectCharacter = function(charId, user) {
   var xhr = new XMLHttpRequest(),
       method = "POST",
@@ -121,7 +119,48 @@ window.getWeekDay = function(date){
     return weekdays[day];
 }
 
+function getDateline(){
+  const aDay = document.getElementById('the-dateline');
+  return aDay.getAttribute('data-date');
+}
+
 function fillDay(){
-  const aDay = document.getElementById('the-day');
-  var dateIs = aDay.getAttribute('data-date')
+  const aDay = document.getElementById('the-dateline');
+  var dateIs = new Date(getDateline());
+  var options = { month: 'long'};
+  var month = new Intl.DateTimeFormat('en-US', options).format(dateIs);
+  var day = window.getWeekDay(dateIs);
+  var year = dateIs.getFullYear();
+  var date = dateIs.getDate();
+  aDay.innerHtml = `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${month}`;
+}
+
+fillDay();
+
+
+const getColHTML = function(colNum) {
+  try {
+  const aDay = getDateline();
+  var xhr = new XMLHttpRequest(),
+      method = "GET",
+      url = 'https://thespin.glitch.me/'+"text/"+aDay;
+  console.log('GET Characters');
+  xhr.open(method, url, true);
+  xhr.onreadystatechange = function () {
+    if(xhr.readyState === 4 && xhr.status === 200) {
+      var jsonObj = JSON.parse(xhr.responseText);
+      console.log(jsonObj);
+      jsonObj.forEach(function(characterObj){
+        appendNewCharacter(characterObj);
+      })
+      if (jsonObj.result == false){
+        window.alert('All the base belong to someone else')
+      }
+    }
+  };
+  xhr.send();
+  } catch (e){
+    console.log(e);
+    window.alert('We can not reach the server. Are you sure you are on HTTPS?')
+  }
 }
