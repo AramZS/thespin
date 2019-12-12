@@ -172,7 +172,7 @@ li {
     font-size: 14px;
     line-height: 20px;
     grid-column: auto;
-    padding: 0 5px 0 20px;
+    padding: 0 10px 0 15px;
     vertical-align: top;
     transition: all .7s;
   border: 10px solid #f9f7f1;

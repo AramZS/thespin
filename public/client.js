@@ -164,7 +164,7 @@ const setColHTML = function(colNum, col) {
   }
 }
 
-window.fillHTMLCols = function(col){
+window.fillHTMLCols = function(){
   var colNum = 1;
   var columns = document.querySelectorAll(".collumn");
   columns.forEach(function(col){

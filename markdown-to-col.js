@@ -13,7 +13,11 @@ const selectCol = (date, colNum) => {
 };
 
 const convert = function(text) {
-  var converter = new showdown.Converter();
+  var converter = new showdown.Converter({
+    strikethrough: true,
+    simpleLineBreaks: false,
+  });
+  converter.setFlavor('original');
   var html = converter.makeHtml(text);
   return html;
 };
