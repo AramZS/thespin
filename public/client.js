@@ -79,7 +79,7 @@ const selectCharacter = function(charId, user) {
   xhr.send(JSON.stringify({user: user}));
 }
 
-const getCharacters = function() {
+var getCharacters = function() {
   try {
   var xhr = new XMLHttpRequest(),
       method = "GET",
@@ -105,8 +105,7 @@ const getCharacters = function() {
   }
 }
 
-
-getCharacters();
+window.getCharacters = getCharacters;
 
 window.getWeekDay = function(date){
     //Create an array containing each day, starting with Sunday.
@@ -140,7 +139,7 @@ function fillDay(){
 fillDay();
 
 
-const getColHTML = function(colNum) {
+const setColHTML = function(colNum, col) {
   try {
   const aDay = getDateline();
   var xhr = new XMLHttpRequest(),
@@ -152,9 +151,7 @@ const getColHTML = function(colNum) {
     if(xhr.readyState === 4 && xhr.status === 200) {
       var jsonObj = JSON.parse(xhr.responseText);
       console.log(jsonObj);
-      jsonObj.forEach(function(characterObj){
-        appendNewCharacter(characterObj);
-      })
+      col.innerHTML = jsonObj.data
       if (jsonObj.result == false){
         window.alert('All the base belong to someone else')
       }
@@ -167,12 +164,10 @@ const getColHTML = function(colNum) {
   }
 }
 
-function fillHTMLCols(col){
+window.fillHTMLCols = function(col){
   var colNum = 1;
   var columns = document.querySelectorAll(".collumn");
   columns.forEach(function(col){
-    col.innerHTML = getColHTML(colNum++);
+    setColHTML(colNum++, col);
   });
 }
-
-fillHTMLCols();

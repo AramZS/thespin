@@ -19,7 +19,8 @@ const convert = function(text) {
 };
 
 const process = function(date, colNum) {
-  var text = fs.readFileSync(selectCol(date, colNum));
+  var text = fs.readFileSync(selectCol(date, colNum)).toString();
+  // console.log(text);
   return convert(text);
 };
 
