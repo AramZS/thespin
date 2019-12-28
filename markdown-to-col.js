@@ -68,6 +68,8 @@ const convert = function(text) {
   converter.setFlavor('original');
   // var html = md.render(text);
   var html = converter.makeHtml(text);
+  var metadata = converter.getMetadata();
+  console.log('Article metadata', metadata);
   return html;
 };
 
