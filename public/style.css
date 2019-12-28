@@ -309,6 +309,9 @@ li {
     box-sizing: border-box;
     padding: 10px 0 10px 0;
 }
+.collumn header {
+  margin-bottom: 20px;
+}
 .collumn .headline.hl10{
     font-weight: 700;
     font-size: 12px;

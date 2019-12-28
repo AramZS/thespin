@@ -1,6 +1,6 @@
 var showdown = require("showdown");
 var fs = require("fs");
-var md = require('markdown-it')();
+// var md = require('markdown-it')();
 
 /**
  * date: 1987-10-30
@@ -27,7 +27,7 @@ const myext = function () {
   var myext3 = {
     type: 'output',
     regex: /<p>headerStart<\/p>/g,
-    replace: '<header>'
+    replace: '<header class="head">'
   };
   var myext4 = {
     type: 'output',
@@ -62,7 +62,8 @@ const convert = function(text) {
   var converter = new showdown.Converter({
     strikethrough: true,
     simpleLineBreaks: false,
-    extensions: [myext]
+    extensions: [myext],
+    metadata: true
   });
   converter.setFlavor('original');
   // var html = md.render(text);

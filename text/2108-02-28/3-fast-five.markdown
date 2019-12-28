@@ -1,6 +1,10 @@
+headerStart
+
 ### HYPE FIVE
 
 #### The top five stories we're tracking right now
+
+headerEnd
 
 **Vert on the flik...** | The Virtual has been having problems again. Somehow, despite living in the deep shadow of the tech overlords in HC--which invented the damn thing--we've had to boot up our flatsite because the connection remains unreliable all over town. Our ability to access that wonderful realm was stable almost entirely over the last decade, except for that still unexplained blip last year, but now it's about as dependable as THE SPIN Staff's job prospects, which is to say: *NOT AT ALL*.
 
