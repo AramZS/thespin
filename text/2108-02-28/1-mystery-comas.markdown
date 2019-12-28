@@ -12,7 +12,11 @@ Same as last year, the victims seem in perfect health other than being unable to
 
 No one we spoke to could identify the cause of these comas or give us any idea if we're facing some sort of epidemic, or if it is going to get any worse.
 
-> "At this time we have no reason to believe that these incidents are connected to any of our products," said HC in a statement.
+pqStart
+
+"At this time we have no reason to believe that these incidents are connected to any of our products," said HC in a statement.
+
+pqEnd
 
 Citizens who lived near this year's second victim reported strange phenomenon when one of the coma victims fell ill, including strange lights, Vert failures, and technology fuzz-outs and snow-crashes.
 

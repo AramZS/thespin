@@ -44,7 +44,17 @@ const myext = function () {
     regex: /~fiClose/g,
     replace: '</figure>'
   };
-  return [myext1, myext2, myext3, myext4, myext5, myext6];
+    var myext7 = {
+    type: 'output',
+    regex: /<p>pqStart<\/p>/g,
+    replace: '<span class="citation">'
+  };
+    var myext8 = {
+    type: 'output',
+    regex: /<p>pqEnd<\/p>/g,
+    replace: '</span>'
+  };
+  return [myext1, myext2, myext3, myext4, myext5, myext6, myext7, myext8];
 }
 
 const convert = function(text) {
