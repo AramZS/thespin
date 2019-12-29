@@ -73,6 +73,10 @@ const convert = function(text) {
   return html;
 };
 
+const getDateMeta = function(date){
+  
+}
+
 const process = function(date, colNum) {
   var text = fs.readFileSync(selectCol(date, colNum)).toString();
   // console.log(text);

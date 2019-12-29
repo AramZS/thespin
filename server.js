@@ -7,6 +7,8 @@ const app = express();
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
 const markdownHandler = require("./markdown-to-col");
+const Mustache = require('mustache');
+const fs = require('fs');
 
 const adapter = new FileSync("db.json");
 const db = low(adapter);
@@ -78,15 +80,18 @@ app.get("/text/:date/:col", function(request, response) {
 
 app.get("/:date", function(request, response) {
   console.log("param", request.params, "data", request.body);
-  var cols = { 1: '', 2: '', 3: '', };
-  for (let [key, value] of Object.entries(cols)) {
+  var site = { 1: '', 2: '', 3: '' };
+  for (let [key, value] of Object.entries(site)) {
   // console.log(`${key}: ${value}`);
-  if (cols.hasOwnProperty(key)){
-    cols[key] = markdownHandler.process(request.params.date, key);
+  if (site.hasOwnProperty(key)){
+    site[key] = markdownHandler.process(request.params.date, key);
   }
+  site.date = request.params.date;
 }
+  var file = fs.readFileSync('./views/handlebars.mst').toString();
+  var html = Mustache.render(file, site);
   
-  response.json({ result: true, data: html }); 
+  response.send(html); 
 });
 
 // http://expressjs.com/en/starter/basic-routing.html

@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>The Spin</title>
+    <title>The Spin: {{date}}</title>
     <meta name="description" content="The Spin" />
     <link
       id="favicon"
@@ -45,13 +45,13 @@
           <span style="font-style: italic;"
             >Weather for the next 24 hours: Overcast</span
           ><br /><span
-            >Wind: 7km/h SSE; Temp: 21°C; Hum: 82%; Air Quality: Orange</span
+            >Wind: {{wind}}; Temp: {{temp}}; Hum: {{hum}}; Air Quality: {{aq}}</span
           >
         </div>
         <header>The Spin</header>
       </div>
 
-      <div class="subhead" id="the-dateline" data-date="2108-02-28"></div>
+      <div class="subhead" id="the-dateline" data-date="{{date}}"></div>
     </div>
 
     <main>
@@ -59,12 +59,12 @@
         <div class="collumns">
           <section class="collumn">
             <div class="colInner">
-              
+              {{1}}
             </div>
           </section>
           <section class="collumn">
             <div class="colInner">
-              
+              {{2}}
             </div>
             <form id="select-class">
               Enter your name before you apply!
@@ -86,7 +86,7 @@
           </section>
           <section class="collumn">
             <div class="colInner">
-              
+              {{3}}
             </div>
           </section>
         </div>
