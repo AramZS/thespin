@@ -76,6 +76,19 @@ app.get("/text/:date/:col", function(request, response) {
   response.json({ result: true, data: html }); 
 });
 
+app.get("/:date", function(request, response) {
+  console.log("param", request.params, "data", request.body);
+  var cols = { 1: '', 2: '', 3: '', };
+  for (let [key, value] of Object.entries(cols)) {
+  // console.log(`${key}: ${value}`);
+  if (cols.hasOwnProperty(key)){
+    cols[key] = markdownHandler.process(request.params.date, key);
+  }
+}
+  
+  response.json({ result: true, data: html }); 
+});
+
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function(request, response) {
   response.sendFile(__dirname + "/views/index.html");
