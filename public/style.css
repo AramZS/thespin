@@ -131,6 +131,10 @@ li {
 }
 
 .headerobjectswrapper{
+  display: grid;
+  justify-self: center;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .subhead {
@@ -375,6 +379,9 @@ li {
     .weatherforcastbox{
         display: none;
     }
+  .headerobjectswrapper{
+  grid-template-columns: repeat(1, 1fr);
+}
 
 }
 @media only all and (max-width: 1200px) {
