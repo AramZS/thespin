@@ -7,8 +7,8 @@ const app = express();
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
 const markdownHandler = require("./markdown-to-col");
-const Mustache = require('mustache');
-const fs = require('fs');
+const Mustache = require("mustache");
+const fs = require("fs");
 
 const adapter = new FileSync("db.json");
 const db = low(adapter);
@@ -51,23 +51,20 @@ app.post("/character/:id", function(request, response) {
     .value();
   console.log(char);
   try {
-  if (char.selected) {
-    response.json({ result: false });
-  } else {
-    
-    char.selected = true;
-    char.player = request.body.user;
-    var data = db
-      .get("posts")
-      .find({ id: request.params.id })
-      .assign(char)
-      .write();
-           response.json({ result: true, data: data }); 
- 
-
-  }
+    if (char.selected) {
+      response.json({ result: false });
+    } else {
+      char.selected = true;
+      char.player = request.body.user;
+      var data = db
+        .get("posts")
+        .find({ id: request.params.id })
+        .assign(char)
+        .write();
+      response.json({ result: true, data: data });
+    }
   } catch (e) {
-    console.log('error', e);
+    console.log("error", e);
     response.json({ result: false });
   }
 });
@@ -75,23 +72,24 @@ app.post("/character/:id", function(request, response) {
 app.get("/text/:date/:col", function(request, response) {
   console.log("param", request.params, "data", request.body);
   var html = markdownHandler.process(request.params.date, request.params.col);
-  response.json({ result: true, data: html }); 
+  response.json({ result: true, data: html });
 });
 
-app.get("/:date", function(request, response) {
+app.get("/archive/:date", function(request, response) {
   console.log("param", request.params, "data", request.body);
-  var site = { 1: '', 2: '', 3: '' };
+  var site = { 1: "", 2: "", 3: "" };
   for (let [key, value] of Object.entries(site)) {
-  // console.log(`${key}: ${value}`);
-  if (site.hasOwnProperty(key)){
-    site[key] = markdownHandler.process(request.params.date, key);
+    // console.log(`${key}: ${value}`);
+    if (site.hasOwnProperty(key)) {
+      site[key] = markdownHandler.process(request.params.date, key);
+    }
   }
   site.date = request.params.date;
-}
-  var file = fs.readFileSync('./views/handlebars.mst').toString();
+  Object.assign(site, markdownHandler.getDateMeta(request.params.date));
+  var file = fs.readFileSync("./views/handlebars.mst").toString();
   var html = Mustache.render(file, site);
-  
-  response.send(html); 
+
+  response.send(html);
 });
 
 // http://expressjs.com/en/starter/basic-routing.html

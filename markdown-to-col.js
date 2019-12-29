@@ -57,7 +57,7 @@ const myext = function () {
   return [myext1, myext2, myext3, myext4, myext5, myext6, myext7, myext8];
 }
 
-const convert = function(text) {
+const convert = function(text, toMetadata) {
   // showdown.extension('myext', myext);
   var converter = new showdown.Converter({
     strikethrough: true,
@@ -70,11 +70,16 @@ const convert = function(text) {
   var html = converter.makeHtml(text);
   var metadata = converter.getMetadata();
   console.log('Article metadata', metadata);
+  if (toMetadata === true){
+    return metadata;
+  }
   return html;
 };
 
 const getDateMeta = function(date){
-  
+    var text = fs.readFileSync(selectCol(date, 1)).toString();
+  // console.log(text);
+  return convert(text, true);
 }
 
 const process = function(date, colNum) {
@@ -84,5 +89,6 @@ const process = function(date, colNum) {
 };
 
 module.exports = {
-  process
+  process,
+  getDateMeta
 };

@@ -1,6 +1,10 @@
 ---
 title: Mysterious Comas Return
 author: Wrad Marge
+wind: 7km/h SSE
+temp: 21°C
+hum: 82%
+aq: Orange
 ---
 
 headerStart
