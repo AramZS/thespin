@@ -127,22 +127,54 @@ app.get("/template", function(request, response) {
   response.sendFile(__dirname + "/views/template.html");
 });
 
-app.get("/docs", function(request, response) {
+app.get("/docs", async function(request, response) {
   var fileName = "./text/";
   var files = fs.readdirSync(fileName);
   console.log("Current date:", files[files.length - 1]);
+  var indexHtml = getMainTemplate(files.pop());
   var promises = [];
-  files.forEach(function(fileName) {
-    fs.writeFile("./docs/2pac.txt", '', (err) => {
+  fs.writeFile("./docs/index.html", indexHtml, (err) => {
+    promises.push(new Promise(function(resolve, reject) {
       // throws an error, you could also catch it here
-      if (err) throw err;
+      if (err) reject( err);
+      console.log('File Write Error', err);
+      // success case, the file was saved
+      resolve(true);
+      console.log("Index saved!");
+    }));
+  });
+
+  files.forEach(function(fileName) {
+    var aHtml = getMainTemplate(fileName);
+    fs.writeFile("./docs/archive/"+fileName+".html", aHtml, (err) => {
+      promises.push(new Promise(function(resolve, reject) {
+      // throws an error, you could also catch it here
+      if (err) reject( err);
+      console.log('File Write Error', err);
 
       // success case, the file was saved
-      console.log("Lyric saved!");
+      console.log("File saved saved!");
+      }));
     });
   });
+  var publicFileNames = "./public/";
+  var publicFiles = fs.readdirSync(publicFileNames);
+  publicFiles.forEach(function(fileName) {
+    var indexHtml = getMainTemplate(fileName);
+    fs.copyFile(publicFileNames+fileName, "./docs/archive/"+fileName, (err) => {
+      promises.push(new Promise(function(resolve, reject) {
+      // throws an error, you could also catch it here
+      if (err) reject( err);
+      console.log('File Write Error', err);
+
+      // success case, the file was saved
+      console.log("File saved saved!");
+      }));
+    });
+  });
+  await Promise.all(promises);
   //var html = getMainTemplate(files[files.length - 1]);
-  response.sendFile(__dirname + "/views/template.html");
+  response.sendFile(__dirname + "/docs/index.html");
 });
 
 // listen for requests :)
