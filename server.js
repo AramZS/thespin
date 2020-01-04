@@ -15,8 +15,7 @@ const db = low(adapter);
 
 var bodyParser = require("body-parser");
 
-
-const getMainTemplate = function (date){
+const getMainTemplate = function(date) {
   var site = { 1: "", 2: "", 3: "" };
   for (let [key, value] of Object.entries(site)) {
     // console.log(`${key}: ${value}`);
@@ -29,8 +28,24 @@ const getMainTemplate = function (date){
   var file = fs.readFileSync("./views/handlebars.mst").toString();
   var html = Mustache.render(file, site);
   return html;
-}
+};
 
+var walkDir = function(dir) {
+    var results = [];
+    var list = fs.readdirSync(dir);
+    list.forEach(function(file) {
+        file = dir + '/' + file;
+        var stat = fs.statSync(file);
+        if (stat && stat.isDirectory()) { 
+            /* Recurse into a subdirectory */
+            results = results.concat(walkDir(file));
+        } else { 
+            /* Is a file */
+            results.push(file);
+        }
+    });
+    return results;
+}
 
 // Set some defaults (required if your JSON file is empty)
 db.defaults({ characters: [], users: [], count: 0 }).write();
@@ -102,7 +117,7 @@ app.get("/archive/:date", function(request, response) {
 app.get("/", function(request, response) {
   var fileName = "./text/";
   var files = fs.readdirSync(fileName);
-  console.log('Current date:', files[files.length - 1]);
+  console.log("Current date:", files[files.length - 1]);
   var html = getMainTemplate(files[files.length - 1]);
 
   response.send(html);
@@ -113,10 +128,20 @@ app.get("/template", function(request, response) {
 });
 
 app.get("/docs", function(request, response) {
+  var fileName = "./text/";
   var files = fs.readdirSync(fileName);
-  console.log('Current date:', files[files.length - 1]);
-  files.forEach
-  var html = getMainTemplate(files[files.length - 1]);
+  console.log("Current date:", files[files.length - 1]);
+  var promises = [];
+  files.forEach(function(fileName) {
+    fs.writeFile("./docs/2pac.txt", '', (err) => {
+      // throws an error, you could also catch it here
+      if (err) throw err;
+
+      // success case, the file was saved
+      console.log("Lyric saved!");
+    });
+  });
+  //var html = getMainTemplate(files[files.length - 1]);
   response.sendFile(__dirname + "/views/template.html");
 });
 
