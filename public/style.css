@@ -84,6 +84,20 @@ body{
     color: #2f2f2f;
     background-color: #f9f7f1;
 }
+#wrapper {
+  display: flex;
+  flex-flow: column;
+  height:100%;
+  overflow: hidden;
+  min-height:0;
+}
+#wrapper > .head {
+  display: flex;
+  flex-flow: column;
+  width:100%;
+  flex: 0 1 0;
+}
+
 .head header{
     font-family: 'Playfair Display', serif;
     font-weight: 900;
@@ -136,6 +150,7 @@ li {
 }
 
 .headerobjectswrapper{
+  width: 100%;
   display: grid;
   justify-self: center;
   text-align: center;
@@ -147,6 +162,7 @@ li {
     border-bottom: 2px solid #2f2f2f;
     border-top: 2px solid #2f2f2f;
     padding: 12px 0 12px 0;
+  width: 100%
 
 }
 .weatherforcastbox{
@@ -159,6 +175,12 @@ li {
     grid-column: auto;
     height: 120px;
     margin: -15px auto 12px;
+}
+main {
+  display: flex;
+  flex-flow: row;
+  flex:1 1 0;
+  
 }
 .content{
     font-size: 0;
