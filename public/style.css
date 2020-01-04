@@ -428,6 +428,13 @@ main {
     }
 
 }
+    @media only all and (max-width: 775px) {
+    .collumn{
+
+    }
+
+}
+
 @media only all and (max-width: 775px) {
   main {
     display: block;
@@ -438,6 +445,9 @@ main {
   .content {
     height: fit-content;
   }
+  p {
+    margin: 12px auto;
+  }
   .collumns{
    grid-column-gap: 20px;
   grid-template-columns: repeat(1, 1fr);
@@ -445,6 +455,7 @@ main {
   grid-template-rows: repeat(auto-fill, minmax(3, 1fr) );
   grid-gap: 1px;
 	justify-self: center;
+    width: 100%;
   
 }
   .collumn{
@@ -452,6 +463,8 @@ main {
         margin: 0;
     padding: 0;
     border: 0;
+    font-size: 20px;
+    line-height: 26px;
   }
     .collumn:after {
   content:'';
@@ -472,5 +485,8 @@ main {
         line-height: 54px;
         overflow: hidden;
     }
-
+  #select-class {
+    max-width: 450px;
+    margin: 0 auto;
+  }
 }
