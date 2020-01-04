@@ -39,6 +39,7 @@
     <!-- import the webpage's client-side javascript file -->
   </head>
   <body>
+  <div id="wrapper">
     <div class="head">
       <div class="headerobjectswrapper">
         <div class="weatherforcastbox">
@@ -92,7 +93,7 @@
         </div>
       </div>
     </main>
-
+    </div>
     <!-- <footer>Made with <a href="https://glitch.com">Glitch</a>!</footer>
 
     include the Glitch button to show what the webpage is about and

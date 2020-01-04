@@ -169,8 +169,8 @@ li {
   padding: 8px 15px 8px 15px;
   line-height: 20px;
   grid-column: auto;
-  height: 120px;
-  margin: -15px auto 12px;
+  height: fit-content;
+  margin: 0px auto 12px;
 }
 main {
   display: flex;
@@ -495,10 +495,10 @@ h6:after {
   .collumn .head h2 {
     font-size: 60px;
   }
-    .collumn .head h1 {
+  .collumn .head h1 {
     font-size: 72px;
   }
-      .collumn .head h3 {
+  .collumn .head h3 {
     font-size: 72px;
   }
 }
@@ -508,13 +508,13 @@ h6:after {
     font-size: 16px;
     line-height: 24px;
   }
-    .collumn .head h2 {
+  .collumn .head h2 {
     font-size: 50px;
   }
-    .collumn .head h1 {
+  .collumn .head h1 {
     font-size: 48px;
   }
-      .collumn .head h3 {
+  .collumn .head h3 {
     font-size: 48px;
   }
 }

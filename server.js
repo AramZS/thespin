@@ -15,6 +15,23 @@ const db = low(adapter);
 
 var bodyParser = require("body-parser");
 
+
+const getMainTemplate = function (date){
+  var site = { 1: "", 2: "", 3: "" };
+  for (let [key, value] of Object.entries(site)) {
+    // console.log(`${key}: ${value}`);
+    if (site.hasOwnProperty(key)) {
+      site[key] = markdownHandler.process(date, key);
+    }
+  }
+  site.date = date;
+  Object.assign(site, markdownHandler.getDateMeta(date));
+  var file = fs.readFileSync("./views/handlebars.mst").toString();
+  var html = Mustache.render(file, site);
+  return html;
+}
+
+
 // Set some defaults (required if your JSON file is empty)
 db.defaults({ characters: [], users: [], count: 0 }).write();
 
@@ -76,24 +93,16 @@ app.get("/text/:date/:col", function(request, response) {
 });
 
 app.get("/archive/:date", function(request, response) {
-  console.log("param", request.params, "data", request.body);
-  var site = { 1: "", 2: "", 3: "" };
-  for (let [key, value] of Object.entries(site)) {
-    // console.log(`${key}: ${value}`);
-    if (site.hasOwnProperty(key)) {
-      site[key] = markdownHandler.process(request.params.date, key);
-    }
-  }
-  site.date = request.params.date;
-  Object.assign(site, markdownHandler.getDateMeta(request.params.date));
-  var file = fs.readFileSync("./views/handlebars.mst").toString();
-  var html = Mustache.render(file, site);
+  var html = getMainTemplate(request.params.date);
 
   response.send(html);
 });
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function(request, response) {
+  var fileName = "./text/";
+  var files = fs.readdirSync(fileName);
+  console.log(files);
   response.sendFile(__dirname + "/views/index.html");
 });
 app.get("/template", function(request, response) {
