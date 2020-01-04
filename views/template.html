@@ -1,0 +1,108 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+<!-- https://github.com/propjockey/augmented-ui -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Spin</title>
+    <meta name="description" content="The Spin" />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/augmented-ui/augmented.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's client-side javascript file -->
+  </head>
+  <body>
+    <div class="head">
+      <div class="headerobjectswrapper">
+        <div class="weatherforcastbox">
+          <span style="font-style: italic;"
+            >Weather for the next 24 hours: Overcast</span
+          ><br /><span
+            >Wind: 7km/h SSE; Temp: 21°C; Hum: 82%; Air Quality: Orange</span
+          >
+        </div>
+        <header>The Spin</header>
+      </div>
+
+      <div class="subhead" id="the-dateline" data-date="2108-02-28"></div>
+    </div>
+
+    <main>
+      <div class="content">
+        <div class="collumns">
+          <section class="collumn">
+            <div class="colInner">
+              
+            </div>
+          </section>
+          <section class="collumn">
+            <div class="colInner">
+              
+            </div>
+            <form id="select-class">
+              Enter your name before you apply!
+              <input
+                name="name"
+                type="text"
+                maxlength="100"
+                placeholder="Your Name Here"
+                aria-labelledby="submit-name-label"
+                id="submit-name"
+              />
+              <ul id="select-class-list"></ul>
+              <!-- <button type="submit" id="select">Submit Dream</button> -->
+            </form>
+
+            <div class="dreams">
+              <ul id="dreams"></ul>
+            </div>
+          </section>
+          <section class="collumn">
+            <div class="colInner">
+              
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- <footer>Made with <a href="https://glitch.com">Glitch</a>!</footer>
+
+    include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    <script src="/client.js"></script>
+    <script>
+      window.fillHTMLCols();
+      window.getCharacters();
+    </script>
+  </body>
+</html>
