@@ -428,25 +428,46 @@ main {
     }
 
 }
-@media only all and (max-width: 600px) {
+@media only all and (max-width: 775px) {
+  main {
+    display: block;
+  }
+  #wrapper {
+    overflow: visible;
+  }
+  .content {
+    height: fit-content;
+  }
   .collumns{
    grid-column-gap: 20px;
   grid-template-columns: repeat(1, 1fr);
   display: inline-grid;
   grid-template-rows: repeat(auto-fill, minmax(3, 1fr) );
   grid-gap: 1px;
-	justify-self: center; 
+	justify-self: center;
   
 }
   .collumn{
         width: 100%;
-          border-bottom: 1px solid #2f2f2f;
+        margin: 0;
+    padding: 0;
+    border: 0;
   }
+    .collumn:after {
+  content:'';
+  border-bottom: 5px solid black;
+  height: 4px;
+  width: 100%;
+  display: block;
+  float:left;
+  margin-bottom: 20px;
+}
+  
 	.collumn + .collumn {
 				border-left: none;
 	}
     header{
-        max-width: 320px;
+        max-width: 100%;
         font-size: 60px;
         line-height: 54px;
         overflow: hidden;
