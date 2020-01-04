@@ -50,7 +50,7 @@ var walkDir = function(dir) {
 };
 
 var writeJsonToArchive = function(path, data) {
-  fs.writeFile("./docs/json/" + path + ".json", data, err => {
+  fs.writeFile("./docs/json/" + path + ".json", data.toString(), err => {
     // throws an error, you could also catch it here
     if (err) {
       console.log("File Write Error", err);
@@ -119,6 +119,7 @@ app.post("/character/:id", function(request, response) {
 app.get("/text/:date/:col", function(request, response) {
   console.log("param", request.params, "data", request.body);
   var html = markdownHandler.process(request.params.date, request.params.col);
+s").value()));
   response.json({ result: true, data: html });
 });
 
