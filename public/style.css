@@ -180,14 +180,15 @@ main {
   display: flex;
   flex-flow: row;
   flex:1 1 0;
-  
+  min-height: 0;
 }
 .content{
     font-size: 0;
     line-height: 0;
     word-spacing: -.31em;
     display: grid;
-    height: 735px;
+    display: block;
+  height: inherit;
 
 }
 .collumns{
@@ -197,6 +198,8 @@ main {
   grid-template-columns: repeat(auto-fill, minmax(3, 1fr) );
   grid-gap: 1px;
 	justify-self: center; 
+  height: 100%;
+  min-height: 0;
   
 }
 
@@ -209,7 +212,7 @@ main {
     transition: all .7s;
   border: 10px solid #f9f7f1;
   padding-top: 10px;
-  height: 725px;
+  height: 100%;
   overflow: hidden;
   overflow-y: auto;
 }
