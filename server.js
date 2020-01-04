@@ -24,7 +24,7 @@ const getMainTemplate = function(date, archive) {
     }
   }
   site.date = date;
-  site.fileDepth = archive ? '..' : '';
+  site.fileDepth = archive ? ".." : "";
   site.isLive = archive ? false : true;
   Object.assign(site, markdownHandler.getDateMeta(date));
   var file = fs.readFileSync("./views/handlebars.mst").toString();
@@ -33,21 +33,21 @@ const getMainTemplate = function(date, archive) {
 };
 
 var walkDir = function(dir) {
-    var results = [];
-    var list = fs.readdirSync(dir);
-    list.forEach(function(file) {
-        file = dir + '/' + file;
-        var stat = fs.statSync(file);
-        if (stat && stat.isDirectory()) { 
-            /* Recurse into a subdirectory */
-            results = results.concat(walkDir(file));
-        } else { 
-            /* Is a file */
-            results.push(file);
-        }
-    });
-    return results;
-}
+  var results = [];
+  var list = fs.readdirSync(dir);
+  list.forEach(function(file) {
+    file = dir + "/" + file;
+    var stat = fs.statSync(file);
+    if (stat && stat.isDirectory()) {
+      /* Recurse into a subdirectory */
+      results = results.concat(walkDir(file));
+    } else {
+      /* Is a file */
+      results.push(file);
+    }
+  });
+  return results;
+};
 
 // Set some defaults (required if your JSON file is empty)
 db.defaults({ characters: [], users: [], count: 0 }).write();
@@ -132,65 +132,75 @@ app.get("/template", function(request, response) {
 app.get("/docs", async function(request, response) {
   var fileName = "./text/";
   var files = fs.readdirSync(fileName);
+  var publicFileNames = "./public/";
+  var publicFiles = fs.readdirSync(publicFileNames);
   console.log("Current date:", files[files.length - 1]);
   //var indexHtml = getMainTemplate(files.pop());
   var indexHtml = getMainTemplate(files[files.length - 1]);
   var promises = [];
-  fs.writeFile("./docs/index.html", indexHtml, (err) => {
-    promises.push(new Promise(function(resolve, reject) {
-      // throws an error, you could also catch it here
-      if (err){
-        reject(err);
-        console.log('File Write Error', err);
-      }
-      // success case, the file was saved
-      resolve(true);
-      console.log("Index saved!");
-    }));
-  });
+  promises.push(
+    new Promise(function(resolve, reject) {
+      fs.writeFile("./docs/index.html", indexHtml, err => {
+        // throws an error, you could also catch it here
+        if (err) {
+          reject(err);
+          console.log("File Write Error", err);
+        }
+        // success case, the file was saved
+        resolve(true);
+        console.log("Index saved!");
+      });
+    })
+  );
 
   files.forEach(function(fileName) {
     var aHtml = getMainTemplate(fileName, true);
-    fs.writeFile("./docs/archive/"+fileName+".html", aHtml, (err) => {
-      promises.push(new Promise(function(resolve, reject) {
-      // throws an error, you could also catch it here
-      if (err){
-        reject(err);
-        console.log('File Write Error', err);
-      }
+    promises.push(
+      new Promise(function(resolve, reject) {
+        fs.writeFile("./docs/archive/" + fileName + ".html", aHtml, err => {
+          // throws an error, you could also catch it here
+          if (err) {
+            reject(err);
+            console.log("File Write Error", err);
+          }
 
-      // success case, the file was saved
-      console.log("File saved saved!");
-        resolve(true);
-      }));
-    });
+          // success case, the file was saved
+          console.log("File saved saved!");
+          resolve(true);
+        });
+      })
+    );
   });
-  var publicFileNames = "./public/";
-  var publicFiles = fs.readdirSync(publicFileNames);
-  publicFiles.forEach(function(fileName) {
-    fs.copyFile(publicFileNames+fileName, "./docs/"+fileName, (err) => {
-      promises.push(new Promise(function(resolve, reject) {
-      // throws an error, you could also catch it here
-      if (err){
-        reject(err);
-        console.log('File Write Error', err);
-      }
 
-      // success case, the file was saved
-      console.log("File saved saved!");
-        resolve(true);
-      }));
-    });
+  publicFiles.forEach(function(fileName) {
+    promises.push(
+      new Promise(function(resolve, reject) {
+        fs.copyFile(publicFileNames + fileName, "./docs/" + fileName, err => {
+          // throws an error, you could also catch it here
+          if (err) {
+            reject(err);
+            console.log("File Write Error", err);
+          }
+
+          // success case, the file was saved
+          console.log("File saved saved!");
+          resolve(true);
+        });
+      })
+    );
   });
   await Promise.all(promises);
   //var html = getMainTemplate(files[files.length - 1]);
+  console.log("Serve Built File");
   response.sendFile(__dirname + "/docs/index.html");
 });
 app.get("/docs/archive/:date", function(request, response) {
-  response.sendFile(__dirname + "/docs/archive/"+request.params.date+".html");
+  response.sendFile(
+    __dirname + "/docs/archive/" + request.params.date + ".html"
+  );
 });
 app.get("/docs/:fileName", function(request, response) {
-  response.sendFile(__dirname + "/docs/"+request.params.fileName);
+  response.sendFile(__dirname + "/docs/" + request.params.fileName);
 });
 
 // listen for requests :)
