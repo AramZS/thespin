@@ -49,6 +49,18 @@ var walkDir = function(dir) {
   return results;
 };
 
+var writeJsonToArchive = function(path, data) {
+  fs.writeFile("./docs/json/" + path + ".json", data, err => {
+    // throws an error, you could also catch it here
+    if (err) {
+      console.log("File Write Error", err);
+    }
+
+    // success case, the file was saved
+    console.log("JSON file saved saved!");
+  });
+};
+
 // Set some defaults (required if your JSON file is empty)
 db.defaults({ characters: [], users: [], count: 0 }).write();
 
