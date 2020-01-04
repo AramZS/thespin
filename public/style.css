@@ -5,9 +5,14 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+  padding: 2em;
 }
 
 h1 {
@@ -352,7 +357,8 @@ li {
     margin: 0 auto;
 }
 .collumn .figure {
-	  margin: 0 0 20px;
+	  margin: 0 auto;
+    width: 75%;
 }
 .collumn .figcaption{
 	font-style: italic;
