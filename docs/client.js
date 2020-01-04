@@ -104,7 +104,7 @@ const selectCharacter = function(charId, user) {
 
 var getCharacters = function() {
   try {
-    var xhr = setUpAPIRequest("GET", "characters/");
+    var xhr = setUpAPIRequest("GET", "characters");
     /**
   var xhr = new XMLHttpRequest(),
       method = "GET",
