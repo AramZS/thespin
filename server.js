@@ -102,8 +102,11 @@ app.get("/archive/:date", function(request, response) {
 app.get("/", function(request, response) {
   var fileName = "./text/";
   var files = fs.readdirSync(fileName);
-  console.log(files);
-  response.sendFile(__dirname + "/views/index.html");
+  console.log('Current date:', files[files.length - 1]);
+  var html = getMainTemplate(files[files.length - 1]);
+
+  response.send(html);
+  //response.sendFile(__dirname + "/views/index.html");
 });
 app.get("/template", function(request, response) {
   response.sendFile(__dirname + "/views/template.html");
