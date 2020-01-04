@@ -113,6 +113,10 @@ app.get("/template", function(request, response) {
 });
 
 app.get("/docs", function(request, response) {
+  var files = fs.readdirSync(fileName);
+  console.log('Current date:', files[files.length - 1]);
+  files.forEach
+  var html = getMainTemplate(files[files.length - 1]);
   response.sendFile(__dirname + "/views/template.html");
 });
 
