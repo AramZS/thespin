@@ -132,8 +132,8 @@ function fillDay(){
   var day = window.getWeekDay(dateIs);
   var year = dateIs.getFullYear();
   var date = dateIs.getDate();
-  console.log(`The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${month}`);
-  aDay.innerHTML = `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${month}`;
+  console.log(`The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year}`);
+  aDay.innerHTML = `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year}`;
 }
 
 fillDay();
@@ -166,7 +166,7 @@ const setColHTML = function(colNum, col) {
 
 window.fillHTMLCols = function(){
   var colNum = 1;
-  var columns = document.querySelectorAll(".collumn .colInner");
+  var columns = document.querySelectorAll(".column .colInner");
   columns.forEach(function(col){
     setColHTML(colNum++, col);
   });
