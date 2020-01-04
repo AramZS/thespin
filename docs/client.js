@@ -55,25 +55,7 @@ function fnSubmitForm(button) {
   selectCharacter(button.id, userName)
 };
 
-function setUpAPIRequest(aMethod, url){
-  var theUrl = '';
-  var theMethod = 'GET';
-  if (location.href.match(/github/g).length > 0){
-    var theUrl = 'https://aramzs.github.io/thespin/json/'+url+'.json';
-  } else {
-    var theUrl = 'https://thespin.glitch.me/'+ url;
-    theMethod = aMethod;
-  }
-  var xhr = new XMLHttpRequest(),
-    method = theMethod,
-    url = theUrl;
-  
-  return xhr;
-}
-
 const selectCharacter = function(charId, user) {
-  var xhr = setUpAPIRequest('POST', "character/"+encodeURIComponent(charId));
-  
   var xhr = new XMLHttpRequest(),
       method = "POST",
       url = 'https://thespin.glitch.me/'+"character/"+encodeURIComponent(charId);

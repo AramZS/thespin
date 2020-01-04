@@ -59,6 +59,7 @@ var writeJsonToArchive = function(path, data) {
     // success case, the file was saved
     console.log("JSON file saved saved!");
   });
+  return data;
 };
 
 // Set some defaults (required if your JSON file is empty)
@@ -86,7 +87,7 @@ app.get("/character/:id", function(request, response) {
 });
 
 app.get("/characters/", function(request, response) {
-  response.json(db.get("characters").value());
+  response.json(writeJsonToArchive('characters', db.get("characters").value()));
 });
 
 app.post("/character/:id", function(request, response) {
