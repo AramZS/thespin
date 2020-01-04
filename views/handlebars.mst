@@ -103,7 +103,7 @@
     <script src="{{fileDepth}}client.js"></script>
     <script>
     {{#isLive}}
-        // window.fillHTMLCols();
+        window.fillHTMLCols();
       
     {{/isLive}}
     {{^isLive}}
