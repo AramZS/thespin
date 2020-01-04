@@ -57,13 +57,13 @@
 
     <main>
       <div class="content">
-        <div class="collumns">
-          <section class="collumn">
+        <div class="columns">
+          <section class="column">
             <div class="colInner">
               {{1}}
             </div>
           </section>
-          <section class="collumn">
+          <section class="column">
             <div class="colInner">
               {{2}}
             </div>
@@ -85,7 +85,7 @@
               <ul id="dreams"></ul>
             </div>
           </section>
-          <section class="collumn">
+          <section class="column">
             <div class="colInner">
               {{3}}
             </div>
