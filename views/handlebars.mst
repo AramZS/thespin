@@ -34,7 +34,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href='{{fileDepth}}/style.css' />
+    <link rel="stylesheet" href='{{fileDepth}}style.css' />
 
     <!-- import the webpage's client-side javascript file -->
   </head>
@@ -100,10 +100,14 @@
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js"></script>
-    <script src="{{fileDepth}}/client.js"></script>
+    <script src="{{fileDepth}}client.js"></script>
     <script>
     {{#isLive}}
         // window.fillHTMLCols();
+      
+    {{/isLive}}
+    {{^isLive}}
+      console.log('Not a live page')
     {{/isLive}}
       window.getCharacters();
     </script>
