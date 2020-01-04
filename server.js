@@ -15,7 +15,7 @@ const db = low(adapter);
 
 var bodyParser = require("body-parser");
 
-const getMainTemplate = function(date) {
+const getMainTemplate = function(date, archive) {
   var site = { 1: "", 2: "", 3: "" };
   for (let [key, value] of Object.entries(site)) {
     // console.log(`${key}: ${value}`);
@@ -24,6 +24,7 @@ const getMainTemplate = function(date) {
     }
   }
   site.date = date;
+  site.fileDepth = archive ? '..' : '';
   Object.assign(site, markdownHandler.getDateMeta(date));
   var file = fs.readFileSync("./views/handlebars.mst").toString();
   var html = Mustache.render(file, site);
@@ -131,13 +132,16 @@ app.get("/docs", async function(request, response) {
   var fileName = "./text/";
   var files = fs.readdirSync(fileName);
   console.log("Current date:", files[files.length - 1]);
-  var indexHtml = getMainTemplate(files.pop());
+  //var indexHtml = getMainTemplate(files.pop());
+  var indexHtml = getMainTemplate(files[files.length - 1]);
   var promises = [];
   fs.writeFile("./docs/index.html", indexHtml, (err) => {
     promises.push(new Promise(function(resolve, reject) {
       // throws an error, you could also catch it here
-      if (err) reject( err);
-      console.log('File Write Error', err);
+      if (err){
+        reject(err);
+        console.log('File Write Error', err);
+      }
       // success case, the file was saved
       resolve(true);
       console.log("Index saved!");
@@ -145,30 +149,35 @@ app.get("/docs", async function(request, response) {
   });
 
   files.forEach(function(fileName) {
-    var aHtml = getMainTemplate(fileName);
+    var aHtml = getMainTemplate(fileName, true);
     fs.writeFile("./docs/archive/"+fileName+".html", aHtml, (err) => {
       promises.push(new Promise(function(resolve, reject) {
       // throws an error, you could also catch it here
-      if (err) reject( err);
-      console.log('File Write Error', err);
+      if (err){
+        reject(err);
+        console.log('File Write Error', err);
+      }
 
       // success case, the file was saved
       console.log("File saved saved!");
+        resolve(true);
       }));
     });
   });
   var publicFileNames = "./public/";
   var publicFiles = fs.readdirSync(publicFileNames);
   publicFiles.forEach(function(fileName) {
-    var indexHtml = getMainTemplate(fileName);
-    fs.copyFile(publicFileNames+fileName, "./docs/archive/"+fileName, (err) => {
+    fs.copyFile(publicFileNames+fileName, "./docs/"+fileName, (err) => {
       promises.push(new Promise(function(resolve, reject) {
       // throws an error, you could also catch it here
-      if (err) reject( err);
-      console.log('File Write Error', err);
+      if (err){
+        reject(err);
+        console.log('File Write Error', err);
+      }
 
       // success case, the file was saved
       console.log("File saved saved!");
+        resolve(true);
       }));
     });
   });

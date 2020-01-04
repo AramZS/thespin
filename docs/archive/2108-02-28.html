@@ -1,0 +1,139 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+<!-- https://github.com/propjockey/augmented-ui -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Spin: 2108-02-28</title>
+    <meta name="description" content="The Spin" />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/augmented-ui/augmented.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href='../style.css' />
+
+    <!-- import the webpage's client-side javascript file -->
+  </head>
+  <body>
+  <div id="wrapper">
+    <div class="head">
+      <div class="headerobjectswrapper">
+        <div class="weatherforcastbox">
+          <span style="font-style: italic;"
+            >Weather for the next 24 hours: Overcast</span
+          ><br /><span
+            >Wind: 7km&#x2F;h SSE; Temp: 21°C; Hum: 82%; Air Quality: Orange</span
+          >
+        </div>
+        <header>The Spin</header>
+      </div>
+
+      <div class="subhead" id="the-dateline" data-date="2108-02-28"></div>
+    </div>
+
+    <main>
+      <div class="content">
+        <div class="columns">
+          <section class="column">
+            <div class="colInner">
+              &lt;header class&#x3D;&quot;head&quot;&gt;
+&lt;h2&gt;Mysterious Comas Return&lt;&#x2F;h2&gt;
+&lt;h5&gt;by WRAD MARGE&lt;&#x2F;h5&gt;
+&lt;&#x2F;header&gt;
+&lt;p&gt;Four men and three women have fallen into comas in different areas of The Enclave, all last month. This appears to be a return of whatever put 38 people in comas last year and was believed to have been stopped.&lt;&#x2F;p&gt;
+&lt;p&gt;Same as last year, the victims seem in perfect health other than being unable to regain consciousness. City health services have confirmed the same type of non-responsive condition from last year&#39;s 38 and have extended additional budget to the facility holding the sufferers from last year.&lt;&#x2F;p&gt;
+&lt;p&gt;No one we spoke to could identify the cause of these comas or give us any idea if we&#39;re facing some sort of epidemic, or if it is going to get any worse.&lt;&#x2F;p&gt;
+&lt;span class&#x3D;&quot;citation&quot;&gt;
+&lt;p&gt;&quot;At this time we have no reason to believe that these incidents are connected to any of our products,&quot; said HC in a statement.&lt;&#x2F;p&gt;
+&lt;&#x2F;span&gt;
+&lt;p&gt;Citizens who lived near this year&#39;s second victim reported strange phenomenon when one of the coma victims fell ill, including strange lights, Vert failures, and technology fuzz-outs and snow-crashes.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Read the rest of our in-depth report in our Virtual Space…&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+            </div>
+          </section>
+          <section class="column">
+            <div class="colInner">
+              &lt;header class&#x3D;&quot;head&quot;&gt;
+&lt;h1&gt;ELECTIONS, THEY&#39;RE BACK!&lt;&#x2F;h1&gt;
+&lt;h6&gt;And we need your help to cover them&lt;&#x2F;h6&gt;
+&lt;&#x2F;header&gt;
+&lt;p&gt;Since the 2045 STABLE Act made elections a once-a-decade affair we&#39;ve had to go long periods of time without seeing the great and powerful make fools of themselves. But we&#39;re booting up a whole extra source on the contentfeeds to follow the 2110 elections so that you norms don&#39;t have to miss a single minute of the best entertainment since watching the climate deniers evacuate DC during the flood. In order to try to draw out votes for some of the least relatable people we&#39;ll need help covering every step.&lt;&#x2F;p&gt;
+&lt;p&gt;So you know what that means: The Spin is Recruiting! We&#39;re looking for one correspondent in each of these categories (Don&#39;t click Select unless you&#39;re sure!) so check out the descriptions and don&#39;t forget to also plan how your Virtual Avatar will appear:&lt;&#x2F;p&gt;
+            </div>
+            <form id="select-class">
+              Enter your name before you apply!
+              <input
+                name="name"
+                type="text"
+                maxlength="100"
+                placeholder="Your Name Here"
+                aria-labelledby="submit-name-label"
+                id="submit-name"
+              />
+              <ul id="select-class-list"></ul>
+              <!-- <button type="submit" id="select">Submit Dream</button> -->
+            </form>
+
+            <div class="dreams">
+              <ul id="dreams"></ul>
+            </div>
+          </section>
+          <section class="column">
+            <div class="colInner">
+              &lt;header class&#x3D;&quot;head&quot;&gt;
+&lt;h3&gt;HYPE FIVE&lt;&#x2F;h3&gt;
+&lt;h4&gt;The top five stories we&#39;re tracking right now&lt;&#x2F;h4&gt;
+&lt;&#x2F;header&gt;
+&lt;p&gt;&lt;strong&gt;Vert on the flik…&lt;&#x2F;strong&gt; |&amp;nbsp;The Virtual has been having problems again. Somehow, despite living in the deep shadow of the tech overlords in HC--which invented the damn thing--we&#39;ve had to boot up our flatsite because the connection remains unreliable all over town. Our ability to access that wonderful realm was stable almost entirely over the last decade, except for that still unexplained blip last year, but now it&#39;s about as dependable as THE SPIN Staff&#39;s job prospects, which is to say:&amp;nbsp;&lt;em&gt;NOT AT ALL&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;An all new thrillogy&lt;&#x2F;strong&gt; |&amp;nbsp;The Secret Overlords of the Disney bunker that survived California falling into the sea have mass-commed an ad campaign straight to every billboard, webwall and car-side in the Enclave Upper City. Who even wants this anymore? How do the Secret Overlords keep getting food? Is this what they unfroze Walt&#39;s head for? More on the latest from the lame kingdom as soon as we re-tune our illegal ad-blocking infection.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;figure class&#x3D;&quot;figure&quot;&gt;
+&lt;img src&#x3D;&quot;https:&#x2F;&#x2F;i.giphy.com&#x2F;4fDWVPMoSyhgc.gif&quot; alt&#x3D;&quot;Anyone else finally done after Episode 27?&quot; &#x2F;&gt;
+  &lt;figcaption class&#x3D;&quot;figcaption&quot;&gt;
+    &lt;em&gt;Anyone else finally done after Episode 27?&lt;&#x2F;em&gt;
+  &lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Spirits in the Wires&lt;&#x2F;strong&gt; |&amp;nbsp;When The Virtual isn&#39;t down, we&#39;ve been hearing endless reports around The Enclave of what people are calling &quot;flares&quot;, things from The Virtual showing up in real life, or ad-vatars walking briefly out of webwalls to wave hello and perform impossible tricks. Normally we&#39;d assume you&#39;re all drunk, but perhaps there&#39;s some Hot New Tech they&#39;re testing to surprise us all.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Don&#39;t fill your step-ins&lt;&#x2F;strong&gt; |&amp;nbsp;Lords of Excrement are back in town. They&#39;re taking over The Enclave one bar at a time, and if it&#39;s anything like their usual tours we&#39;re sure the 3D printers will be running overtime on chair replacements, countertops, and fake teeth once they&#39;re gone. Don&#39;t forget to pre-order your liquor from the next ship in because there is sure to be a shortage by the end of the month. We&#39;ll post the schedule soon as they sober up.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;We thought the squirrels were bad before…&lt;&#x2F;strong&gt; |&amp;nbsp;In a new low for The Pigs, EPD identified a death in Lower-3&#39;s core park as a squirrel attack. We know cops don&#39;t care about anything under Lower-1 unless the floods rise, but blaming a clear homicide on attack-by-marmot is just disgraceful. We&#39;d send a reporter to check but they won&#39;t let us in without the requisite firearm.&lt;&#x2F;p&gt;
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    </div>
+    <!-- <footer>Made with <a href="https://glitch.com">Glitch</a>!</footer>
+
+    include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    <script src="../client.js"></script>
+    <script>
+      window.fillHTMLCols();
+      window.getCharacters();
+    </script>
+  </body>
+</html>
