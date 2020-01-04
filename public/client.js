@@ -132,8 +132,8 @@ function fillDay(){
   var day = window.getWeekDay(dateIs);
   var year = dateIs.getFullYear();
   var date = dateIs.getDate();
-  console.log(`The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${month}`);
-  aDay.innerHTML = `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${month}`;
+  console.log(`The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year}`);
+  aDay.innerHTML = `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year}`;
 }
 
 fillDay();
