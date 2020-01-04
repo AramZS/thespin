@@ -24,7 +24,7 @@ const getMainTemplate = function(date, archive) {
     }
   }
   site.date = date;
-  site.fileDepth = archive ? ".." : "";
+  site.fileDepth = archive ? "../" : "";
   site.isLive = archive ? false : true;
   Object.assign(site, markdownHandler.getDateMeta(date));
   var file = fs.readFileSync("./views/handlebars.mst").toString();
@@ -110,7 +110,7 @@ app.get("/text/:date/:col", function(request, response) {
 });
 
 app.get("/archive/:date", function(request, response) {
-  var html = getMainTemplate(request.params.date);
+  var html = getMainTemplate(request.params.date, true);
 
   response.send(html);
 });
