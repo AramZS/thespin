@@ -112,6 +112,10 @@ app.get("/template", function(request, response) {
   response.sendFile(__dirname + "/views/template.html");
 });
 
+app.get("/docs", function(request, response) {
+  response.sendFile(__dirname + "/views/template.html");
+});
+
 // listen for requests :)
 const listener = app.listen(process.env.PORT, function() {
   console.log("Your app is listening on port " + listener.address().port);
