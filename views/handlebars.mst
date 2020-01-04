@@ -60,12 +60,12 @@
         <div class="columns">
           <section class="column">
             <div class="colInner">
-              {{1}}
+              {{{1}}}
             </div>
           </section>
           <section class="column">
             <div class="colInner">
-              {{2}}
+              {{{2}}}
             </div>
             <form id="select-class">
               Enter your name before you apply!
@@ -87,7 +87,7 @@
           </section>
           <section class="column">
             <div class="colInner">
-              {{3}}
+              {{{3}}}
             </div>
           </section>
         </div>
@@ -102,7 +102,9 @@
     <script src="https://button.glitch.me/button.js"></script>
     <script src="{{fileDepth}}/client.js"></script>
     <script>
-      window.fillHTMLCols();
+    {{#isLive}}
+        // window.fillHTMLCols();
+    {{/isLive}}
       window.getCharacters();
     </script>
   </body>

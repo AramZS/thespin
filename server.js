@@ -25,6 +25,7 @@ const getMainTemplate = function(date, archive) {
   }
   site.date = date;
   site.fileDepth = archive ? '..' : '';
+  site.isLive = archive ? false : true;
   Object.assign(site, markdownHandler.getDateMeta(date));
   var file = fs.readFileSync("./views/handlebars.mst").toString();
   var html = Mustache.render(file, site);
@@ -184,6 +185,12 @@ app.get("/docs", async function(request, response) {
   await Promise.all(promises);
   //var html = getMainTemplate(files[files.length - 1]);
   response.sendFile(__dirname + "/docs/index.html");
+});
+app.get("/docs/archive/:date", function(request, response) {
+  response.sendFile(__dirname + "/docs/archive/"+request.params.date+".html");
+});
+app.get("/docs/:fileName", function(request, response) {
+  response.sendFile(__dirname + "/docs/"+request.params.fileName);
 });
 
 // listen for requests :)
