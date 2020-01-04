@@ -96,7 +96,7 @@ app.get("/character/:id", function (request, response) {
     .value();
 });
 
-app.get("/characters/", function (request, response) {
+app.get("/characters", function (request, response) {
   response.json(writeJsonToArchive("characters", db.get("characters").value()));
 });
 
