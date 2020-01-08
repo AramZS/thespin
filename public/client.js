@@ -92,7 +92,8 @@ const selectCharacter = function(charId, user) {
       if (jsonObj.result == false) {
         window.alert("Someone has already claimed that character");
       } else {
-        window.alert("You have selected a character!");
+        // window.alert("You have selected a character!");
+        window.alert("We are not accepting new applicants.")
         document.getElementById(charId).disabled = true;
         var buttonText = "Selected By " + user;
         document.getElementById(charId).innerHTML = buttonText;
