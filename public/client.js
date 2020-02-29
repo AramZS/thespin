@@ -93,7 +93,7 @@ const selectCharacter = function(charId, user) {
         window.alert("Someone has already claimed that character");
       } else {
         // window.alert("You have selected a character!");
-        window.alert("We are not accepting new applicants.")
+        window.alert("We are not accepting new applicants.");
         document.getElementById(charId).disabled = true;
         var buttonText = "Selected By " + user;
         document.getElementById(charId).innerHTML = buttonText;
@@ -154,13 +154,15 @@ window.getWeekDay = function(date) {
 
 function getDateline() {
   const aDay = document.getElementById("the-dateline");
+  console.log("aDay", aDay);
   return aDay.getAttribute("data-date");
 }
 
 function fillDay() {
   console.log(fillDay);
   const aDay = document.getElementById("the-dateline");
-  var dateIs = new Date(getDateline());
+  var dateIs = new Date(getDateline() + ' 12:00 pm');
+  console.log("date is", dateIs);
   var options = { month: "long" };
   var month = new Intl.DateTimeFormat("en-US", options).format(dateIs);
   var day = window.getWeekDay(dateIs);
