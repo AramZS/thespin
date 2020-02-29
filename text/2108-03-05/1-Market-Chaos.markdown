@@ -4,7 +4,7 @@ author: Kat Lazaruzz
 wind: .01km/h N
 temp: 12°C
 hum: 89%
-aq: Orange
+aq: Orange-Red
 ---
 
 headerStart
@@ -21,7 +21,7 @@ Police were deployed to the Market and the adjacent Lower-3 core park in respons
 
 pqStart
 
-"Corner Market management allowed known abusers to continue to operate inside their building and we make no appologies for putting the gross behavior we observed to an end. Taxidermist Lawerence Beech was hurting real--live--animals and that is behavior we'll always put a stop to," VM from Robin Harding, ALF member on site. 
+"Corner Market allowed known abusers to continue to operate inside their building and that is gross behavior we will always work to end..." VM from Robin Harding, ALF member on site. 
 
 pqEnd
 
@@ -31,14 +31,6 @@ HC representatives were also on the scene, as they claimed the activity had dama
 
 "While we're all happy to support animal welfare, the ALF apparently broke into the fiber storage and access system on some wild and unproven theory. As a result they may have damaged some of our equipment. We've not yet dismissed the question of legal action, something we need to consider when anyone enters our property illegally," said Offical HC Spokesperson Cu Graves.
 
-No one we spoke to could identify the cause of these comas or give us any idea if we're facing some sort of epidemic, or if it is going to get any worse.
-
-pqStart
-
-"At this time we have no reason to believe that these incidents are connected to any of our products," said HC in a statement.
-
-pqEnd
-
-Citizens who lived near this year's second victim reported strange phenomenon when one of the coma victims fell ill, including strange lights, Vert failures, and technology fuzz-outs and snow-crashes.
+ALF denied the damage, attributing it to helpful bystanders who were forced to defend themselves against some sort of weapon created by alleged animal abuser and taxidermist Lawerence Beech. 
 
 *Read the rest of our in-depth report in our Virtual Space...*

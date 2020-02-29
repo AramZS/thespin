@@ -68,7 +68,7 @@
               {{{2}}}
             </div>
             <form id="select-class">
-              Enter your name before you apply!
+              <del>Enter your name before you apply!</del> Recruitment Paused
               <input
                 name="name"
                 type="text"
