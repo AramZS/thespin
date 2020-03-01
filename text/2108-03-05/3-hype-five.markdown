@@ -6,7 +6,7 @@ headerStart
 
 headerEnd
 
-**Vert on the flik...** | A
+**Grafitti hits both Vert and IRL** | The Enclave has been hit with a sudden explosition of graffiti tags on both physical objects and Vert storefronts, all are identical tags `YS/x` and seem to be accompanied by various break-ins or unlocking program failures. 
 
 **Drama on Thwip** | A
 
