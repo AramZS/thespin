@@ -19,6 +19,6 @@ headerEnd
   </figcaption>
 ~fiClose
 
-**"Flare" Up at South Central Wall** | One window to the wall has never been an easy living situation here in The Enclave. However, it's only become harder with the rumored "Flares" arriving with high frequency at SoCentWa. When not trying to keep the lights on, Vert screens have been throwing out disruptive ad sims that wreck havok when they appear to exit the screens. If this is some new HC stuntware it's going too far. 
+**"Flare" Up at South Central Wall** | One window to the wall has never been an easy living situation here in The Enclave. However, it's only become harder with the rumored "Flares" arriving with high frequency at SoCentWa. When not trying to keep the lights on, residents have reported that Vert screens have been throwing out disruptive ad sims that wreck havok when they appear to cross the screens from Vert to IRL. If this is some new HC stuntware it's going too far. We'd recommend filing a complaint but the support queue is always full. 
 
-**Continuing Vert Failures** | A
+**Vert Fails Have Us All Falling Flat** | Tech overlords HC remain mum on instability ripping into regular Vert operations. We're not the only VSpace to fall back on flat UI, a number of major media apps are now supplying old-style access options to bypass bad Vert connections. Whatever is going wrong with The Virtual no one seems to want to report anything but the party line of "momentery downtime, be back soon". We visited five newly rebooted news flatsites and the closest we saw to a real explanation was an HC release blaming technical issues on a break in by fired processor technician Farrah Price. Price could not be found for comment. 

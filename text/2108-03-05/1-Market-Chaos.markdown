@@ -29,7 +29,7 @@ At the center of the conflict, the idea that a store owner was harming rare live
 
 HC representatives were also on the scene, as they claimed the activity had damaged the nearby fiber tunnel that powers Virtual access for Lower-3. 
 
-"While we're all happy to support animal welfare, the ALF apparently broke into the fiber storage and access system on some wild and unproven theory. As a result they may have damaged some of our equipment. We've not yet dismissed the question of legal action, something we need to consider when anyone enters our property illegally," said Offical HC Spokesperson Cu Graves.
+"While we're all happy to support animal welfare, the ALF apparently broke into the fiber storage and access system on some wild and unproven theory. As a result they may have damaged some of our equipment. We've not yet dismissed the question of legal action, something we need to consider when anyone enters our property illegally," said Official HC Spokesperson Cu Graves.
 
 ALF denied the damage, attributing it to helpful bystanders who were forced to defend themselves against some sort of weapon created by alleged animal abuser and taxidermist Lawerence Beech. 
 
