@@ -18,17 +18,19 @@ Here's how it works:
 
 **Take a Move from those available on another profile** : All the profiles we've supplied show what they can do under the Moves section. You can learn something new and unusual though! If you do you can take a Move that describes your new skill from any of the other profiles below, just check their Full Descriptions to think about what you'd like to do.  
 
-**Gain an Ally/Gain a Team** : You can gain some support staff that will be registered as working with you! You may already have some people you know that you're picking out, or just putting it out there that you're recruiting and getting some folks to show up. Allies and teams work similarly, they both are organized around a single motivation, even if a team comprises of 2 to 6 people. However, members of your team may have their own motivations outside of the team's requirements. The motivations you can register for your new Ally/Team:
+**Gain an Ally/Gain a Team** : You can gain some support staff that will be registered as working with you! You may already have some people you know that you're picking out, or just putting it out there that you're recruiting and getting some folks to show up. Allies and teams work similarly, they both are organized around a single motivation, even if a team comprises of 2 to 6 people. However, members of your team may have their own motivations outside of the team's requirements. 
 
- - Subordinate (motivation: to follow your exact instructions)
- - Lieutenant (motivation: to execute the spirit of your
+The motivations you can register for your new Ally/Team:
+
+*   Subordinate (motivation: to follow your exact instructions)
+*   Lieutenant (motivation: to execute the spirit of your
 instructions)
- - Friend (motivation: to provide emotional support)
- - Bodyguard (motivation: to intercept danger)
- - Confidante (motivation: to give you advice and perspective)
- - Backup (motivation: to stand with you)
+*   Friend (motivation: to provide emotional support)
+*   Bodyguard (motivation: to intercept danger)
+*   Confidante (motivation: to give you advice and perspective)
+*   Backup (motivation: to stand with you)
 
-If the ally/team members don’t have names yet, pick them now. Decide
+Ally/team membersshould have names registered along with
 what their background is too, how they look, and any special skills
 they bring.
 
