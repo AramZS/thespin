@@ -63,6 +63,7 @@ const convert = function(text, toMetadata) {
     strikethrough: true,
     simpleLineBreaks: false,
     extensions: [myext],
+    tasklists: true,
     metadata: true
   });
   converter.setFlavor('original');
