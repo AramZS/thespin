@@ -115,6 +115,7 @@ app.post("/character/:id", function (request, response) {
         result: false
       });
     } else {
+      /**
       char.selected = true;
       char.player = request.body.user;
       var data = db
@@ -124,6 +125,7 @@ app.post("/character/:id", function (request, response) {
         })
         .assign(char)
         .write();
+        **/
       response.json({
         result: true,
         data: data

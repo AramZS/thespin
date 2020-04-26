@@ -129,6 +129,10 @@ li {
   display: block;
 }
 
+.colInner > ul > li {
+  display: list-item;
+}
+
 .char {
   margin: 5px 0 38px 0;
   display: inline-block;
