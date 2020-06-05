@@ -28,6 +28,7 @@ const getMainTemplate = function (date, archive) {
     }
   }
   site.letter = {};
+  site.hasLetters = false;
   
     var chars = db
     .get("characters")
@@ -41,6 +42,7 @@ const getMainTemplate = function (date, archive) {
       var aLetter = markdownHandler.processLetter(date, value);
       if (aLetter !== false){
         site.letter[key] = aLetter;
+        site.hasLetters = true;
       }
     }
   }
