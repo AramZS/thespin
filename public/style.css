@@ -417,11 +417,11 @@ h6:after {
 }
 
 #notification-link {
-    color: darkcyan;
-    font-style: inherit;
-    font-weight: bold;
-    text-decoration: underline;
-    text-underline-position: under;
+  color: darkcyan;
+  font-style: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-position: under;
   cursor: pointer;
 }
 /*________________________________________________________________________________________________________________________________*/

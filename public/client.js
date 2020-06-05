@@ -175,10 +175,14 @@ function fillDay() {
   console.log(
     `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year}`
   );
-  aDay.innerHTML = `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year} <br />` + topLine;
+  aDay.innerHTML = `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year} <br />` + '<a id="notification-container" onclick="window.openLetter">' + topLine + '</a>';
 }
 
 fillDay();
+
+window.openLetter = function(){
+  console.log('open letter');
+}
 
 const setColHTML = function(colNum, col) {
   try {

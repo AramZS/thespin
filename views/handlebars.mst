@@ -55,7 +55,7 @@
       <div class="subhead" id="the-dateline" data-date="{{date}}">
             {{#isLive}}
               <!-- check hasLetters -->
-              <br />Hello <strong>User</strong>, You have <a id="notification-link"><span class="notification-count">1</span> notification</a> waiting
+              <br />Hello <strong>User</strong>, You have <span id="notification-link"><span class="notification-count">1</span> notification</span> waiting
             {{/isLive}}
       </div>
     </div>
