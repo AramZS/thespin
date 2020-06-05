@@ -39,7 +39,15 @@ const getMainTemplate = function (date, archive) {
     // console.log(`${key}: ${value}`);
     if (selectedCharacterIds.hasOwnProperty(key) && value) {
       var aLetter = markdownHandler.processLetter(date, value);
+      if (aLetter !== false){
+        site.letter[key] = aLetter;
+      }
     }
+  }
+  site.previously = '';
+  var previousLetter = markdownHandler.processLetter(date, 'intro');
+  if (previousLetter){
+    site.previously = previousLetter;
   }
   site.date = date;
   site.fileDepth = archive ? "../" : "";
