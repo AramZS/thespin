@@ -27,6 +27,7 @@ const getMainTemplate = function (date, archive) {
       site[key] = markdownHandler.process(date, key);
     }
   }
+  site.letter = {};
   site.date = date;
   site.fileDepth = archive ? "../" : "";
   site.isLive = archive ? false : true;

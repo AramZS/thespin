@@ -52,7 +52,7 @@
         <header>The Spin</header>
       </div>
 
-      <div class="subhead" id="the-dateline" data-date="{{date}}"></div>
+      <div class="subhead" id="the-dateline" data-date="{{date}}">Hello User, You have <span>1</span> notification waiting</div>
     </div>
 
     <main>

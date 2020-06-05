@@ -161,6 +161,9 @@ function getDateline() {
 function fillDay() {
   console.log(fillDay);
   const aDay = document.getElementById("the-dateline");
+  if (aDay.innerHTML.length > 1){
+    window.topLine = aDay.innerHTML
+  }
   var dateIs = new Date(getDateline() + ' 12:00 pm');
   console.log("date is", dateIs);
   var options = { month: "long" };
