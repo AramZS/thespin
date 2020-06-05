@@ -28,6 +28,16 @@ const getMainTemplate = function (date, archive) {
     }
   }
   site.letter = {};
+  
+    var chars = db
+    .get("characters")
+    .pullAllWith({
+      selected: true
+    })
+    .value();
+  var selectedCharacterIds = chars; // chars.map(char => char.id)
+  console.log('Characters for letters', selectedCharacterIds)
+  
   site.date = date;
   site.fileDepth = archive ? "../" : "";
   site.isLive = archive ? false : true;
