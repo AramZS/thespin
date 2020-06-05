@@ -31,13 +31,16 @@ const getMainTemplate = function (date, archive) {
   
     var chars = db
     .get("characters")
-    .pullAllWith({
-      selected: true
-    })
+    .filter((el)=>{ return el.selected })
     .value();
-  var selectedCharacterIds = chars; // chars.map(char => char.id)
+  var selectedCharacterIds = chars.map(char => char.id.charAt(0).toUpperCase() + char.id.slice(1))
   console.log('Characters for letters', selectedCharacterIds)
-  
+    for (let [key, value] of Object.entries(selectedCharacterIds)) {
+    // console.log(`${key}: ${value}`);
+    if (selectedCharacterIds.hasOwnProperty(key) && value) {
+      var aLetter = markdownHandler.processLetter(date, value);
+    }
+  }
   site.date = date;
   site.fileDepth = archive ? "../" : "";
   site.isLive = archive ? false : true;
