@@ -415,6 +415,15 @@ h6:after {
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
+
+#notification-link {
+    color: darkcyan;
+    font-style: inherit;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-position: under;
+  cursor: pointer;
+}
 /*________________________________________________________________________________________________________________________________*/
 /*MEDIAQUERIES*/
 @media only all and (max-width: 1300px) {

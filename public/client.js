@@ -161,8 +161,9 @@ function getDateline() {
 function fillDay() {
   console.log(fillDay);
   const aDay = document.getElementById("the-dateline");
+  let topLine = '';
   if (aDay.innerHTML.length > 1){
-    window.topLine = aDay.innerHTML
+    topLine = aDay.innerHTML
   }
   var dateIs = new Date(getDateline() + ' 12:00 pm');
   console.log("date is", dateIs);
@@ -174,7 +175,7 @@ function fillDay() {
   console.log(
     `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year}`
   );
-  aDay.innerHTML = `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year}`;
+  aDay.innerHTML = `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year} <br />` + topLine;
 }
 
 fillDay();
