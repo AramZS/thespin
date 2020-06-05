@@ -133,6 +133,11 @@ var getCharacters = function() {
   }
 };
 
+window.openLetter = function(){
+  console.log('open letter');
+};
+
+
 window.getCharacters = getCharacters;
 
 window.getWeekDay = function(date) {
@@ -176,13 +181,10 @@ function fillDay() {
     `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year}`
   );
   aDay.innerHTML = `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year} <br />` + '<a id="notification-container" onclick="window.openLetter">' + topLine + '</a>';
+  aDay.onclick = window.openLetter;
 }
 
 fillDay();
-
-window.openLetter = function(){
-  console.log('open letter');
-}
 
 const setColHTML = function(colNum, col) {
   try {
