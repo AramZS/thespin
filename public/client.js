@@ -137,7 +137,7 @@ window.openLetter = function(){
   var container = document.getElementById('letter-notifications');
   var isOpen = container.getAttribute('data-open')
   if (isOpen != "true"){
-    console.log('open letter');
+    console.log('open letter box');
     document.getElementById('letter-notifications').style = "transform: scale(1,1)"
     container.setAttribute('data-open', "true")
   } else {
@@ -145,6 +145,22 @@ window.openLetter = function(){
     document.getElementById('letter-notifications').style = "transform: scale(0,0)"
   }
 };
+
+window.activateLetter = function(el){
+  var container = document.getElementsByClassName(el.value)[0];
+  var isOpen = container.getAttribute('data-open')
+  var list = document.getElementsByClassName("mystery-letter");
+  for (var i = 0; i < list.length; i++) {
+    if (list[i].className !== container.className){
+      console.log(list[i].id); //second console output
+      list[i].setAttribute('data-open', "false")
+      list[i].style = "display: none; transform: scale(0,0);"
+    }
+  }
+  console.log('open letter', container);
+  container.style = "display: block; transform: scale(1,1);"
+  container.setAttribute('data-open', "true")
+}
 
 
 window.getCharacters = getCharacters;

@@ -63,7 +63,8 @@
     <div id="letter-notifications">
       <div id="profile-selection-menu">
         <label for="profile-select">Select Profile: </label>
-        <select id="profile-select">
+        <select id="profile-select" onchange="window.activateLetter(this)">
+          <option value="---">---</option>
           {{#letters}}
             <option value="{{to}}">{{to}}</option>
             </div>
