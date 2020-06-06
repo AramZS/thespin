@@ -71,6 +71,7 @@
           {{/letters}}
         </select>
       </div>
+      <div id="letter-close">X</div>
                     {{#letters}}
                       <div class="mystery-letter {{to}}">
                         Dear {{to}},
