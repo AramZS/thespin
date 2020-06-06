@@ -429,15 +429,14 @@ h6:after {
   display: block;
   width: 75%;
   position: fixed;
-  max-height: calc(100% - 180px);
+  height: calc(100% - 180px);
   background-color: #2f2f2f;
   z-index: 100;
   top: 222px;
   margin: 0 12.5%;
   border: 2px solid black;
   transition: all .5s ease-in-out;
-  height: 0;
-  width: 0;
+  transform: scale(0,0);
 }
 
 #letter-notifications > div {
@@ -450,6 +449,7 @@ h6:after {
   text-align: left;
   background-color: #f9f7f1;
   transition: all .5s ease-in-out;
+  transform: scale(0,0);
 }
 
 /*________________________________________________________________________________________________________________________________*/

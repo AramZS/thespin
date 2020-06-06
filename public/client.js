@@ -134,7 +134,16 @@ var getCharacters = function() {
 };
 
 window.openLetter = function(){
-  console.log('open letter');
+  var container = document.getElementById('letter-notifications');
+  var isOpen = container.getAttribute('data-open')
+  if (isOpen != "true"){
+    console.log('open letter');
+    document.getElementById('letter-notifications').style = "transform: scale(1,1)"
+    container.setAttribute('data-open', "true")
+  } else {
+    container.setAttribute('data-open', "false")
+    document.getElementById('letter-notifications').style = "transform: scale(0,0)"
+  }
 };
 
 
