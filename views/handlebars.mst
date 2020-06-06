@@ -61,15 +61,15 @@
       </div>
     {{#hasLetters}}
     <div id="letter-notifications">
-      <p>
+      <div id="profile-selection-menu">
         <label for="profile-select">Select Profile: </label>
         <select id="profile-select">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="vw">VW</option>
-          <option value="audi" selected>Audi</option>
+          {{#letters}}
+            <option value="{{to}}">{{to}}</option>
+            </div>
+          {{/letters}}
         </select>
-      </p>
+      </div>
                     {{#letters}}
                       <div class="mystery-letter {{to}}">
                         Dear {{to}},
