@@ -37,7 +37,7 @@ const getMainTemplate = function (date, archive) {
   var selectedCharacterIds = chars.map(char => char.id.charAt(0).toUpperCase() + char.id.slice(1))
   console.log('Characters for letters', selectedCharacterIds)
     for (let [key, value] of Object.entries(selectedCharacterIds)) {
-    // console.log(`${key}: ${value}`);
+    console.log(`${key}: ${value}`);
     if (selectedCharacterIds.hasOwnProperty(key) && value) {
       var aLetter = markdownHandler.processLetter(date, value);
       if (aLetter !== false){
