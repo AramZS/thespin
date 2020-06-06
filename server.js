@@ -41,7 +41,8 @@ const getMainTemplate = function (date, archive) {
     if (selectedCharacterIds.hasOwnProperty(key) && value) {
       var aLetter = markdownHandler.processLetter(date, value);
       if (aLetter !== false){
-        site.letters.push[{ to: value, content: aLetter}];
+        site.letters.push({ to: value, content: aLetter});
+        // console.log(site.letters)
         site.hasLetters = true;
       }
     }

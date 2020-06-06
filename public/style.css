@@ -424,6 +424,11 @@ h6:after {
   text-underline-position: under;
   cursor: pointer;
 }
+
+#letter-notifications {
+  display: block;
+  
+}
 /*________________________________________________________________________________________________________________________________*/
 /*MEDIAQUERIES*/
 @media only all and (max-width: 1300px) {

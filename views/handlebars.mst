@@ -53,22 +53,23 @@
       </div>
 
       <div class="subhead" id="the-dateline" data-date="{{date}}">
-            {{#isLive}}
+            {{#hasLetters}}
               <!-- check hasLetters -->
               <br />Hello <strong>User</strong>, You have <span id="notification-link"><span class="notification-count">1</span> notification</span> waiting
-              <div id="letter-notifications">
+            {{/hasLetters}}
+      </div>
+    </div>
+{{#hasLetters}}
+<div id="letter-notifications">
                 {{#letters}}
                   <div class="mystery-letter {{to}}">
                     Dear {{to}},
                     
-                    {{content}}
+                    {{{content}}}
                   </div>
                 {{/letters}}
-              </div>
-            {{/isLive}}
-      </div>
-    </div>
-
+</div>
+{{/hasLetters}}
     <main>
       <div class="content">
         <div class="columns">
