@@ -56,6 +56,10 @@
             {{#isLive}}
               <!-- check hasLetters -->
               <br />Hello <strong>User</strong>, You have <span id="notification-link"><span class="notification-count">1</span> notification</span> waiting
+              <div id="letter-notifications">
+                {{#letters}}
+                {{/letters}}
+              </div>
             {{/isLive}}
       </div>
     </div>

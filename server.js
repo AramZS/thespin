@@ -27,7 +27,7 @@ const getMainTemplate = function (date, archive) {
       site[key] = markdownHandler.process(date, key);
     }
   }
-  site.letter = {};
+  site.letters = [];
   site.hasLetters = false;
   
     var chars = db
@@ -41,7 +41,7 @@ const getMainTemplate = function (date, archive) {
     if (selectedCharacterIds.hasOwnProperty(key) && value) {
       var aLetter = markdownHandler.processLetter(date, value);
       if (aLetter !== false){
-        site.letter[key] = aLetter;
+        site.letters.push[{ to: value, content: aLetter}];
         site.hasLetters = true;
       }
     }
