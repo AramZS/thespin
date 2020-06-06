@@ -427,13 +427,13 @@ h6:after {
 
 #letter-notifications {
   display: block;
-  max-width: 75%;
+  width: 75%;
   position: fixed;
   max-height: calc(100% - 180px);
   background-color: #f9f7f1;
   z-index: 100;
   top: 222px;
-  margin: 0 25%
+  margin: 0 12.5%
 
 }
 
@@ -446,15 +446,12 @@ h6:after {
 
 /*________________________________________________________________________________________________________________________________*/
 /*MEDIAQUERIES*/
-@media only all and (min-width: 1400px) {
-  .weatherforcastbox {
-    display: none;
-  }
-  .headerobjectswrapper {
-    grid-template-columns: repeat(1, 1fr);
-  }
+@media only all and (min-width: 1392px) {
+
   #letter-notifications {
-    top: 180px;
+    top: 202px;
+    margin: 0 10%;
+    width: 80%;
   }
   
 }
@@ -467,6 +464,8 @@ h6:after {
   }
   #letter-notifications {
     top: 180px;
+    margin: 0 10%;
+    width: 80%;
   }
   
 }
@@ -481,6 +480,12 @@ h6:after {
   .column {
     font-size: 18px;
     line-height: 24px;
+  }
+  #letter-notifications {
+    top: 180px;
+    margin: 0 calc(2% + 1em);
+    width: calc(94% - 2em - 10px);
+    margin-right: calc(2% + 1em + 10px)
   }
 }
 @media only all and (max-width: 900px) {
