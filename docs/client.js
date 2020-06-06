@@ -211,7 +211,7 @@ function fillDay() {
     var dateString = getDateline();
     dateString.split('-')
     var dateArray = [dateString.split('-')[1], dateString.split('-')[2], dateString.split('-')[0]]
-    var dateIs = new Date(getDateline() + " 12:00 pm");
+    var dateIs = new Date(dateArray.join(' ') + " 12:00 pm");
   }
   console.log("date is", dateIs);
   var options = { month: "long" };

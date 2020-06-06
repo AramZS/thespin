@@ -205,10 +205,20 @@ function fillDay() {
   if (aDay.innerHTML.length > 1) {
     topLine = aDay.innerHTML;
   }
-  var dateIs = new Date(getDateline() + " 12:00 pm");
-  console.log("date is", dateIs);
   var options = { month: "long" };
-  var month = new Intl.DateTimeFormat("en-US", options).format(dateIs);
+  try {
+    var dateIs = new Date(getDateline() + " 12:00 pm");
+    var month = new Intl.DateTimeFormat("en-US", options).format(dateIs);
+  } catch (e) {
+    var dateString = getDateline();
+    dateString.split('-')
+    var dateArray = [dateString.split('-')[1], dateString.split('-')[2], dateString.split('-')[0]]
+    console.log('Date is try 2 ', dateArray.join(' '))
+    var dateIs = new Date(dateArray.join(' ') + " 12:00 pm");
+    var month = new Intl.DateTimeFormat("en-US", options).format(dateIs);
+  }
+  console.log("date is", dateIs);
+  
   var day = window.getWeekDay(dateIs);
   var year = dateIs.getFullYear();
   var date = dateIs.getDate();
