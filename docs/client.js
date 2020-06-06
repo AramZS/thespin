@@ -92,7 +92,8 @@ const selectCharacter = function(charId, user) {
       if (jsonObj.result == false) {
         window.alert("Someone has already claimed that character");
       } else {
-        window.alert("You have selected a character!");
+        // window.alert("You have selected a character!");
+        window.alert("We are not accepting new applicants.");
         document.getElementById(charId).disabled = true;
         var buttonText = "Selected By " + user;
         document.getElementById(charId).innerHTML = buttonText;
@@ -132,6 +133,46 @@ var getCharacters = function() {
   }
 };
 
+window.openLetter = function() {
+  var container = document.getElementById("letter-notifications");
+  if (container) {
+    var isOpen = container.getAttribute("data-open");
+    if (isOpen != "true") {
+      console.log("open letter box");
+      document.getElementById("letter-notifications").style =
+        "transform: scale(1,1)";
+      container.setAttribute("data-open", "true");
+    } else {
+      container.setAttribute("data-open", "false");
+      document.getElementById("letter-notifications").style =
+        "transform: scale(0,0)";
+    }
+  }
+};
+
+window.activateLetter = function(el) {
+  try {
+    var container = document.getElementsByClassName(el.value)[0];
+    var isOpen = container.getAttribute("data-open");
+    var list = document.getElementsByClassName("mystery-letter");
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].className !== container.className) {
+        list[i].setAttribute("data-open", "false");
+        list[i].style = "display: none; transform: scale(0,0);";
+      }
+    }
+    console.log("open letter", container);
+    container.style = "display: block; transform: scale(1,1);";
+    container.setAttribute("data-open", "true");
+  } catch (e) {
+    var list = document.getElementsByClassName("mystery-letter");
+    for (var i = 0; i < list.length; i++) {
+      list[i].setAttribute("data-open", "false");
+      list[i].style = "display: none; transform: scale(0,0);";
+    }
+  }
+};
+
 window.getCharacters = getCharacters;
 
 window.getWeekDay = function(date) {
@@ -153,13 +194,19 @@ window.getWeekDay = function(date) {
 
 function getDateline() {
   const aDay = document.getElementById("the-dateline");
+  console.log("aDay", aDay);
   return aDay.getAttribute("data-date");
 }
 
 function fillDay() {
   console.log(fillDay);
   const aDay = document.getElementById("the-dateline");
-  var dateIs = new Date(getDateline());
+  let topLine = "";
+  if (aDay.innerHTML.length > 1) {
+    topLine = aDay.innerHTML;
+  }
+  var dateIs = new Date(getDateline() + " 12:00 pm");
+  console.log("date is", dateIs);
   var options = { month: "long" };
   var month = new Intl.DateTimeFormat("en-US", options).format(dateIs);
   var day = window.getWeekDay(dateIs);
@@ -168,7 +215,12 @@ function fillDay() {
   console.log(
     `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year}`
   );
-  aDay.innerHTML = `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year}`;
+  aDay.innerHTML =
+    `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year} <br />` +
+    '<a id="notification-container" onclick="window.openLetter">' +
+    topLine +
+    "</a>";
+  aDay.onclick = window.openLetter;
 }
 
 fillDay();
