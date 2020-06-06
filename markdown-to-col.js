@@ -13,6 +13,10 @@ const selectCol = (date, colNum) => {
   return fileName+'/'+files[colNum - 1];
 };
 
+const selectLetter = (date, playerName) => {
+  return "./text/" + date + "/letters/" + playerName + ".markdown";
+};
+
 const myext = function () {
   var myext1 = {
     type: 'lang',
@@ -89,7 +93,19 @@ const process = function(date, colNum) {
   return convert(text);
 };
 
+const processLetter = function(date, playerName) {
+  var letterPath = selectLetter(date, playerName)
+  if (fs.existsSync(letterPath)){
+    var text = fs.readFileSync(letterPath).toString();
+    // console.log(text);
+    return convert(text);
+  } else {
+    return false;
+  }
+};
+
 module.exports = {
   process,
+  processLetter,
   getDateMeta
 };

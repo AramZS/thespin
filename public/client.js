@@ -133,6 +133,43 @@ var getCharacters = function() {
   }
 };
 
+window.openLetter = function(){
+  var container = document.getElementById('letter-notifications');
+  var isOpen = container.getAttribute('data-open')
+  if (isOpen != "true"){
+    console.log('open letter box');
+    document.getElementById('letter-notifications').style = "transform: scale(1,1)"
+    container.setAttribute('data-open', "true")
+  } else {
+    container.setAttribute('data-open', "false")
+    document.getElementById('letter-notifications').style = "transform: scale(0,0)"
+  }
+};
+
+window.activateLetter = function(el){
+  try {
+    var container = document.getElementsByClassName(el.value)[0];
+    var isOpen = container.getAttribute('data-open')
+    var list = document.getElementsByClassName("mystery-letter");
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].className !== container.className){
+        list[i].setAttribute('data-open', "false")
+        list[i].style = "display: none; transform: scale(0,0);"
+      }
+    }
+    console.log('open letter', container);
+    container.style = "display: block; transform: scale(1,1);"
+    container.setAttribute('data-open', "true") 
+  } catch (e) {
+    var list = document.getElementsByClassName("mystery-letter");
+    for (var i = 0; i < list.length; i++) {
+        list[i].setAttribute('data-open', "false")
+        list[i].style = "display: none; transform: scale(0,0);"
+    }
+  }
+}
+
+
 window.getCharacters = getCharacters;
 
 window.getWeekDay = function(date) {
@@ -161,6 +198,10 @@ function getDateline() {
 function fillDay() {
   console.log(fillDay);
   const aDay = document.getElementById("the-dateline");
+  let topLine = '';
+  if (aDay.innerHTML.length > 1){
+    topLine = aDay.innerHTML
+  }
   var dateIs = new Date(getDateline() + ' 12:00 pm');
   console.log("date is", dateIs);
   var options = { month: "long" };
@@ -171,7 +212,8 @@ function fillDay() {
   console.log(
     `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year}`
   );
-  aDay.innerHTML = `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year}`;
+  aDay.innerHTML = `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year} <br />` + '<a id="notification-container" onclick="window.openLetter">' + topLine + '</a>';
+  aDay.onclick = window.openLetter;
 }
 
 fillDay();
