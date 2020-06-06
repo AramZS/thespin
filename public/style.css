@@ -430,18 +430,26 @@ h6:after {
   width: 75%;
   position: fixed;
   max-height: calc(100% - 180px);
-  background-color: #f9f7f1;
+  background-color: #2f2f2f;
   z-index: 100;
   top: 222px;
-  margin: 0 12.5%
-
+  margin: 0 12.5%;
+  border: 2px solid black;
+  transition: all .5s ease-in-out;
+  height: 0;
+  width: 0;
 }
 
 #letter-notifications > div {
-  margin: 0 auto;
+  margin: 10px auto;
+  margin-top: 8px;
+  padding: 20px;
   overflow-x: auto;
-  max-width: 50%;
+  max-width: 410px;
   display: block;
+  text-align: left;
+  background-color: #f9f7f1;
+  transition: all .5s ease-in-out;
 }
 
 /*________________________________________________________________________________________________________________________________*/
@@ -484,8 +492,8 @@ h6:after {
   #letter-notifications {
     top: 180px;
     margin: 0 calc(2% + 1em);
-    width: calc(94% - 2em - 10px);
-    margin-right: calc(2% + 1em + 10px)
+    width: calc(94% - 2em - 20px);
+    margin-right: calc(2% + 1em + 20px)
   }
 }
 @media only all and (max-width: 900px) {

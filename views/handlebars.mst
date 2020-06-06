@@ -64,7 +64,7 @@
                     {{#letters}}
                       <div class="mystery-letter {{to}}">
                         Dear {{to}},
-
+                        <br /> <br/>
                         {{{content}}}
                       </div>
                     {{/letters}}
