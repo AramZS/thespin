@@ -427,8 +427,22 @@ h6:after {
 
 #letter-notifications {
   display: block;
-  
+  max-width: 75%;
+  position: fixed;
+  max-height: calc(100% - 180px);
+  background-color: #f9f7f1;
+  z-index: 100;
+  top: 180px;
+
 }
+
+#letter-notifications > div {
+  margin: 0 auto;
+  overflow-x: auto;
+  max-height: 100%;
+  display: block;
+}
+
 /*________________________________________________________________________________________________________________________________*/
 /*MEDIAQUERIES*/
 @media only all and (max-width: 1300px) {
