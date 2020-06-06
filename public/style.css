@@ -432,19 +432,32 @@ h6:after {
   max-height: calc(100% - 180px);
   background-color: #f9f7f1;
   z-index: 100;
-  top: 180px;
+  top: 222px;
+  margin: 0 25%
 
 }
 
 #letter-notifications > div {
   margin: 0 auto;
   overflow-x: auto;
-  max-height: 100%;
+  max-width: 50%;
   display: block;
 }
 
 /*________________________________________________________________________________________________________________________________*/
 /*MEDIAQUERIES*/
+@media only all and (min-width: 1400px) {
+  .weatherforcastbox {
+    display: none;
+  }
+  .headerobjectswrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #letter-notifications {
+    top: 180px;
+  }
+  
+}
 @media only all and (max-width: 1300px) {
   .weatherforcastbox {
     display: none;
@@ -452,6 +465,10 @@ h6:after {
   .headerobjectswrapper {
     grid-template-columns: repeat(1, 1fr);
   }
+  #letter-notifications {
+    top: 180px;
+  }
+  
 }
 @media only all and (max-width: 1200px) {
   .column {

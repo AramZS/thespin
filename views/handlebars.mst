@@ -51,25 +51,26 @@
         </div>
         <header>The Spin</header>
       </div>
-
-      <div class="subhead" id="the-dateline" data-date="{{date}}">
-            {{#hasLetters}}
-              <!-- check hasLetters -->
-              <br />Hello <strong>User</strong>, You have <span id="notification-link"><span class="notification-count">1</span> notification</span> waiting
-            {{/hasLetters}}
+  <div class="subhead-wrapper">
+        <div class="subhead" id="the-dateline" data-date="{{date}}">
+              {{#hasLetters}}
+                <!-- check hasLetters -->
+                <br />Hello <strong>User</strong>, You have <span id="notification-link"><span class="notification-count">1</span> notification</span> waiting
+              {{/hasLetters}}
+        </div>
       </div>
+    {{#hasLetters}}
+    <div id="letter-notifications">
+                    {{#letters}}
+                      <div class="mystery-letter {{to}}">
+                        Dear {{to}},
+
+                        {{{content}}}
+                      </div>
+                    {{/letters}}
     </div>
-{{#hasLetters}}
-<div id="letter-notifications">
-                {{#letters}}
-                  <div class="mystery-letter {{to}}">
-                    Dear {{to}},
-                    
-                    {{{content}}}
-                  </div>
-                {{/letters}}
-</div>
-{{/hasLetters}}
+    {{/hasLetters}}
+  </div>
     <main>
       <div class="content">
         <div class="columns">
