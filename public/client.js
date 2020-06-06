@@ -147,19 +147,26 @@ window.openLetter = function(){
 };
 
 window.activateLetter = function(el){
-  var container = document.getElementsByClassName(el.value)[0];
-  var isOpen = container.getAttribute('data-open')
-  var list = document.getElementsByClassName("mystery-letter");
-  for (var i = 0; i < list.length; i++) {
-    if (list[i].className !== container.className){
-      console.log(list[i].id); //second console output
-      list[i].setAttribute('data-open', "false")
-      list[i].style = "display: none; transform: scale(0,0);"
+  try {
+    var container = document.getElementsByClassName(el.value)[0];
+    var isOpen = container.getAttribute('data-open')
+    var list = document.getElementsByClassName("mystery-letter");
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].className !== container.className){
+        list[i].setAttribute('data-open', "false")
+        list[i].style = "display: none; transform: scale(0,0);"
+      }
+    }
+    console.log('open letter', container);
+    container.style = "display: block; transform: scale(1,1);"
+    container.setAttribute('data-open', "true") 
+  } catch (e) {
+    var list = document.getElementsByClassName("mystery-letter");
+    for (var i = 0; i < list.length; i++) {
+        list[i].setAttribute('data-open', "false")
+        list[i].style = "display: none; transform: scale(0,0);"
     }
   }
-  console.log('open letter', container);
-  container.style = "display: block; transform: scale(1,1);"
-  container.setAttribute('data-open', "true")
 }
 
 

@@ -1,17 +1,17 @@
 ---
-title: Moon Lights Up
-author: Alden Cordell
+title: SoCentWa Explodes With HC Mercs and Flares
+author: Wrad Marge
 wind: 52km/h S
-temp: 36°C
-hum: 95%
-aq: Red
+temp: 38°C
+hum: 99%
+aq: Deep Red
 ---
 
 headerStart
   
-## Moon Lights Up
+## SoCentWa Explodes With HC Mercs and Flares
 
-##### by Alden Cordell
+##### by Wrad Marge
 
 headerEnd
 
