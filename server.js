@@ -3,6 +3,7 @@
 
 // init project
 const express = require("express");
+var cors = require('cors');
 const app = express();
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
@@ -100,6 +101,8 @@ db.defaults({
 
 // we've started you off with Express,
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
+
+app.use(cors());
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static("public"));
