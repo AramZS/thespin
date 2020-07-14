@@ -1,0 +1,26 @@
+<section class="gridbox" old-augmented-ui="b-clip-x r-clip-y exe">
+  <div class="gridbox-inner">
+    <div class="general-tags">
+      <span></span>
+    </div>
+    <h2>
+    To Do: <span class="header-count">5 items</span>
+    </h2>
+    <div class="data-box-collection">
+      {{#databoxes}}
+        {{> databox}}
+      {{/databoxes}}
+    </div>
+  </div>
+        <div class="gridbox-controls">
+          <button class="back" onclick="(function(e){bkClick(e)})(this)">
+            <span class="glitch" data-text="&lt; Bkwd">&lt; Bkwd</span>
+          </button>
+          <div class="gridbox-controls__count">
+
+          </div>
+          <button class="forward" onclick="(function(e){fwdClick(e)})(this)">
+            <span class="glitch" data-text="Fwd &gt;">Fwd &gt;</span>
+          </button>
+        </div>
+</section>

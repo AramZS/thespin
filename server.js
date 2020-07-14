@@ -14,10 +14,14 @@ const fs = require("fs");
 const adapter = new FileSync("db.json");
 const db = low(adapter);
 
+const dgadapter = new FileSync("datagriddb.json");
+const dgdb = low(dgadapter);
+
 var bodyParser = require("body-parser");
 
 const getDatagrid = function (){
-  
+  var file = fs.readFileSync("./views/handlebars.mst").toString();
+  var html = Mustache.render(file, site);
 }
 
 const getMainTemplate = function (date, archive) {
