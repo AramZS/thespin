@@ -21,7 +21,7 @@ var bodyParser = require("body-parser");
 
 const getDatagrid = function (){
   var file = fs.readFileSync("./views/handlebars.mst").toString();
-  var html = Mustache.render(file, site);
+  var html = Mustache.render(file, {});
 }
 
 const getMainTemplate = function (date, archive) {
