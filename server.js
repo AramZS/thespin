@@ -16,6 +16,10 @@ const db = low(adapter);
 
 var bodyParser = require("body-parser");
 
+const getDatagrid = function (){
+  
+}
+
 const getMainTemplate = function (date, archive) {
   var site = {
     1: "",
