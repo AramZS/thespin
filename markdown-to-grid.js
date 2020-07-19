@@ -18,16 +18,16 @@ const convert = function(text) {
 };
 
 const getData = function() {
-  const datgridFolder = "./text-datagrid/";
+  const datagridFolder = "./text-datagrid/";
   return new Promise((resolve, reject) => {
-    fs.readdir(datgridFolder, function(err, filenames) {
+    fs.readdir(datagridFolder, function(err, filenames) {
       if (err) {
         console.log("could not read folder of datagrid", err);
         resolve(false);
         return;
       } else {
         const data = filenames.map(function(filename) {
-          fs.readFile(datgridFolder + filename, "utf-8", function(
+          fs.readFile(datagridFolder + filename, "utf-8", function(
             err,
             content
           ) {
@@ -39,8 +39,29 @@ const getData = function() {
             }
           });
         });
-        resolve(data);
+        resolve(Promise.all(data));
       }
     });
   });
+};
+
+const getGrid = async function() {
+  const data = await getData();
+  const gridSet = {};
+  data.forEach(dataItem => {
+    try {
+      if (gridSet.hasOwnProperty(dataItem.topic)) {
+        gridSet[dataItem.topic].push(dataItem);
+      } else {
+        gridSet[dataItem.topic] = [dataItem]
+      }
+    } catch (e) {
+      console.log("Data item missing topic ", e, dataItem);
+    }
+  });
+  return gridSet;
+};
+
+module.exports = {
+  getGrid
 };
