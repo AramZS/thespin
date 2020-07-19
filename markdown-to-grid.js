@@ -51,9 +51,9 @@ const getGridSet = async function() {
   data.forEach(dataItem => {
     try {
       if (gridSet.hasOwnProperty(dataItem.topic)) {
-        gridSet[dataItem.topic].push(dataItem);
+        gridSet[dataItem.topic].data.push(dataItem);
       } else {
-        gridSet[dataItem.topic] = [dataItem]
+        gridSet[dataItem.topic] = { data: [dataItem], tags: dataItem.tags.split(',') }
       }
     } catch (e) {
       console.log("Data item missing topic ", e, dataItem);
