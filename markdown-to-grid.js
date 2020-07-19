@@ -14,7 +14,7 @@ const convert = function(text) {
   // var html = md.render(text);
   var html = converter.makeHtml(text);
   var metadata = converter.getMetadata();
-  return { metadata, html };
+  return { ...metadata, content: html };
 };
 
 const getData = function() {
