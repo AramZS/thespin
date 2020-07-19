@@ -44,6 +44,7 @@ const getGridSet = async function() {
     try {
       if (gridSet.hasOwnProperty(dataItem.topic)) {
         gridSet[dataItem.topic].data.push(dataItem);
+        gridSet[dataItem.topic].tags = gridSet[dataItem.topic].tags.concat(dataItem.tags.split(','));
       } else {
         gridSet[dataItem.topic] = { data: [dataItem], tags: dataItem.tags.split(',') }
       }
