@@ -2,6 +2,14 @@ const markdownHandler = require("./markdown-to-grid");
 const Mustache = require("mustache");
 var fs = require("fs");
 
+function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
 const gridOfCards = async function() {
   const gridSet = await markdownHandler.getGridSet();
   let gridBoxes = [];
@@ -11,6 +19,7 @@ const gridOfCards = async function() {
   Object.keys(gridSet).forEach(function(key, index) {
     // key: the name of the object key
     // index: the ordinal position of the key within the object
+    var tagSet = shuffle(gridSet[key].tags).slice(0,4);
     var gridbox = {
       databoxes: gridSet[key].data,
       title: key,

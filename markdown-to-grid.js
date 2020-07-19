@@ -40,7 +40,7 @@ const getGridSet = async function() {
   const data = await getData();
   const gridSet = {};
   data.forEach(dataItem => {
-    console.log(dataItem)
+    // console.log(dataItem)
     try {
       if (gridSet.hasOwnProperty(dataItem.topic)) {
         gridSet[dataItem.topic].data.push(dataItem);
