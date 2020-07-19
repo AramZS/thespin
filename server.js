@@ -11,6 +11,8 @@ const markdownHandler = require("./markdown-to-col");
 const Mustache = require("mustache");
 const fs = require("fs");
 
+const gridHandler = require("./build-grid");
+
 const adapter = new FileSync("db.json");
 const db = low(adapter);
 
@@ -276,6 +278,11 @@ app.get("/docs/archive/:date", function (request, response) {
 });
 app.get("/docs/:fileName", function (request, response) {
   response.sendFile(__dirname + "/docs/" + request.params.fileName);
+});
+
+app.get("/grid", async function(request, response){
+  var grid = await gridHandler.getDatagrid();
+  response.send(grid)
 });
 
 // listen for requests :)
