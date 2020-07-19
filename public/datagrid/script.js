@@ -7,13 +7,6 @@ Array.prototype.move = function(from, to) {
   this.splice(to, 0, this.splice(from, 1)[0]);
 };
 
-// fetch the initial list of dreams
-fetch("/dreams")
-  .then(response => response.json()) // parse the JSON from the server
-  .then(dreams => {
-    // remove the loading text
-  });
-
 function fwdClick(e) {
   var box = e.parentElement.parentElement;
   var boxInner = box.getElementsByClassName("data-box-collection");
