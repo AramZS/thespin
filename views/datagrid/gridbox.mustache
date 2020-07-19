@@ -1,14 +1,14 @@
 <section class="gridbox" old-augmented-ui="b-clip-x r-clip-y exe">
   <div class="gridbox-inner">
     <div class="general-tags">
-      <span></span>
+      <span>{{tags}}</span>
     </div>
     <h2>
-    To Do: <span class="header-count">5 items</span>
+    {{title}}: <span class="header-count">{{itemCount}} items</span>
     </h2>
     <div class="data-box-collection">
       {{#databoxes}}
-        {{{databox}}}
+        {{> databox}}
       {{/databoxes}}
     </div>
   </div>

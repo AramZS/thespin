@@ -19,11 +19,6 @@ const dgdb = low(dgadapter);
 
 var bodyParser = require("body-parser");
 
-const getDatagrid = function (){
-  var file = fs.readFileSync("./views/handlebars.mst").toString();
-  var html = Mustache.render(file, {});
-}
-
 const getMainTemplate = function (date, archive) {
   var site = {
     1: "",

@@ -45,7 +45,7 @@ const getData = function() {
   });
 };
 
-const getGrid = async function() {
+const getGridSet = async function() {
   const data = await getData();
   const gridSet = {};
   data.forEach(dataItem => {
@@ -63,5 +63,5 @@ const getGrid = async function() {
 };
 
 module.exports = {
-  getGrid
+  getGridSet
 };
