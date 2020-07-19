@@ -26,20 +26,11 @@ const getData = function() {
         resolve(false);
         return;
       } else {
+        console.log('Datagrid files ', filenames)
         const data = filenames.map(function(filename) {
-          fs.readFile(datagridFolder + filename, "utf-8", function(
-            err,
-            content
-          ) {
-            if (err) {
-              console.log("could not read file of datagrid", err);
-              return;
-            } else {
-              return convert(content);
-            }
-          });
+          return convert( fs.readFileSync(datagridFolder + filename, "utf-8") );
         });
-        resolve(Promise.all(data));
+        resolve(data);
       }
     });
   });
@@ -49,6 +40,7 @@ const getGridSet = async function() {
   const data = await getData();
   const gridSet = {};
   data.forEach(dataItem => {
+    console.log(dataItem)
     try {
       if (gridSet.hasOwnProperty(dataItem.topic)) {
         gridSet[dataItem.topic].data.push(dataItem);
