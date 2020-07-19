@@ -48,15 +48,16 @@ window.modalCtrl = {
     if (event.target.classList.contains("magnify")) {
       return true;
     } else {
-      window.modalCtrl.returnContainer = event.target.parentElement;
+      window.modalCtrl.returnContainer = event.target.closest(".data-box-collection");
       document.querySelectorAll(".data-box").forEach(function(e) {
         e.classList.remove("magnify");
       });
-      event.target.classList.add("magnify");
-      document.getElementById("grid-container").prepend(event.target);
+      var targetDiv = event.target.closest("div.data-box")
+      targetDiv.classList.add("magnify");
+      document.getElementById("grid-container").prepend(targetDiv);
       document.body.style.overflow = "hidden";
       document.body.classList.add("fadeout");
-      event.target.removeEventListener("click", window.modalCtrl.modalIt, true);
+      targetDiv.removeEventListener("click", window.modalCtrl.modalIt, true);
       event.stopImmediatePropagation();
       return false;
     }

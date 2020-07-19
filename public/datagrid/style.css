@@ -504,7 +504,14 @@ footer {
   text-shadow: 2px 2px 6px var(--neon-hot-pink);
 }
 
-.data-box__inner > p:nth-of-type(1n + 2) {
+.data-box__inner > p.status:before {
+  content: "Status: ";
+  color: var(--neon-dark-blue);
+  font-weight: bold;
+  text-shadow: 2px 2px 6px var(--neon-hot-pink);
+}
+
+.data-box__inner > p:nth-of-type(1n + 3) {
   display: none;
 }
 
