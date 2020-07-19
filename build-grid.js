@@ -19,7 +19,9 @@ const gridOfCards = async function() {
   Object.keys(gridSet).forEach(function(key, index) {
     // key: the name of the object key
     // index: the ordinal position of the key within the object
-    var tagSet = shuffle(gridSet[key].tags).slice(0,4);
+    var uniqueSet = new Set(gridSet[key].tags);
+    var uniqueArray = [...uniqueSet];
+    var tagSet = shuffle([...uniqueSet]).slice(0,4);
     var gridbox = {
       databoxes: gridSet[key].data,
       title: key,
