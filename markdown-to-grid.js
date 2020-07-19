@@ -16,3 +16,7 @@ const convert = function(text, toMetadata) {
   var metadata = converter.getMetadata();
   return { metadata, html };
 };
+
+const getData = function() {
+  
+}
