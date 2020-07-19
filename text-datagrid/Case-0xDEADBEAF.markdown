@@ -1,7 +1,8 @@
 ---
-title: Cu Graves
-topic: Contact List
-tags: HC
-status: Unknown
-brief: He's clued in on The Verdent. He's clued in on everything. 
+title: 0xDEADBEAF
+topic: Casefiles
+tags: Marketplace
+brief: You vs Rogue Taxidermist Lawerence Beech. 
 ---
+
+__The Spin:__ [2106/02/28](http://thespin.glitch.me/archive/2108-02-28)
