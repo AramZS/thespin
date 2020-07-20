@@ -1,13 +1,11 @@
 ---
 title: Dr. Karen Wathey
 topic: Contact List
-tags: ALF, Animal Liberation Front
-status: Ally, Owed a Favor
-brief: A local leader of the Animal Liberation Front at The Corner Marketplace. 
+tags: Spiritualist
+status: Neutral, Frequent Emailer
+brief: Doctor of Spiritualism, crystal ball vendor. Not at all clued in. 
 ---
 
-Robin is a local leader in The Corner Marketplace representing ALF (The Animal Liberation Front). 
+Dr. Karen Wathey owns a spiritualism store in The Corner Marketplace and has somehow managed to infer a lot of the practice of magic without knowing a true thing about it.
 
-She runs a small booth in The Corner Marketplace (tCM) raising money for ALF and recurits for them there along with at tCM location: "The Crazy Cats Club".
-
-She helped you out during Case 0 and now you owe her a favor. She'll call it in eventually. 
+In exchange for her help on Case 0 you purchased a rather expensive crystal ball from her and have ended up signed up for her email list. 
