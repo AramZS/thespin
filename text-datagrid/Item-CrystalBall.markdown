@@ -2,7 +2,7 @@
 title: Crystal Ball
 topic: The Stash
 tags: The Corner Marketplace
-status: Open
+status: Translucent
 brief: A large and rather expensive crystal ball. 
 ---
 

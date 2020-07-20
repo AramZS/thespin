@@ -6,4 +6,4 @@ status: Bloodied
 brief: A curvey delicate looking dagger you reclaimed from some nasty rituals. 
 ---
 
-A curvey delicate looking dagger you reclaimed from some nasty rituals. It's inlaid with gold and silver. 
+A curvey delicate looking dagger you reclaimed from some nasty rituals. It's inlaid with gold, silicon and silver. 
