@@ -21,12 +21,12 @@ const gridOfCards = async function() {
     // index: the ordinal position of the key within the object
     var uniqueSet = new Set(gridSet[key].tags);
     var uniqueArray = [...uniqueSet];
-    var tagSet = shuffle([...uniqueSet]).slice(0,4);
+    var tagSet = shuffle(uniqueArray).slice(0,4);
     var gridbox = {
       databoxes: gridSet[key].data,
       title: key,
       itemCount: gridSet[key].data.length,
-      tags: gridSet[key].tags.join(', ') || ""
+      tags: tagSet.join(', ') || ""
     };
     var file = fs.readFileSync("./views/datagrid/gridbox.mustache").toString();
     var html = Mustache.render(file, gridbox, templates);
