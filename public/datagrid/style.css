@@ -1013,7 +1013,9 @@ body.fadeout #grid-container .magnify * * * {
 
 }
 @media only all and (max-width: 900px) {
-
+  body {
+    margin-left: 0;
+  }
 }
 
 @media only all and (max-width: 775px) {
