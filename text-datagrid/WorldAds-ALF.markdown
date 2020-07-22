@@ -1,8 +1,10 @@
 ---
-title: H/FC Presents New Gun Formfactors
+title: Join the Animal Liberation Front Today and Save Some Squirrels Tomorrow 
 topic: Logged Ads
 tags: ALF
-brief: Save space in your ruck with our new collapsibles 
+brief: There's only one Earth and one Green Patch per Quad, so keep it healthy
 ---
 
-Hitaki FC presents a new line of assault rifles and shotguns for the discerning runner or corpsec requisition agent, available wholesale and single order. Follow through to our Virt Space to get your hands on our latest and see just how small they collapse down.  
+Our future relies on sharing this planet with the animals man, so join us and keep them safe.
+
+Weekly meetings at the Crazy Cats Club.
