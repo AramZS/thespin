@@ -10,4 +10,10 @@ Composed of 13 rainbow-static-filled globes glowing with an almost blinding empy
 
 Usually represented as 13 rainbow-static-filled globes glowing with an almost blinding empyrean magic.
 
-You have interacted 
+You have interacted with the following named globes:
+
+Gomory (Now ensconced in the archive at the Moonbase),
+Zagan,
+Sytry,
+Eligor,
+Durson
