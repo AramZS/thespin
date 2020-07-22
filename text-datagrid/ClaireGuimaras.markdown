@@ -2,7 +2,7 @@
 title: Claire Guimaras
 topic: Contact List
 tags: EPD
-status: Strong Ally
+status: Strong Ally, A Friend on the Force
 brief: Lower-1st Sector EPD Chief, this official isn't quite sure what your deal is, but has found you dependable.
 ---
 
