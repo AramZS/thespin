@@ -1,4 +1,3 @@
-
 const selectorAugsList = []
 const recursiveRuleCrawl = cssRules => {
   const rulesLen = cssRules.length
@@ -10,7 +9,12 @@ const recursiveRuleCrawl = cssRules => {
       const augs = rule.style.getPropertyValue("--augmented-ui")
       if (augs) {
         rule.selectorText.split(",").forEach(selector => {
-          selectorAugsList.push({ selector: selector, selectorWithoutHover: selector.replace(/:hover/g, ""), augs, hover: selector.indexOf(":hover") > -1 })
+          selectorAugsList.push({
+            selector: selector,
+            selectorWithoutHover: selector.replace(/:hover/g, ""),
+            augs,
+            hover: selector.indexOf(":hover") > -1
+          })
         })
       }
     }
@@ -21,7 +25,7 @@ Array.from(document.styleSheets).forEach(
     try {
       recursiveRuleCrawl(stylesheet.cssRules)
     } catch (e) {
-      console.log()
+      console.log('Stylesheet unreadable: ', e, stylesheet)
     }
   }
 )

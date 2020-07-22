@@ -1,7 +1,7 @@
 ---
 title: H/FC Presents New Gun Formfactors
 topic: Logged Ads
-tags: Weapons
+tags: ALF
 brief: Save space in your ruck with our new collapsibles 
 ---
 
