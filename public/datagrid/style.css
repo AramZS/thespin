@@ -76,17 +76,18 @@ footer {
   padding-top: 1.5em;
   border-top: 1px solid lightgrey;
 }
-/* user */ 
+
+/* user */
 
 #grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(410px, 1fr) );
+  grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
   grid-gap: 10px;
   grid-auto-rows: minmax(360px, auto);
   background-color: black;
 }
 
-.gridbox { 
+.gridbox {
   --aug-border: 0px;
   --aug-border-bg: transparent;
   --aug-inset: 0px;
@@ -103,6 +104,7 @@ footer {
   --aug-r-height: 84px;
   --aug-r-width: 10px;
 }
+
 .gridbox:nth-of-type(even) {
   --augmented-ui: b-clip-x t-clip-x l-clip-y exe;
   --aug-b-height: 8px;
@@ -129,7 +131,7 @@ footer {
   --aug-bl-height: 10px;
   --aug-bl-width: 6px;
   --aug-tl-height: 10px;
-  --aug-tl-width: 6px;  
+  --aug-tl-width: 6px;
   --aug-border: 0px;
   --aug-border-bg: transparent;
   --aug-inset: 0px;
@@ -137,11 +139,11 @@ footer {
 }
 
 .gridbox .header-count {
-    float: right;
-    margin-right: -40%;
-    font-size: small;
-    margin-top: -4px;
-    text-align: left;
+  float: right;
+  margin-right: -40%;
+  font-size: small;
+  margin-top: -4px;
+  text-align: left;
 }
 
 .gridbox-inner {
@@ -153,7 +155,7 @@ footer {
   padding-top: 0;
 }
 
-.gridbox-inner > .general-tags {
+.gridbox-inner>.general-tags {
   height: 12px;
   color: var(--neon-pink);
   font-size: 9px;
@@ -178,7 +180,7 @@ footer {
   --aug-b-height: 6px;
   --aug-l-origin-y: 25%;
   --aug-l-width: 6px;
-  --aug-l-height: 30%;  
+  --aug-l-height: 30%;
   --aug-border: 2px;
   --aug-border-bg: #fbe806;
   --aug-inset: 4px;
@@ -191,190 +193,228 @@ footer {
 }
 
 .data-box:first-of-type:not(.magnify) {
-	animation: pulse .25s 4, slide 1s 1, loadtop 1s 1, innerpulse 2s 1, phaseTextIn 1s 1;
+  animation: pulse .25s 4, slide 1s 1, loadtop 1s 1, innerpulse 2s 1, phaseTextIn 1s 1;
   color: black;
 }
+
 .data-box:not(.fwd):not(.magnify) {
-	animation: pulse .25s 4, slide 1s 1, loadtop 1s 1, innerpulse 2s 1;
-  
+  animation: pulse .25s 4, slide 1s 1, loadtop 1s 1, innerpulse 2s 1;
+
 }
 
 .data-box.bkwd:first-of-type:not(.magnify) {
-	animation: pulse .25s 4, bkslide 1s 1, loadtop 1s 1, innerpulse 2s 1, phaseTextIn 1s 1;
+  animation: pulse .25s 4, bkslide 1s 1, loadtop 1s 1, innerpulse 2s 1, phaseTextIn 1s 1;
 }
 
-.data-box:after {
+.data-box:after {}
 
-}
-
-.data-box:before {
-
-}
+.data-box:before {}
 
 @keyframes innerpulse {
-  0% { 
+  0% {
     --aug-inset: 20px;
   }
-  5% { 
+
+  5% {
     --aug-inset: 15px;
   }
-  10% { 
+
+  10% {
     --aug-inset: 10px;
   }
-  15% { 
+
+  15% {
     --aug-inset: 8px;
   }
-  20% { 
+
+  20% {
     --aug-inset: 6px;
   }
-  25% { 
+
+  25% {
     --aug-inset: 5.5px;
   }
-  30% { 
+
+  30% {
     --aug-inset: 5px;
   }
-  35% { 
+
+  35% {
     --aug-inset: 4.5px;
   }
-  40% { 
+
+  40% {
     --aug-inset: 4px;
   }
-  45% { 
+
+  45% {
     --aug-inset: 3.5px;
   }
-  50% { 
+
+  50% {
     --aug-inset: 3px;
   }
-  55% { 
+
+  55% {
     --aug-inset: 3.1px;
   }
-  60% { 
+
+  60% {
     --aug-inset: 3.2px;
   }
-  65% { 
+
+  65% {
     --aug-inset: 3.3px;
   }
-  70% { 
+
+  70% {
     --aug-inset: 3.4px;
   }
-  75% { 
+
+  75% {
     --aug-inset: 3.5px;
   }
-  80% { 
+
+  80% {
     --aug-inset: 3.6px;
   }
-  85% { 
+
+  85% {
     --aug-inset: 3.7px;
   }
-  90% { 
+
+  90% {
     --aug-inset: 3.8px;
   }
-  95% { 
+
+  95% {
     --aug-inset: 3.9px;
   }
+
   100% {
     --aug-inset: 4px;
   }
 }
 
 @keyframes loadtop {
-  0% { 
+  0% {
     --aug-tr-width: 150px;
   }
-  5% { 
+
+  5% {
     --aug-tr-width: 144.5px;
   }
-  10% { 
+
+  10% {
     --aug-tr-width: 139px;
   }
-  15% { 
+
+  15% {
     --aug-tr-width: 133.5px;
   }
-  20% { 
+
+  20% {
     --aug-tr-width: 128px;
   }
-  25% { 
+
+  25% {
     --aug-tr-width: 122.5px;
   }
-  30% { 
+
+  30% {
     --aug-tr-width: 117px;
   }
-  35% { 
+
+  35% {
     --aug-tr-width: 111.5px;
   }
-  40% { 
+
+  40% {
     --aug-tr-width: 106.5px;
   }
-  45% { 
+
+  45% {
     --aug-tr-width: 100.5px;
   }
-  50% { 
+
+  50% {
     --aug-tr-width: 95px;
   }
-  55% { 
+
+  55% {
     --aug-tr-width: 89.5px;
   }
-  60% { 
+
+  60% {
     --aug-tr-width: 84px;
   }
-  65% { 
+
+  65% {
     --aug-tr-width: 78.5px;
   }
-  70% { 
+
+  70% {
     --aug-tr-width: 73px;
   }
-  75% { 
+
+  75% {
     --aug-tr-width: 67.5px;
   }
-  80% { 
+
+  80% {
     --aug-tr-width: 62px;
   }
-  85% { 
+
+  85% {
     --aug-tr-width: 56.5px;
   }
-  90% { 
+
+  90% {
     --aug-tr-width: 51px;
   }
-  95% { 
+
+  95% {
     --aug-tr-width: 45.5px;
   }
+
   100% {
     --aug-tr-width: 40px;
   }
 }
 
 @keyframes pulse {
-	0% {
+  0% {
 
-		transform: scale(1);
-	}
-  
+    transform: scale(1);
+  }
+
   25% {
 
-		transform: scale(.99);
-	}
-  
+    transform: scale(.99);
+  }
+
   50% {
 
-		transform: scale(.98);
-	}
-   
-	75% {
+    transform: scale(.98);
+  }
 
-		transform: scale(.99);
-	}
-  
-	100% {
+  75% {
 
-		transform: scale(1);
-	}
+    transform: scale(.99);
+  }
+
+  100% {
+
+    transform: scale(1);
+  }
 }
 
 @keyframes slide {
-  from { 
+  from {
     transform: translate(20px, 20px);
     opacity: .3;
   }
+
   to {
     opacity: 1;
     /* left: 26px;
@@ -383,9 +423,10 @@ footer {
 }
 
 @keyframes phaseTextIn {
-  from { 
+  from {
     color: transparent;
   }
+
   to {
     color: black;
     /* left: 26px;
@@ -394,9 +435,10 @@ footer {
 }
 
 @keyframes phaseTextOut {
-  from { 
+  from {
     color: black;
   }
+
   to {
     opacity: 1;
     color: transparent;
@@ -407,10 +449,11 @@ footer {
 
 
 @keyframes bkslide {
-  from { 
+  from {
     transform: translate(80px, 80px);
     opacity: .1;
   }
+
   to {
     opacity: 1;
     /* left: 26px;
@@ -420,17 +463,15 @@ footer {
 
 
 .gridbox-inner .data-box-collection .data-box:nth-child(1n+2) {
-  --aug-border-bg: rgb(251,232,6, .5);
-  --aug-inset-bg: rgb(251,232,6, .5);
+  --aug-border-bg: rgb(251, 232, 6, .5);
+  --aug-inset-bg: rgb(251, 232, 6, .5);
   z-index: 50;
   left: 25px;
   top: 90px;
   color: transparent;
 }
 
-.gridbox-inner .data-box:nth-child(1n+2) {
-
-}
+.gridbox-inner .data-box:nth-child(1n+2) {}
 
 .gridbox:nth-of-type(even) .gridbox-inner .data-box-collection .data-box:nth-child(1n+2) {
   left: 35px;
@@ -439,8 +480,8 @@ footer {
 .gridbox-inner .data-box-collection .data-box:nth-child(1n+3) {
   left: 45px;
   top: 110px;
-  --aug-border-bg: rgb(251,232,6, .4);
-  --aug-inset-bg: rgb(251,232,6, .4);
+  --aug-border-bg: rgb(251, 232, 6, .4);
+  --aug-inset-bg: rgb(251, 232, 6, .4);
 }
 
 .gridbox:nth-of-type(even) .gridbox-inner .data-box-collection .data-box:nth-child(1n+3) {
@@ -451,8 +492,8 @@ footer {
 .gridbox-inner .data-box-collection .data-box:nth-child(1n+4) {
   left: 65px;
   top: 130px;
-  --aug-border-bg: rgb(251,232,6, .3);
-  --aug-inset-bg: rgb(251,232,6, .3);
+  --aug-border-bg: rgb(251, 232, 6, .3);
+  --aug-inset-bg: rgb(251, 232, 6, .3);
 }
 
 .gridbox:nth-of-type(even) .gridbox-inner .data-box-collection .data-box:nth-child(1n+4) {
@@ -462,8 +503,8 @@ footer {
 .gridbox-inner .data-box-collection .data-box:nth-child(1n+5) {
   left: 85px;
   top: 150px;
-  --aug-border-bg: rgb(251,232,6, .2);
-  --aug-inset-bg: rgb(251,232,6, .2);
+  --aug-border-bg: rgb(251, 232, 6, .2);
+  --aug-inset-bg: rgb(251, 232, 6, .2);
   display: none;
 }
 
@@ -474,7 +515,6 @@ footer {
 .gridbox-inner .data-box-collection .data-box:nth-child(1n+6) {
   display: none;
 }
-
 
 .data-box h3 {
   margin: 0;
@@ -493,213 +533,253 @@ footer {
   line-height: 12px;
 }
 
-.data-box__inner > p {
+.data-box__inner>p {
   width: 97%;
 }
 
-.data-box__inner > p:first-of-type:before {
+.data-box__inner>p:first-of-type:before {
   content: "Brief: ";
   color: var(--neon-dark-blue);
   font-weight: bold;
   text-shadow: 2px 2px 6px var(--neon-hot-pink);
 }
 
-.data-box__inner > p.status:before {
+.data-box__inner>p.status:before {
   content: "Status: ";
   color: var(--neon-dark-blue);
   font-weight: bold;
   text-shadow: 2px 2px 6px var(--neon-hot-pink);
 }
 
-.data-box__inner > p:nth-of-type(1n + 2):not(.status) {
+.data-box__inner>p:nth-of-type(1n + 2):not(.status) {
   display: none;
 }
 
 .data-box.magnify {
-    position: fixed;
+  position: fixed;
   opacity: 1 !important;
-    width: 98%;
-    top: 1%;
-    left: 1%;
-    height: 98%;
-    --augmented-ui: b-clip-x tr-clip-x l-clip-y r-clip-y exe;
-    --aug-tr-width: 40%;
-    --aug-tr-height: 20px;
-    --aug-b-width: 90%;
-    --aug-b-height: 12px;
-    --aug-l-origin-y: 55%;
-    --aug-l-width: 4px;
-    --aug-l-height: 85%;
-    --aug-border: 4px;
-    --aug-border-bg: #fbe806;
-    --aug-inset: 10px;
-    --aug-inset-bg: #0b1519;
-    background: var( --goldDark);
-    --aug-r-width: 12px;
-    --aug-r-height: 20%;
-    --aug-r-origin-y: 18%;
-      cursor: default;
-    padding: 14px;
-    transition: all 4s;
-    animation: magnifytop 1.5s 1, magnifypulse 2s 1, phaseTextIn 1s 1;
+  width: 98%;
+  top: 1%;
+  left: 1%;
+  height: 98%;
+  --augmented-ui: b-clip-x tr-clip-x l-clip-y r-clip-y exe;
+  --aug-tr-width: 40%;
+  --aug-tr-height: 20px;
+  --aug-b-width: 90%;
+  --aug-b-height: 12px;
+  --aug-l-origin-y: 55%;
+  --aug-l-width: 4px;
+  --aug-l-height: 85%;
+  --aug-border: 4px;
+  --aug-border-bg: #fbe806;
+  --aug-inset: 10px;
+  --aug-inset-bg: #0b1519;
+  background: var(--goldDark);
+  --aug-r-width: 12px;
+  --aug-r-height: 20%;
+  --aug-r-origin-y: 18%;
+  cursor: default;
+  padding: 14px;
+  transition: all 4s;
+  animation: magnifytop 1.5s 1, magnifypulse 2s 1, phaseTextIn 1s 1;
 }
 
 
 @keyframes magnifypulse {
-  0% { 
+  0% {
     --aug-inset: 4px;
   }
-  5% { 
+
+  5% {
     --aug-inset: 3.5px;
   }
-  10% { 
+
+  10% {
     --aug-inset: 3px;
   }
-  15% { 
+
+  15% {
     --aug-inset: 2.5px;
   }
-  20% { 
+
+  20% {
     --aug-inset: 2px;
   }
-  25% { 
+
+  25% {
     --aug-inset: 1.5px;
   }
-  30% { 
+
+  30% {
     --aug-inset: 1px;
   }
-  35% { 
+
+  35% {
     --aug-inset: .5px;
   }
-  40% { 
+
+  40% {
     --aug-inset: 0px;
   }
-  45% { 
+
+  45% {
     --aug-inset: 1px;
   }
-  50% { 
+
+  50% {
     --aug-inset: 1.5px;
   }
-  55% { 
+
+  55% {
     --aug-inset: 2px;
   }
-  60% { 
+
+  60% {
     --aug-inset: 3px;
   }
-  65% { 
+
+  65% {
     --aug-inset: 3.5px;
   }
-  70% { 
+
+  70% {
     --aug-inset: 4px;
   }
-  75% { 
+
+  75% {
     --aug-inset: 5px;
   }
-  80% { 
+
+  80% {
     --aug-inset: 5.5px;
   }
-  85% { 
+
+  85% {
     --aug-inset: 6px;
   }
-  90% { 
+
+  90% {
     --aug-inset: 7px;
   }
-  95% { 
+
+  95% {
     --aug-inset: 8px;
   }
+
   100% {
     --aug-inset: 9px;
   }
 }
 
 @keyframes magnifytop {
-  0% { 
+  0% {
     --aug-tr-width: 2%;
   }
-  5% { 
+
+  5% {
     --aug-tr-width: 4%;
   }
-  10% { 
+
+  10% {
     --aug-tr-width: 6%;
   }
-  15% { 
+
+  15% {
     --aug-tr-width: 8%;
   }
-  20% { 
+
+  20% {
     --aug-tr-width: 10%;
   }
-  25% { 
+
+  25% {
     --aug-tr-width: 12%;
   }
-  30% { 
+
+  30% {
     --aug-tr-width: 14%;
   }
-  35% { 
+
+  35% {
     --aug-tr-width: 16%;
   }
-  40% { 
+
+  40% {
     --aug-tr-width: 18%;
   }
-  45% { 
+
+  45% {
     --aug-tr-width: 20%;
   }
-  50% { 
+
+  50% {
     --aug-tr-width: 22%;
   }
-  55% { 
+
+  55% {
     --aug-tr-width: 24%;
   }
-  60% { 
+
+  60% {
     --aug-tr-width: 26%;
   }
-  65% { 
+
+  65% {
     --aug-tr-width: 28%;
   }
-  70% { 
+
+  70% {
     --aug-tr-width: 30%;
   }
-  75% { 
+
+  75% {
     --aug-tr-width: 32%;
   }
-  80% { 
+
+  80% {
     --aug-tr-width: 34%;
   }
-  85% { 
+
+  85% {
     --aug-tr-width: 36%;
   }
-  90% { 
+
+  90% {
     --aug-tr-width: 38%;
   }
-  95% { 
+
+  95% {
     --aug-tr-width: 40%;
   }
+
   100% {
     --aug-tr-width: 40%;
   }
 }
 
-.data-box.magnify .data-box__inner > p:first-of-type {
+.data-box.magnify .data-box__inner>p:first-of-type {
   display: none;
 }
 
 .data-box.magnify .data-box__inner {
-    width: 90%;
-    max-width: 410px;
-    overflow-y: auto;
-    padding: 5px 5px 8px 12px;
-    font-size: 18px;
-    line-height: 24px;
-    max-height: 85%;
-    margin: 0 auto;
-    --augmented-ui: br-clip tr-clip-x tl-clip-x exe;
-    background: var(--gold);
-    --aug-tr-height: 20px;
-    --aug-tr-width: 10px;
-    --aug-tl-width: 80px;
-    --aug-tl-height: 15px;
-    --aug-br-clip: 10px;
+  width: 90%;
+  max-width: 410px;
+  overflow-y: auto;
+  padding: 5px 5px 8px 12px;
+  font-size: 18px;
+  line-height: 24px;
+  max-height: 85%;
+  margin: 0 auto;
+  --augmented-ui: br-clip tr-clip-x tl-clip-x exe;
+  background: var(--gold);
+  --aug-tr-height: 20px;
+  --aug-tr-width: 10px;
+  --aug-tl-width: 80px;
+  --aug-tl-height: 15px;
+  --aug-br-clip: 10px;
 }
 
-.data-box.magnify .data-box__inner > p:nth-of-type(1n + 2) {
+.data-box.magnify .data-box__inner>p:nth-of-type(1n + 2) {
   display: block;
 }
 
@@ -722,30 +802,30 @@ footer {
   color: var(--neon-blue-green);
   font-size: 28px;
   font-weight: bold;
-    margin-top: 26px;
-    margin-right: 8px;
-    cursor: pointer;
-    padding: 4px;
+  margin-top: 26px;
+  margin-right: 8px;
+  cursor: pointer;
+  padding: 4px;
 }
 
-body.fadeout *:not(#grid-container){
-  opacity:0;
+body.fadeout *:not(#grid-container) {
+  opacity: 0;
 }
 
-body.fadeout #grid-container *:not(.magnify){
-  opacity:0;
+body.fadeout #grid-container *:not(.magnify) {
+  opacity: 0;
 }
 
 body.fadeout #grid-container .magnify * {
-  opacity:1;
+  opacity: 1;
 }
 
 body.fadeout #grid-container .magnify * * {
-  opacity:1;
+  opacity: 1;
 }
 
 body.fadeout #grid-container .magnify * * * {
-  opacity:1;
+  opacity: 1;
 }
 
 .gridbox-controls {
@@ -756,17 +836,17 @@ body.fadeout #grid-container .magnify * * * {
   text-align: center;
 }
 
-.gridbox-controls > * {
+.gridbox-controls>* {
   display: inline-block;
 }
 
-.gridbox-controls > button {
+.gridbox-controls>button {
   background-color: var(--neon-light-green);
   color: var(--neon-black);
   border: transparent;
   width: 24%;
   height: 16px;
-  display:block;
+  display: block;
   z-index: 100;
   cursor: pointer;
 }
@@ -775,58 +855,63 @@ body.fadeout #grid-container .magnify * * * {
   color: white;
 }
 
-.gridbox-controls > button.back {
+.gridbox-controls>button.back {
   --augmented-ui: tr-clip-x exe;
   --aug-tr-width: 2px;
-  --aug-tr-height: 2px;  
+  --aug-tr-height: 2px;
   padding-right: 4%;
   float: left;
 }
 
-.gridbox-controls > button.forward {
+.gridbox-controls>button.forward {
   --augmented-ui: tl-clip-x exe;
   --aug-tl-width: 2px;
-  --aug-tl-height: 2px;  
+  --aug-tl-height: 2px;
   padding-left: 4%;
   float: right;
 }
 
-.gridbox-controls > button.forward:before {
+.gridbox-controls>button.forward:before {
   content: " ";
   width: 20%;
   float: right;
 }
 
-.agridbox { 
+.agridbox {
   background-color: lightblue;
   grid-column: 1;
   grid-row: 1;
 }
 
-.agridbox:nth-of-type(1n + 1):nth-of-type(odd):nth-of-type(n + 4){ 
+.agridbox:nth-of-type(1n + 1):nth-of-type(odd):nth-of-type(n + 4) {
   grid-column: 1;
   background-color: lightblue;
 }
-.agridbox:nth-of-type(2n + 2):nth-of-type(even):nth-of-type(-n+4){ 
+
+.agridbox:nth-of-type(2n + 2):nth-of-type(even):nth-of-type(-n+4) {
   grid-column: 2;
   background-color: lightyellow;
 }
-.agridbox:nth-of-type(3n + 3):nth-of-type(odd):nth-of-type(n) { 
+
+.agridbox:nth-of-type(3n + 3):nth-of-type(odd):nth-of-type(n) {
   grid-column: 3;
   background-color: whitesmoke;
 }
-.agridbox:nth-of-type(4n + 4):nth-of-type(even):nth-of-type(n) { 
+
+.agridbox:nth-of-type(4n + 4):nth-of-type(even):nth-of-type(n) {
   grid-column: 4;
   background-color: pink;
 }
 
-.agridbox:nth-of-type(n + 5) { 
+.agridbox:nth-of-type(n + 5) {
   grid-row: 2;
 }
-.agridbox:nth-of-type(n + 9) { 
+
+.agridbox:nth-of-type(n + 9) {
   grid-row: 3;
 }
-.agridbox:nth-of-type(n + 13) { 
+
+.agridbox:nth-of-type(n + 13) {
   grid-row: 4;
 }
 
@@ -845,67 +930,88 @@ body.fadeout #grid-container .magnify * * * {
   0% {
     clip-path: inset(52% 0 49% 0);
   }
+
   5% {
     clip-path: inset(98% 0 3% 0);
   }
+
   10% {
     clip-path: inset(90% 0 10% 0);
   }
+
   15% {
     clip-path: inset(75% 0 4% 0);
   }
+
   20% {
     clip-path: inset(32% 0 34% 0);
   }
+
   25% {
     clip-path: inset(41% 0 45% 0);
   }
+
   30% {
     clip-path: inset(22% 0 54% 0);
   }
+
   35% {
     clip-path: inset(11% 0 20% 0);
   }
+
   40% {
     clip-path: inset(70% 0 5% 0);
   }
+
   45% {
     clip-path: inset(80% 0 9% 0);
   }
+
   50% {
     clip-path: inset(20% 0 29% 0);
   }
+
   55% {
     clip-path: inset(33% 0 22% 0);
   }
+
   60% {
     clip-path: inset(86% 0 13% 0);
   }
+
   65% {
     clip-path: inset(42% 0 4% 0);
   }
+
   70% {
     clip-path: inset(23% 0 4% 0);
   }
+
   75% {
     clip-path: inset(50% 0 45% 0);
   }
+
   80% {
     clip-path: inset(23% 0 58% 0);
   }
+
   85% {
     clip-path: inset(53% 0 33% 0);
   }
+
   90% {
     clip-path: inset(60% 0 8% 0);
   }
+
   95% {
     clip-path: inset(45% 0 54% 0);
   }
+
   100% {
     clip-path: inset(71% 0 5% 0);
   }
 }
+
 .glitch::after {
   content: attr(data-text);
   display: inline-block;
@@ -924,67 +1030,88 @@ body.fadeout #grid-container .magnify * * * {
   0% {
     clip-path: inset(22% 0 49% 0);
   }
+
   5% {
     clip-path: inset(57% 0 2% 0);
   }
+
   10% {
     clip-path: inset(21% 0 44% 0);
   }
+
   15% {
     clip-path: inset(72% 0 14% 0);
   }
+
   20% {
     clip-path: inset(67% 0 33% 0);
   }
+
   25% {
     clip-path: inset(39% 0 30% 0);
   }
+
   30% {
     clip-path: inset(68% 0 2% 0);
   }
+
   35% {
     clip-path: inset(44% 0 54% 0);
   }
+
   40% {
     clip-path: inset(48% 0 41% 0);
   }
+
   45% {
     clip-path: inset(44% 0 21% 0);
   }
+
   50% {
     clip-path: inset(33% 0 52% 0);
   }
+
   55% {
     clip-path: inset(89% 0 11% 0);
   }
+
   60% {
     clip-path: inset(90% 0 5% 0);
   }
+
   65% {
     clip-path: inset(64% 0 36% 0);
   }
+
   70% {
     clip-path: inset(29% 0 22% 0);
   }
+
   75% {
     clip-path: inset(50% 0 45% 0);
   }
+
   80% {
     clip-path: inset(67% 0 7% 0);
   }
+
   85% {
     clip-path: inset(100% 0 1% 0);
   }
+
   90% {
     clip-path: inset(96% 0 5% 0);
   }
+
   95% {
     clip-path: inset(96% 0 3% 0);
   }
+
   100% {
     clip-path: inset(76% 0 5% 0);
   }
 }
+
 .glitch::before {
   content: attr(data-text);
   display: inline-block;
@@ -998,33 +1125,26 @@ body.fadeout #grid-container .magnify * * * {
   pointer-events: none;
   animation: noise-anim-2 2s infinite linear alternate-reverse;
 }
+
 /* end glitch css from css-tricks.com */
 
 
 /*________________________________________________________________________________________________________________________________*/
 /*MEDIAQUERIES*/
-@media only all and (min-width: 1201px) {
+@media only all and (min-width: 1201px) {}
 
-}
-@media only all and (max-width: 1200px) {
+@media only all and (max-width: 1200px) {}
 
-}
-@media only all and (max-width: 1024px) {
+@media only all and (max-width: 1024px) {}
 
-}
 @media only all and (max-width: 900px) {
   body {
     margin-left: 0;
   }
 }
 
-@media only all and (max-width: 775px) {
+@media only all and (max-width: 775px) {}
 
-}
+@media only all and (max-width: 600px) {}
 
-@media only all and (max-width: 600px) {
-
-}
-@media only all and (max-width: 480px) {
-
-}
+@media only all and (max-width: 480px) {}
