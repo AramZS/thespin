@@ -25,6 +25,14 @@ Her eyes have been replaced with mirror lenses, dark glass inset into her face t
 
 #### The Result
 
-The Gorgon Awakens. Without even thinking she begins to coma people in The Real, pull their etheric spirit into The Virtual, where she turns them into stone and slowly drains their etheric energy until they die in the Real. Daemons invade her mind. She begins climbed through The Vert from WestCentWa to WestCentMid.
+The Gorgon Awakens. Without even thinking she begins to coma people in The Real, pull their etheric spirit into The Virtual, where she turns them into stone and slowly drains their etheric energy until they die in the Real. She begins climbed through The Vert from WestCentWa to WestCentMid. You also noticed that The Wall seemed to have some strange failures. 
 
-You also encountered Zeroth a hacker working for HC who has some real power in The Virtual, but is bound by HC via an addiction to microtransactions. 
+You also encountered Zeroth a hacker working for HC who has some real power in The Virtual, but is bound by HC via an addiction to microtransactions. He seemed to be working with the gorgon, or manipulating her. 
+
+At the end you found yourself facing off against a Gorgon, awoken only recently, who was drawing power out of people in The Real, causing them to fall into comas and then eventually die.
+
+She seemed protected by Zeroth, who you fought almost to death, but let him live badly hurt and stripped of some of his HC Gear. 
+
+You made your way into the Gorgon's demesne and fought. The Mother of Daemons showed up with an interest in her and in you but you managed to banish the MoD. 
+
+You defeated the Gorgon. Some of her victims woke up, whom you saved as a result, but it was clear that her intent had more to do with her interest in absorbing energy to change her situation in some way. 
