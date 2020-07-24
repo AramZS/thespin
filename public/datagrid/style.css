@@ -551,6 +551,10 @@ footer {
 
 }
 
+.gridbox-inner .data-box-collection .data-box:nth-child(1n+2) .data-box__inner h4 {
+  display: none;
+}
+
 .data-box__inner__text {
   margin-top: 18px;
   font-size: 12px;
