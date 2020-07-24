@@ -31,7 +31,7 @@ The screens around you flicker to a view of a house standing in the middle of a 
 
 #### Main Locations
 
-Cypressmont & the Thwip House
+Upland Cay & the Thwip House
 
 #### The Monster
 
@@ -47,4 +47,11 @@ As a ghost, a lot of attacks won’t hurt him. Only attacks using rock salt, col
 
 #### The Result
 
-You discovered the Mother of Daemons creates deals with humans to place magic in them or enslave them to others and encountered a number of her 
+You discovered the Mother of Daemons creates deals with humans to place magic in them or enslave them to others and encountered a number of those she created deals with and managed to defeat them, even as the insanity of Logan meshed The Real and The Virtual around you. 
+
+You met YS/x for the first time, a creature who seems to have overwhelming empyrean power. 
+
+Logan seemed to have lost control of his powers, a bargain that was more than he could handle. 
+
+However, you found you could 
+
