@@ -25,4 +25,6 @@ Weak to:
 
 #### The Result
 
+In The Suburban Isle of Cypressmont you encountered Rhys Watson, the Daemon Werewolf. He was a changeling like you, but different, merged and in hibernation until he woke up, hungry and stuck in The Virtual, seeking to consume power and manifest in The Real. His tactics and power destabilized The Real and The Virtual and the things dependent on it, like Cypressmont's tall dam walls.
+
 You now know: the Changelings who were lost in The Virtual are waking up.

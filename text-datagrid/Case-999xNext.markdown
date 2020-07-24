@@ -2,7 +2,7 @@
 title: 900xNext - Overall Case Notes
 topic: Casefiles
 tags: The Future
-brief: The Future
+brief: The future is...
 ---
 
 You've returned to a relatively stable moonbase. 
