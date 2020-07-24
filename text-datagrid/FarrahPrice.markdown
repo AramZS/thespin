@@ -6,8 +6,6 @@ status: Lost
 brief: The Oracle of Clock, lost in your first encounter with a daemon. 
 ---
 
-Dr. Karen Wathey owns a spiritualism store in The Corner Marketplace and has somehow managed to infer a lot of the practice of magic without knowing a true thing about it.
+You met briefly in your first case when she saved you from Daemons and sacrificed herself. You found her body in a coma in her office in HC Peak Tower. When you saw her body she was a woman wearing normal street clothes, with a mark on her inner-wrist, some sort of tattoo with a strange symbol, a horned X, with zig-zagging lines underneath it, crossing over a central line that runs through the whole thing. She has long hair dyed the same exact shade of purple as the her avatar you met in The Virtual. She's was still breathing but in a coma.
 
-In exchange for her help on Case 0 you purchased a rather expensive crystal ball from her and have ended up signed up for her email list. 
-
-She has pale skin, long curley hair, big eyes and big glasses and her ability to look slightly amazed at everything covers up the fact that she is a rather savey businessperson. 
+She recently had all of her clearances at HC revoked and was fired. 
