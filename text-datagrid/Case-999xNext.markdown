@@ -1,5 +1,5 @@
 ---
-title: 900xNext - Overall Case Notes
+title: 9000xNext - Overall Case Notes
 topic: Casefiles
 tags: The Future
 brief: The future is...
@@ -9,16 +9,17 @@ You've returned to a relatively stable moonbase.
 
 Most of the standard humans are off base leaving you with
 
-an unconscious Eric Leahy (Trapped in the Summoning Circle Lab)
-a disembodied Cor Larana (Trapped in the Summoning Circle Lab)
-the inhabitants of Entity Storage (Trapped there)
-Divi the Droid, 
-and Artria of course. 
+an unconscious Eric Leahy (Trapped in the Summoning Circle Lab)<br />
+a disembodied Cor Larana (Trapped in the Summoning Circle Lab)<br />
+the inhabitants of Entity Storage (Trapped there)<br />
+Divi the Droid, <br />
+and Artria of course. <br />
 
-Also remaining, if a little less clear in their purpose, 
-the body of Brea Rush (who you met in Entity Storage)
-Inquiry AI 334 - Installed in the Records Room - Partially controlled by Gomory an etheric component of YS/x
-Eliabeth (Elli) Cordova, who has remained aboard trying to get your help to find the missing Antim Quinn. 
+Also remaining, if a little less clear in their purpose:
+
+the body of Brea Rush (who you met in Entity Storage)<br />
+Inquiry AI 334 - Installed in the Records Room - Partially controlled by Gomory an etheric component of YS/x<br />
+Eliabeth (Elli) Cordova, who has remained aboard trying to get your help to find the missing Antim Quinn. <br />
 
 When we last left off it was clear that the Mother of Daemons has been manipulating people and manifesting power and possession into The Real, your most recent encounter left you with the sense that she was trying to push things from The Verdent into The Real. HC had been experimenting with the same idea on the moonbase, with their best result being Artria (though her manifestation resulted in half stuck in The Virtual, half insane in The Real). 
 
