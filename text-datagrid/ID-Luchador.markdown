@@ -14,7 +14,7 @@ On Twitch all the time streaming to fans.
 
 Has a huge crush on Cat having been near her adventures.
 
-Trained together and got tattos together with Monstrous. 
+Trained together and got tattoos together with Monstrous. 
 
 Glow in the dark costume. 
 
