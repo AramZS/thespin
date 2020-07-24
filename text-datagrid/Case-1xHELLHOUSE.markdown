@@ -53,5 +53,5 @@ You met YS/x for the first time, a creature who seems to have overwhelming empyr
 
 Logan seemed to have lost control of his powers, a bargain that was more than he could handle. 
 
-However, you found you could 
+However, you found you could defeat him with the help of a little salt and some good magic.
 
