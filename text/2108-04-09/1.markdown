@@ -1,17 +1,17 @@
 ---
-title: Cypressmont Flooding Stopped at Last Minute
-author: Fionn Ulster
-wind: 52km/h S
-temp: 36°C
-hum: 90%
+title: WeCentWa on Lockdown After Transit Hub Policing Failed to Stop Deaths
+author: Tachs Ren
+wind: 10km/h S
+temp: 34°C
+hum: 94%
 aq: Red
 ---
 
 headerStart
   
-## Cypressmont Flooding Stopped at Last Minute
+## WeCentWa on Lockdown After Transit Hub Policing Failed to Stop Deaths
 
-##### by Fionn Ulster
+##### by Tachs Ren
 
 headerEnd
 
