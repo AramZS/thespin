@@ -11,4 +11,4 @@ The more you use your powers the more effective they get and you have begun to f
 - The Luchador
 - The Crooked
 
-Roll me a +Weird to focus your connection, you'll count it as free held +1 to be given to the selected Keeper at any point in the adventure. One a 10+ select two Hunters. On a 7-9 pick one thing to come into focus. On a failure you'll see magical consequences appear during the upcoming adventure. 
+Roll me a +Weird to focus your connection, you'll count it as free held +1 to be given to the selected Hunter at any point in the adventure. One a 10+ select two Hunters. On a 7-9 pick one thing to come into focus. On a failure you'll see magical consequences appear during the upcoming adventure. 
