@@ -21,7 +21,7 @@ Flare events have been particularly bad in the WestWall region over the past two
 
 pqStart
 
-"We cannot re-open transit until we can safeguard travelers in both directions. At this time we are still investigating cause, but the number and unusual nature of the deaths is enough reason to put travel on hold." - Raph Edwhitelle, EPD Commissioner. 
+"We cannot re-open transit until we can safeguard travelers in both directions. At this time we are still investigating cause, but the number and unusual nature of the deaths is enough reason to put travel on hold." - Raph Edwlitelle, EPD Commissioner. 
 
 pqEnd
 
