@@ -23,6 +23,12 @@ The Variokaryon [varioh-carie-ohn] - Sasha "Sash" Shovegood:
 
 "I'd do anything for this town"
 
+Leads the protests, but quit the Vert team months ago when SoCentWa entered what was basically lockdown. Always threw herself bodily into games, often need bio or mech grafts to repair the damage. Became addicted to the grafts. Shares its body with a Daemon. Faces have been grafted all over her body by Dr. Cole, she hides them under a long grey trenchcoat.
+
+She is tall, bulky with mustle and constantly wears a grim expression under a clean-shod dome.
+
+Weak against fire and face damage
+
 #### The Result
 
 Dr. Juan Cole runs a cheap cybersurgery clinic in SoCentWa that has been the main source of biomechanical grafts (both needed and optional) for the area. He was using the debt RyotGuurls member Susan "Suze" B. Agony was in to him in order to have her help him perform his own search through the results of the Keyfall on behalf of "his mistress".
