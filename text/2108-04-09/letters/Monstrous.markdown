@@ -4,7 +4,7 @@ Your Weird nature has only been getting Weirder as of late and when you returned
 - What can I do about the etheric spirit of Cor Larana that I've trapped in the Summoning Circle Lab?
 - Since you returned to the moonbase something is pulling at you, what is it? 
 
-The newly stabilized Moonbase is just teaming with Weird and it calls out to you so strongly you find yourself roaming the halls at night, your stomach roiling, just filled with the desire to eat something truly strange. If you let the e
+The newly stabilized Moonbase is just teaming with Weird and it calls out to you so strongly you find yourself roaming the halls at night, your stomach roiling, just filled with the desire to eat something truly strange. If you let the Weird call to you then you may find yourself pulled in the direction of some
 
 - The special weakness of your next big enemy
 - The traitor who serves The Mother of Daemons (though not why)
