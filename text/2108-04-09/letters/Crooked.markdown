@@ -1,15 +1,15 @@
-A long avoided enemy has come out of the woodwork and is hunting for you. For years you'd outmaneuvered him and basically made it clear that he couldn't get at you without bringing way too much heat on to his head. If that's changing he must have made some powerful allies. 
+A long avoided enemy has come out of the woodwork and is hunting for you. For years you'd outmaneuvered him and basically made it clear that he couldn't get at you without bringing way too much heat on to his head. If that's changing he must have made some powerful allies. Better dive into your underworld contacts and find out who he could have ended up with if you want to have a chance to stalemate him again.
 
-Ask me one of these questions to find out what you learned in your research: 
+Ask me one of these questions to find out what you learned from your contacts: 
 
-- Why did the Daemons come into play, seemingly on their own, when they first killed The Oracle of Clocks and again when containment started breaking down around entity storage?
-- What sort of things can happen in the case of possessions from The Verdent? 
-- What did the increase in Flares mean in SoCentWa? 
+- What is the state of the allegiances between the criminal underworld and the factions of law enforcement? 
+- Have the criminal element started deploying the Weird and Verdant on a regular basis? 
+- What has been the reaction to HC rolling out Free Battalion? 
 
-You're also pretty interested in the idea that objects could be pulled out of The Verdent and HC has done quite a bit of research on this and has it in The Records Room. Here are some things the group has expressed an interest in that you might look into:
+You're continuing to experiment with the system HC build to pulled objects out of The Verdant, but you're finding yourself blocked off by the presence of your prisoners in the summoning circle:
 
-- A spell that will let you determine what Daemons are weak against in The Verdent and how to apply it to one of the group's weapons. 
-- A talisman that HC might have on the base that gives +1 etheric armor 
-- A set of useful instructions for the Summoning Circle Lab
+- If you sneak over there and execute them without telling anyone you could get some real anti-magic armor together, but you'd have to hide it from the others. 
+- You could acquire the skill to empower circles yourself by training in the Records Room, but it's unclear what that will unlock for you.
+- You could change focus and get a mold together along with modifying Eric's old lab with a lightweight forge and have the capacity to start making some bullets with properties that make them stronger against specific monsters. 
 
-Roll me a +Sharp to delve into the records and the base for these items: On a 10+ pick two, on a 7-9 pick one. On a miss your thievery will trigger countermeasures and you can choose to get out without an item by the skin of your teeth or to grab an item but suffer consequences in the process. 
+Roll me a +Sharp to test your skills for one of these options: On a 8-12 pick one. On a miss you'll foul the magic involved. 

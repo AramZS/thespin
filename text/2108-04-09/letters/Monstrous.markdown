@@ -4,10 +4,10 @@ Your Weird nature has only been getting Weirder as of late and when you returned
 - What can I do about the etheric spirit of Cor Larana that I've trapped in the Summoning Circle Lab?
 - Since you returned to the moonbase something is pulling at you, what is it? 
 
-Your connection with the etheric nature of The Verdent has only increased over time and use. Visions and drives are now hitting you with some real regularity. Here are some of the things you could See:
+The newly stabilized Moonbase is just teaming with Weird and it calls out to you so strongly you find yourself roaming the halls at night, your stomach roiling, just filled with the desire 
 
 - The special weakness of your next big enemy
 - The traitor who serves The Mother of Daemons (though not why)
 - The weapon that will give you an advantage over The Mother of Daemons
 
-Roll me a +Weird to focus your visions, you'll count them as free held questions on Investigate the Mystery to be used at any point in the adventure. On a 10+ select two things to come into focus. On a 7-9 pick one thing. On a failure you'll see magical consequences appear during the upcoming adventure. 
+Roll me a +Weird to focus your visions, you'll count them as free held questions on Investigate the Mystery to be used at any point in the adventure. On a 8-10+ pick one thing to come into focus. On a failure you'll see magical consequences appear during the upcoming adventure. 
