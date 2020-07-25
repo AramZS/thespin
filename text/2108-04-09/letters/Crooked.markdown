@@ -1,4 +1,4 @@
-You've been getting better at ferreting out and getting a sense of The Weird that surround you now. Who knew that's where your life was going? When you returned to the moonbase you realized that, as it is with crime, being prepared means knowing the lay of the land. The Records Room and its AI are now open to your perusal. All the knowledge that HC has collected in its interactions with The Verdent up until the moonbase was abandoned 10 years ago is now at your fingertips. It's Research Time! You've been keeping a sharp eye on the events you've been pulled into and you've got some questions you want answered. 
+A long avoided enemy has come out of the woodwork and is hunting for you. For years you'd outmaneuvered him and basically made it clear that he couldn't get at you without bringing way too much heat on to his head. If that's changing he must have made some powerful allies. 
 
 Ask me one of these questions to find out what you learned in your research: 
 
