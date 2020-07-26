@@ -1,25 +1,24 @@
 headerStart
 
-### HYPE FIVE
+### FREAKY FIVE
 
-#### The five top stories we are keeping pinned this week
+#### The five top stories weirding us out this week
 
 headerEnd
 
-**Flares Spread to SoWestWa** | Flares, incidents of strange malfunctions from The Vert impinging on real life, continue to spread. The phenomenon appears to have spread from South Central, moving west and now reportedly impacting the South West Wall neighborhood. Ad Sims have been having strange impacts on the area around them, causing abnormal winds and cold, and wallscreens have been lighting up at all hours. Notably neither region has seen the issue spread up the z-axis above the wall line to the Mids or Uppers.
+**Emergency Elections for Core Reps** | City Core region representatives to the borough council who were ejected by the main council after embezzling money from the city transit fund now await sentencing. The voice of the City Core needs to return to the council ASAP according to its residents and so an emergency election to replace their reps will take place next week. 
 
-**Amusement Park Barge Fights Pirates** | The Disney Barge is supposed to float around the country to make itself easily available to all the major walled cities like our own. However, it has been unexpectedly been delayed after docking in Thunder Bay, where it was scheduled to take on new cast crew and a brand new grav-bubble coaster. Floods, unseasonal tornados, and unpredictable currents all conspired to keep it in the Great North far longer than expected. It departed on a slow cruise out of the bay last week, but the delays caused its course to intersect with the seasonal maple syrup pirates who took the opportunity to mount a raid. Much to their surprise, DisneyAmmuse apparently trains staff to not just stay in character, but use heavy weapons. 
+**Wall Maintenance Fails** | West Southern Wall district was evacuated to the West Cental and West Northern Wall districts yesterday as neglected maintenance to WeSoWa's ocean barrier finally culminated in leakages, destroying homes, property and likely killing some residents who were in a panic to evacuate and found the city left only a single route, northerly-along-the-wall open to them, continuing the much maligned policy of not allowing Wall-level residents to pass through tolled passages up-city without paying a fee.  
 
 ~fiOpen
-![Where's the film that explains this?!](https://media.giphy.com/media/UsAkhTVLteVtsw1ypu/giphy.gif)
+![A good time to remember your flood shelter zones and escape routes](https://media.giphy.com/media/1wQbDA84B8CcqjPpcI/giphy.gif)
   <figcaption class="figcaption">
-    <em>Where's the film that explains this?!</em>
-    <!-- https://twitter.com/RATE_VFX/status/1019766271154388993 -->
+    <em>A good time to remember your flood shelter zones and escape routes</em>
   </figcaption>
 ~fiClose
 
-**Keys Fall in SoCentWa** | Things have escalated in SoCentWa as protesters continue to wreck havoc on city property and HC technology. After burning through many of the HC wallscreens and digiboards in their own region, rioting citizens--sick of Flares with no help from HC or Enclave City Services--have begun raids on South Central Mid, trying to get some help by hoping to impact people with enough money to have their complaints heard. EPD has routed additional forces to the region. HC Sec has brought in Free Battalion mercenaries to try and protect valuable property on the Mid levels. The Pigs are finding things difficult as the end of last week saw a literal rain of keycards from an unknown source, allowing TeamRyotGurrls and protest groups to get past security in a number of locations and break through the normally tolled passages to the Mids.
+**Suburban Islands See More Comas, Kidnappings** | The outer islands within a few hours transit of The Enclave have long been a haven for those looking for a break from city life, some even welcome tourists. But ever since the events at Thwip House a few weeks ago the suburbs have been plagued by missing people cases and an abnormally high incidence of comas, even against the upward trend. The issue has finally risen to the attention of the Suburban Coalition Council which is debating counter-measures that include hiring patrolling mercs and a curfew. 
 
-**Rolla Rolla** | The Spin's own Wrad Marge is on assignment this week to cover the Battle Rolla Derby competition between teams in the Wall and LowerCore league. Mods, grafts, shoving, and ladies on wheels abound in her early reports, which are sitting in front of our very lazy and slow editor right this minute. No one knows this game better than Marge, who won the city-wide cup in her youth.
+**Wheel to Wall** | After SoCentWa broke out in righteous citizen combat against the police and HC-employed Free Battalion (see Vert coverage under Wrad Marge's byline) the anticipated beginning match of the Battle Rolla was canceled by EPD. This has caused an uproar, especially in Wall regions anticipating an opportunity to soundly beat the core and make their way up. It's unknown when the city will allow the Rolla to continue. 
 
-**Core Reps Ousted on Corruption Charges** | City Core region representatives to the borough council have been ousted by court order. It turns out they were stealing money from the pool intended to spread fast-travel-trains through their region. This embezzling was apparently being helped by a number of their constituents who didn't want to see the new transit service pass into their region and potentially bring in "Wall-y riff-raff".
+**Flares Continue to Plague Wall Districts** | Starting in SoCentWa but now spreading to other wall regions the plague of Flares, odd behavior from HC tech and Virt-connected devices has impacted a number of Wall districts over the last week. Whatever the cause, HC remains silent and the problem gets worse. One questions if their continued pay out to the Free Battalion might be better allocated to solving their tech support queue. 

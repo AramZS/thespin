@@ -3,6 +3,7 @@
 
 // init project
 const express = require("express");
+var cors = require('cors');
 const app = express();
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
@@ -10,8 +11,13 @@ const markdownHandler = require("./markdown-to-col");
 const Mustache = require("mustache");
 const fs = require("fs");
 
+const gridHandler = require("./build-grid");
+
 const adapter = new FileSync("db.json");
 const db = low(adapter);
+
+const dgadapter = new FileSync("datagriddb.json");
+const dgdb = low(dgadapter);
 
 var bodyParser = require("body-parser");
 
@@ -100,6 +106,8 @@ db.defaults({
 
 // we've started you off with Express,
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
+
+app.use(cors());
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static("public"));
@@ -270,6 +278,11 @@ app.get("/docs/archive/:date", function (request, response) {
 });
 app.get("/docs/:fileName", function (request, response) {
   response.sendFile(__dirname + "/docs/" + request.params.fileName);
+});
+
+app.get("/grid", async function(request, response){
+  var grid = await gridHandler.getDatagrid();
+  response.send(grid)
 });
 
 // listen for requests :)
