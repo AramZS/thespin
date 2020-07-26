@@ -51,10 +51,37 @@
         </div>
         <header>The Spin</header>
       </div>
-
-      <div class="subhead" id="the-dateline" data-date="{{date}}"></div>
+  <div class="subhead-wrapper">
+        <div class="subhead" id="the-dateline" data-date="{{date}}">
+              {{#hasLetters}}
+                <!-- check hasLetters -->
+                <br />Hello <strong>User</strong>, You have <span id="notification-link"><span class="notification-count">1</span> notification</span> waiting
+              {{/hasLetters}}
+        </div>
+      </div>
+    {{#hasLetters}}
+    <div id="letter-notifications">
+      <div id="profile-selection-menu">
+        <label for="profile-select">Select Profile: </label>
+        <select id="profile-select" onchange="window.activateLetter(this)">
+          <option value="---">---</option>
+          {{#letters}}
+            <option value="{{to}}">{{to}}</option>
+            </div>
+          {{/letters}}
+        </select>
+      </div>
+      <div id="letter-close" onclick="window.openLetter()">X</div>
+                    {{#letters}}
+                      <div class="mystery-letter {{to}}">
+                        Dear {{to}},
+                        <br /> <br/>
+                        {{{content}}}
+                      </div>
+                    {{/letters}}
     </div>
-
+    {{/hasLetters}}
+  </div>
     <main>
       <div class="content">
         <div class="columns">

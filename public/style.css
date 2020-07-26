@@ -415,8 +415,100 @@ h6:after {
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
+
+#notification-link {
+  color: darkcyan;
+  font-style: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-position: under;
+  cursor: pointer;
+}
+
+#letter-notifications {
+  display: block;
+  width: 75%;
+  position: fixed;
+  height: calc(100% - 208px);
+  background-color: #2f2f2f;
+  z-index: 100;
+  top: 222px;
+  margin: 0 12.5%;
+  border: 2px solid black;
+  transition: all .5s ease-in-out;
+  transform: scale(0,0);
+}
+
+#profile-selection-menu {
+  font-size: 24px;
+  background-color: whitesmoke;
+  width: 80%;
+  margin: 10px 10%;
+  padding: 12px;
+}
+
+#profile-selection-menu select {
+  font-size: 24px;
+  margin: auto 10px;
+  padding: 10px;
+  background-color: lightsteelblue;
+  border: 3px;
+  border-style: ridge;
+}
+
+#letter-notifications > div.mystery-letter {
+  margin: 10px auto;
+  margin-top: 8px;
+  padding: 20px;
+  overflow-x: auto;
+  max-width: 410px;
+  display: block;
+  text-align: left;
+  background-color: #f9f7f1;
+  transition: all .5s ease-in-out;
+  max-height: 84%;
+  font-family: monospace;
+  padding-right: 30px;
+  transform: scale(0,0);
+}
+
+.mystery-letter ul {
+  list-style-type: disc;
+}
+
+.mystery-letter ul li {
+  list-style-type: disc;
+  display: list-item;
+  list-style-position: outside;
+  margin-left: 28px;
+}
+
+#letter-close {
+  display: block;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: whitesmoke;
+  padding: 5px;
+  /* float: right; */
+  right: 12px;
+  top: 10px;
+  font-family: sans-serif;
+  font-size: 30px;
+  cursor: pointer;  
+}
+
 /*________________________________________________________________________________________________________________________________*/
 /*MEDIAQUERIES*/
+@media only all and (min-width: 1392px) {
+
+  #letter-notifications {
+    top: 202px;
+    margin: 0 10%;
+    width: 80%;
+  }
+  
+}
 @media only all and (max-width: 1300px) {
   .weatherforcastbox {
     display: none;
@@ -424,6 +516,12 @@ h6:after {
   .headerobjectswrapper {
     grid-template-columns: repeat(1, 1fr);
   }
+  #letter-notifications {
+    top: 180px;
+    margin: 0 10%;
+    width: 80%;
+  }
+  
 }
 @media only all and (max-width: 1200px) {
   .column {
@@ -436,6 +534,12 @@ h6:after {
   .column {
     font-size: 18px;
     line-height: 24px;
+  }
+  #letter-notifications {
+    top: 180px;
+    margin: 0 calc(2% + 1em);
+    width: calc(94% - 2em - 20px);
+    margin-right: calc(2% + 1em + 20px)
   }
 }
 @media only all and (max-width: 900px) {
