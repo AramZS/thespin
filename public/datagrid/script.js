@@ -43,7 +43,7 @@ function bkClick(e) {
 
 window.modalCtrl = {
   returnContainer: null,
-  modalIt: event => {
+  modalDatabox: event => {
     console.log(event.target.classList);
     if (event.target.classList.contains("magnify")) {
       return true;
@@ -57,7 +57,7 @@ window.modalCtrl = {
       document.getElementById("grid-container").prepend(targetDiv);
       document.body.style.overflow = "hidden";
       document.body.classList.add("fadeout");
-      targetDiv.removeEventListener("click", window.modalCtrl.modalIt, true);
+      targetDiv.removeEventListener("click", window.modalCtrl.modalDatabox, true);
       event.stopImmediatePropagation();
       return false;
     }
@@ -72,7 +72,7 @@ window.onload = function() {
   document.querySelectorAll(".data-box").forEach(function(databox) {
     databox.addEventListener(
       "click",
-      window.modalCtrl.modalIt,
+      window.modalCtrl.modalDatabox,
       true
     );
   });
@@ -84,7 +84,7 @@ window.onload = function() {
         document.body.classList.remove("fadeout");
         event.target.parentElement.classList.remove("magnify");
         window.modalCtrl.prependIt(event.target.parentElement);
-        event.target.parentElement.addEventListener("click", window.modalCtrl.modalIt, true);
+        event.target.parentElement.addEventListener("click", window.modalCtrl.modalDatabox, true);
         event.stopImmediatePropagation();
         return false;
       }
