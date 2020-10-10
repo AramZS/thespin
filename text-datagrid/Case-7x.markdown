@@ -1,8 +1,8 @@
 ---
-title: 7x
+title: 7xSEARCHWORD
 topic: Casefiles
-tags: 
-brief: 
+tags: WeCentWa, Vory V Zakone, Cosa Nostra, Al Hensah
+brief: Things are getting worse in the Wall regions. An investigation uncovers gangsters and gargoyles
 ---
 
 #### Prologue
