@@ -29,6 +29,14 @@ You focus in on the AI you encountered in The Records Room and you feel there is
 
 You also got a sense that the entity possessing the AI in The Records Room will grant you entrance only if you provide a boon or something that proves the possessed system is required to give you access. 
 
+#### Main Location
+
+WeCentWa
+
+#### The Monster
+
+A flight of Gargoyles
+
 #### Game On:
 
 The Crooked's sources in the criminal underworld have been reporting that the Cosa Nostra, the primary underworld gang in The Enclave, has recently found itself on a back foot fighting the [Vory V Zakone](https://shadowrun.fandom.com/wiki/Vory). The Vory have found themselves at an advantage as their enforcers have been undergoing a ritual called "puteshestviye k rechnym zemlyam - Journey to the Riverlands" which seem to grant those who undergo it a significantly enhanced set of capabilities without having to undergo expensive grafts or cybernetic enhancements. The Vory have used this opportunity to both expanded their protection business and put quite a few cops in their pockets. The Mob, in an attempt to follow suit, have developed their own ritual (acqua al maestro - Water to the Master) and begun to empower some of their own enforcers, but it has caused issues in the existing Cosa Nostra power structure and started to create rifts between them and their established traditional mercs.
@@ -39,9 +47,9 @@ In your investigation of the situation you found a local chapter of the Cosa Nos
 
 You also saw for yourself the rift that is forming between the Cosa Nostra's enforcers, learning from Stafford Lynch, a merc with significant jaguar mods, that they have been moving work over to internal folks who look unmodified but can somehow hold their own. 
 
-You then explored the area that the Vory have taken over, a block of dilapidated three-level brownstones with stores on the bottom floors, including an abandoned and torn up chinese restaurant, Jenny's bar (which you saw having its owner being shook down by a Vory member), and Real Enclave Cafe The Best tm, which appeared to have a Vory hangout in the back that you snuck into. The hideout had a gun safe (from which you pulled all the firing pins), a ritual kit, which you stole the knife out of, that looked like it was meant to tap into the power of The Verdent, records of them shaking down various parts of the neighborhood for protection money and bribing at least one local EPD. There was also just a ton of empty alcohol bottles. 
+You then explored the area that the Vory have taken over, a block of dilapidated three-level brownstones with stores on the bottom floors, including an abandoned and torn up chinese restaurant, Jenny's bar (which you saw having its owner being shook down by a Vory member), and Real Enclave Cafe The Best tm, which appeared to have a Vory hangout in the back that you snuck into. The hideout had a gun safe (from which you pulled all the firing pins), a ritual kit, which you stole the knife out of, that looked like it was meant to tap into the power of The Verdant, records of them shaking down various parts of the neighborhood for protection money and bribing at least one local EPD. There was also just a ton of empty alcohol bottles. 
 
-While investigating the joined backyard of this block The Monstress transformed into a flying squiril and was able to hear a high pitched pattern of sounds that was coming from the borough's Core Park. You investigated and found more refugees at the edge of the park, but none in the center, as they were afraid of something there that was rumored to be taking people. Some of the refugees have become a fan of The Luchodor for his casts showing the poor conditions and garnering public support for the refugees on The Virtual. 
+While investigating the joined backyard of this block The Monstress transformed into a flying squirrel and was able to hear a high pitched pattern of sounds that was coming from the borough's Core Park. You investigated and found more refugees at the edge of the park, but none in the center, as they were afraid of something there that was rumored to be taking people. Some of the refugees have become a fan of The Luchodor for his casts showing the poor conditions and garnering public support for the refugees on The Virtual. 
 
 The Core Park is divided into a huge sculpture garden, with each section showing different types of sculptures and as you investigated you found one that came to life. A gargoyle who claimed to be part of a group. It attacked you and you had it on the ropes when it was catapulted away in a single punch by an enthusiastic Vory enforcer Prit Astoky (who you noticed seemed to have power running through him). Prit claimed he was there just to knock it back but not to kill it, so he could continue collecting protection money from the refugee camp. When you didn't go along with him, he left, and was angry at you and no longer considering you a possible ally. 
 
@@ -59,7 +67,7 @@ You then staked out the Vory hideout in the bodega, and saw them initiate an emp
 
 You managed to defeat the gargoyles, including banishing Phil the Metal Gargoyle to be a stable person in The Verdant.
 
-Al Hensah, is going to be their contact for the Cosa Nostra and will tell them all about future Vory incurions.
+Al Hensah, is going to be their contact for the Cosa Nostra and will tell them all about future Vory incursions.
 
 You also made friends with Bella, mob wizard. 
 

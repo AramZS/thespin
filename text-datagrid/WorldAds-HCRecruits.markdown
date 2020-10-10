@@ -2,7 +2,7 @@
 title: HC Recruitment 
 topic: Logged Ads
 tags: HC
-brief: Recovered Weapons for Sale
+brief: Computer Engineers, Virtual Techs and QA Needed!
 ---
 
-TopGun, The Enclave's most popular storefront for lightly-used weaponry, has a special on machine guns after having recovered and repared a store from The Wall region. Visit our shops in the area to get a steep discount! 
+We saved The Enclave and we can save you too. Join HermitageCorp's staff and take your skills to their limits, learn new ones, and get access to The Spire and some of the best tech on Vert spaces ever created. 

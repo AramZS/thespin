@@ -29,10 +29,10 @@ Heat: The Colonel is someone with special powers, a person or monster, who you t
 
 **Empowered Circle Maker**: You may now create an empowered circle at will. You will always have with you the appropriate amount of salt and chalk that will allow you to (assuming no one interferes) create and empower a magical circle with the following rules:
 
-- etheric energy and any magic use cannot pass through
-- it presents as a solid transparent wall in The Virtual
-- a purely physical object will break the circle
-- entities who have manifested from The Virtual or The Verdant cannot break the circle nor can they exert the will to push a physical object through in a way that will break the circle.
-- entities that combine elements from The Real and The Virtual (possessed objects or people) are essentially subject to the effects of a banishment if they pass through the circle and will not break it.
+etheric energy and any magic use cannot pass through
+it presents as a solid transparent wall in The Virtual
+a purely physical object will break the circle
+entities who have manifested from The Virtual or The Verdant cannot break the circle nor can they exert the will to push a physical object through in a way that will break the circle.
+entities that combine elements from The Real and The Virtual (possessed objects or people) are essentially subject to the effects of a banishment if they pass through the circle and will not break it.
 
 You must roll Act Under Pressure to complete a circle during active combat.
