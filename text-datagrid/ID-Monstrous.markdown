@@ -12,6 +12,9 @@ Snake Tail
 
 Long nails and birdlike 
 
+*Special Moves*
+ Magical Lab
+
 Plume that looks like a mohoak
 
 Feather tattoos.
@@ -34,3 +37,16 @@ Drive: Wantonly consumes an unnerving resources.
 
 She once server a dark master: The Colonel.
 
+**You've unlocked a new move:**
+
+**The Beast among us**: you've habitually given in to your monstrous nature and in doing so you've only gotten creepier, people will now automatically find you off putting and no longer assume your just a gangster with weird grafts. Now when you Manipulate Someone or try to help with a Manipulate take -1.
+
+You may now roll +Weird to frighten the living daylights out of someone during combat instead. On a 10+ select 1; on a 7 - 9 select 2 or consider it a failure with no effects; on a failure (5 or less) choose three from the list.
+
+List:
+
+- you scare them so much they will not go near you during the remainder of combat;
+- they run away screaming;
+- they're calling for help to take you out;
+- they send out a message to warn everyone about you (-1 to all Manipulate Someone rolls forward);
+- they are frightened to the point of snapping and focus their attacks on you and nothing will convince them to stop;
