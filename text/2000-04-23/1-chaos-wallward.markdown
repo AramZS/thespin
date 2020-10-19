@@ -31,7 +31,7 @@ HC takes credit for the Wall's safe-state with a software patch to the wall's re
 
 HC has justified their blocking off of the major Virt pipes by claiming that the Wall regions are responsible for their own chaos, system instability and disorder. They continue to deploy the mercenary band "The Free Battalion" to secure major transit and comms points at the border. The result has been that many basic functions of life, access to resources, jobs, major banking systems, have been cut off. 
 
-Meanwhile, many of the refugees in WestCentralWall struggle to even cross the Core where, for the desperate, the last remaining transit station open between the Wall and the Mids remains heavily guarded.
+Meanwhile, many of the refugees in WestCentralWall struggle to even cross the Core where, for the desperate, the last remaining transit station open between the Wall and the Mids remains heavily guarded in EastNoWa. 
 
 
 *Read the rest of our in-depth report in our Virtual Space...*
