@@ -8,9 +8,9 @@ headerEnd
 
 Our corporate overlords are apparently not happy enough to be looming over us in their enormous tower, or running our lives via control of The Virtual. This week marked a late entrant into the long running electoral process with a long pedigree in Hermitage Corp. 
 
-John Dyer stepped down as HC CFO three months ago and there were rumors that he'd formed an exploratory committee with part of his multi-billion retirement parachute. It seems like these rumors were true. Yesterday he announced his candidacy for the Law and Order party and that he was bringing along a multimillion dollar warchest. 
+Tuck Braedy stepped down as HC CFO three months ago and there were rumors that he'd formed an exploratory committee with part of his multi-billion retirement parachute. It seems like these rumors were true. Yesterday he announced his candidacy for the Law and Order party and that he was bringing along a multimillion dollar warchest. 
 
-Dyer spent years carefully avoiding public scrutiny as he amassed trillions for HC and billions for himself. His announcement as the fourth billionare in the race was met with much derision and his Vcast was overwhelmed by protesting comments. 
+Braedy spent years carefully avoiding public scrutiny as he amassed trillions for HC and billions for himself. His announcement as the fourth billionare in the race was met with much derision and his Vcast was overwhelmed by protesting comments. 
 
 We gathered a number of on-the-ground reactions to the announcement that you can find in our Virtual Space. If you'd like to join them, we have the tools here! 
 
