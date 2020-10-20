@@ -37,6 +37,8 @@ Drive: Wantonly consumes an unnerving resources.
 
 She once server a dark master: The Colonel.
 
+Administrates the Magical Laboratory in the moonbase. You have a mystical lab with all kinds of weird ingredients and tools useful for casting spells (like the use magic move, big magic, and any other magical moves). 
+
 **You've unlocked a new move:**
 
 **The Beast among us**: you've habitually given in to your monstrous nature and in doing so you've only gotten creepier, people will now automatically find you off putting and no longer assume your just a gangster with weird grafts. Now when you Manipulate Someone or try to help with a Manipulate take -1.

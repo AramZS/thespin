@@ -17,11 +17,11 @@ Guy knows her criminal past, she tells him what crimes she committed.
 Special Skills:
 
  Flight: You can fly. 
- Mental Domination
+ Mental Domination: When you gaze into a normal human’s eyes and exert your will over them, roll +Charm. On a 10+, hold 3. On a 7-9, hold 1. You may spend your hold to give them an order. Regular people will follow your order, whatever it is. Hunters can choose whether they do it or not. If they do, they mark experience. 
 
 What Does Not Kill Me...: If you have suffered harm in a fight, you gain +1 ongoing until the fight is over. 
 
-Drive:  Treat every single aspect of the hunt as a televised event.
+Drive: Forego a rich profit in order to do the right thing.
 
 Heat: The Colonel is someone with special powers, a person or monster, who you took advantage of. Stealing his magic recipe book and ran off with KF Cindy.
 
