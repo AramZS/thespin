@@ -5,6 +5,8 @@ tags: WeCentWa, Vory V Zakone, Cosa Nostra, Al Hensah
 brief: Things are getting worse in the Wall regions. An investigation uncovers gangsters and gargoyles
 ---
 
+__The Spin:__ [2106/04/09](http://thespin.glitch.me/archive/2108-04-09)
+
 #### Prologue
 
 Letters:

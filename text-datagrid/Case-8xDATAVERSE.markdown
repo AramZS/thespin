@@ -5,6 +5,8 @@ tags: HC, Moonbase, The Virtual
 brief: A journey to better understand The Verdant, The Virtual and The Mother of Daemons 
 ---
 
+__The Spin:__ [2106/04/23](http://thespin.glitch.me/archive/2108-03-05)
+
 #### Location:
 
 The Dataverse within The Records Room system on the Moonbase

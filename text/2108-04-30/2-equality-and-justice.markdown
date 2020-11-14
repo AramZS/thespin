@@ -1,6 +1,6 @@
 headerStart
 
-# Equality and Justice: Questions finally asked by others than just your Spin.
+# Equality and Justice: Questions finally asked by others than us.
 
 ###### Tools for your Citizen Reporting Kit
 

@@ -23,7 +23,7 @@ Records show code and meetings managed by one HC employee, Antim Quinn, were a p
 
 pqStart
 
-"Many engineers worked on The Virtual, at the end of the day the decisions that created the modern system, and the code that powers many of the utilities and services in our every day lives, belongs to HC and its CEO John Dyer" - HC Spokesperson Cu Graves
+"Many engineers work on The Virtual but the code that powers many of the utilities and services in our every-day lives, belongs to HC and its CEO John Dyer" - HC Spokesperson Cu Graves
 
 pqEnd
 
