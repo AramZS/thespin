@@ -39,8 +39,8 @@ You must roll Act Under Pressure to complete a circle during active combat.
 
 **Bonuses**
 
-+observation-of-moonbase
++Heap Investigation
 
 +real/verdant link
 
-+antim-quinn-supporter
++Antim Quinn Supporter
