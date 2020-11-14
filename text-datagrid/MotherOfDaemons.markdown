@@ -16,4 +16,8 @@ For the first time the public now knows her name and some of her role in creatin
 
 Before she was banashed by John Dyer to The Verdant she had been trying to disconnect The Verdant from The Virtual, or at least make the process by which they were connected less cannibalistic of The Virtual's energy. 
 
-She was a mentor to Eliabeth (Elli) Cordova, who she saw something of herself in, as they were both engineers who had clawed the
+She was a mentor to Eliabeth (Elli) Cordova, who she saw something of herself in, as they were both engineers who had made their way up from the Wall districts through excellence in their work.
+
+She attempted to sound the alarm on the fact that HC is essentially fracking The Verdant for energy and hurting that world by doing so. 
+
+She seems to have been changed significantly by her banishment, or some other aspect of her experience fighting John Dyer. 
