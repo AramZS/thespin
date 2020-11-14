@@ -12,4 +12,4 @@ You have recently discovered that she was there when The Virtual began and may h
 
 She is one of the few beings capable of creating equal-energy-exchange portals. 
 
-When Artria was pulled out of The Verdant by HC she was split into three pieces. One became the Banshee. One became the "AI" assistant that is used by almost all Virtual users. The third was sent to The Heap, a Virtual space firewalled in The HC Oeak.
+When Artria was pulled out of The Verdant by HC she was split into three pieces. One became the Banshee. One became the "AI" assistant that is used by almost all Virtual users. The third was sent to The Heap, a Virtual space firewalled in The HC Peak.
