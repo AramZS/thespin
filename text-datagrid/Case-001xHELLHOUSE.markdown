@@ -1,5 +1,5 @@
 ---
-title: 1xHELLHOUSE
+title: 001xHELLHOUSE
 topic: Casefiles
 tags: Thwip House
 brief: Aiden Logan, social media super star, has fallen into a coma. The house is thrown into a mysterious lock down.

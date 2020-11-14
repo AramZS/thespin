@@ -1,5 +1,5 @@
 ---
-title: 6xMULTITHREADHEAD
+title: 006xMULTITHREADHEAD
 topic: Casefiles
 tags: WeCentWa, The Wall, WestCentMid
 brief: A monster destabalizes The Wall of The Enclave.
