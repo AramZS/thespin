@@ -52,3 +52,7 @@ they run away screaming;
 they're calling for help to take you out;
 they send out a message to warn everyone about you (-1 to all Manipulate Someone rolls forward);
 they are frightened to the point of snapping and focus their attacks on you and nothing will convince them to stop;
+
+**Bounces**
+
+

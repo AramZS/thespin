@@ -36,3 +36,11 @@ entities who have manifested from The Virtual or The Verdant cannot break the ci
 entities that combine elements from The Real and The Virtual (possessed objects or people) are essentially subject to the effects of a banishment if they pass through the circle and will not break it.
 
 You must roll Act Under Pressure to complete a circle during active combat.
+
+**Bonuses**
+
++observation-of-moonbase
+
++real/verdant link
+
++antim-quinn-supporter
