@@ -5,7 +5,7 @@ tags: HC, Moonbase, The Virtual
 brief: A journey to better understand The Verdant, The Virtual and The Mother of Daemons 
 ---
 
-__The Spin:__ [2106/04/23](http://thespin.glitch.me/archive/2108-03-05)
+__The Spin:__ [2106/04/09](http://thespin.glitch.me/archive/2108-04-09)
 
 #### Location:
 

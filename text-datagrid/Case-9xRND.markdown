@@ -5,7 +5,7 @@ tags: HC, Moonbase, The Virtual
 brief: Deciding what to do next with all this new knowledge 
 ---
 
-__The Spin:__ [2106/04/30](http://thespin.glitch.me/archive/2108-04-30)
+__The Spin:__ [2106/04/23](http://thespin.glitch.me/archive/2108-04-23)
 
 #### Location: 
 
