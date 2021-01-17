@@ -8,7 +8,7 @@ const app = express();
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
 const markdownHandler = require("./markdown-to-col");
-const Mustache = require("inde");
+const Mustache = require("mustache");
 const fs = require("fs");
 
 const gridHandler = require("./build-grid");
