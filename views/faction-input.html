@@ -6,7 +6,37 @@
   <body>
     <main>
       <form id="Faction Input">
-        <input name="dream" type="text" maxlength="100" placeholder="Dreams!" aria-labelledby="submit-dream">
+        <!--
+    {
+      "name": "Enclave Police Department",
+      "abrv": "EPD",
+      "clocks": [
+        {
+          "name": "Heat on you",
+          "level": 2,
+          "type": "heat"
+        },
+        { 
+          "name": "Friction with the Open Enclave",
+          "level": 2,
+          "type": "progress"
+        },
+        {
+          "name": "City Lockdown",
+          "level": 2,
+          "type": "progress"
+        }
+      ]
+    }
+        -->
+        <input type="radio" id="creating-faction" name="creating" value="faction">
+        <label for="creating-faction">Faction</label><br>
+        <input type="radio" id="creating-clock" name="creating" value="clock">
+        <label for="creating-clock">Clock</label>
+        <input name="" type="text" maxlength="100" placeholder="Dreams!" aria-labelledby="submit-dream">
+        <div id="faction-build">
+          
+        </div>
         <button type="submit" id="submit-dream">Submit Dream</button>
       </form>
     </main>
