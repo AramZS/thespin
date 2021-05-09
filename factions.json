@@ -1,0 +1,25 @@
+{
+  "factions": [
+    {
+      "name": "Enclave Police Department",
+      "abrv": "EPD",
+      "clocks": [
+        {
+          "name": "Heat on you",
+          "level": 2,
+          "type": "heat"
+        },
+        { 
+          "name": "Friction with the Open Enclave",
+          "level": 2,
+          "type": "progress"
+        },
+        {
+          "name": "City Lockdown",
+          "level": 2,
+          "type": "progress"
+        }
+      ]
+    }
+  ]
+}
