@@ -6,6 +6,7 @@
   <body>
     <main>
       <form id="Faction Input">
+        <input name="info-name" type="text" maxlength="100" placeholder="Input Name">
         <!--
     {
       "name": "Enclave Police Department",
@@ -44,10 +45,25 @@
           <input name="info-abrv" type="text" maxlength="100" placeholder="Input Abreviation">
         </div>
         <div id="clock-build">
-          <input name="info-name" type="text" maxlength="100" placeholder="Input Name">
-          
+          <input type="radio" id="level-1" name="level" value="1">
+          <label for="level-1">1</label>|
+          <input type="radio" id="level-2" name="level" value="2">
+          <label for="level-2">2</label>|
+          <input type="radio" id="level-3" name="level" value="3">
+          <label for="level-3">3</label>|
+          <input type="radio" id="level-4" name="level" value="4">
+          <label for="level-4">4</label>|
+          <input type="radio" id="level-5" name="level" value="5">
+          <label for="level-5">5</label>|
+          <input type="radio" id="level-6" name="level" value="6">
+          <label for="level-6">6</label>
+          <label for="clock-type">Choose a clock type:</label>
+          <select name="clock-type" id="clock-type">
+            <option value="progress">Progress</option>
+            <option value="progress">Progress</option>
+          </select> 
         </div>
-        <button type="submit" id="submit-dream">Submit Dream</button>
+        <button type="submit" id="submit-faction-change">Submit Faction Change</button>
       </form>
     </main>
   </body>
