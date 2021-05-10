@@ -21,6 +21,8 @@ const dgdb = low(dgadapter);
 
 var bodyParser = require("body-parser");
 
+const Clocks = require("./clocks")
+
 const getMainTemplate = function (date, archive) {
   var site = {
     1: "",
@@ -284,6 +286,49 @@ app.get("/grid", async function(request, response){
   var grid = await gridHandler.getDatagrid();
   response.send(grid)
 });
+
+
+// Factions
+
+app.post("/faction/", function (request, response) {
+  console.log("param", request.params, "data", request.body);
+  var char = db
+    .get("characters")
+    .find({
+      id: request.params.id
+    })
+    .value();
+  console.log(char);
+  try {
+    if (char.selected) {
+      response.json({
+        result: false
+      });
+    } else {
+      /**
+      char.selected = true;
+      char.player = request.body.user;
+      var data = db
+        .get("posts")
+        .find({
+          id: request.params.id
+        })
+        .assign(char)
+        .write();
+        **/
+      response.json({
+        result: true,
+        data: data
+      });
+    }
+  } catch (e) {
+    console.log("error", e);
+    response.json({
+      result: false
+    });
+  }
+});
+
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT, function () {
