@@ -7,6 +7,11 @@ const tables = (tableName) => {
   return db.get(tableName).value()
 }
 
+const getFactionClocks = (factionName) => {
+  return db.get('faction').value()
+}
+
 module.exports = {
-  db
+  db,
+  tables
 };
