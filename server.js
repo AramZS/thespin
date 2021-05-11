@@ -292,19 +292,7 @@ app.get("/grid", async function(request, response){
 
 app.post("/faction/", function (request, response) {
   console.log("param", request.params, "data", request.body);
-  var char = db
-    .get("characters")
-    .find({
-      id: request.params.id
-    })
-    .value();
-  console.log(char);
-  try {
-    if (char.selected) {
-      response.json({
-        result: false
-      });
-    } else {
+
       /**
       char.selected = true;
       char.player = request.body.user;
