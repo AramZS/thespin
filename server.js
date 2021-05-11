@@ -323,6 +323,58 @@ app.get("/faction/", function(request, response) {
   }
 });
 
+app.get("/faction/:id", function(request, response) {
+  console.log("param", request.params, "data", request.body);
+  try {
+    /**
+      char.selected = true;
+      char.player = request.body.user;
+      var data = db
+        .get("posts")
+        .find({
+          id: request.params.id
+        })
+        .assign(char)
+        .write();
+        **/
+    response.json({
+      result: true,
+      data: Clocks.getFaction(request.params.id)
+    });
+  } catch (e) {
+    console.log("error", e);
+    response.json({
+      result: false
+    });
+  }
+});
+
+app.get("/faction/:id/clocks", function(request, response) {
+  console.log("param", request.params, "data", request.body);
+  try {
+    /**
+      char.selected = true;
+      char.player = request.body.user;
+      var data = db
+        .get("posts")
+        .find({
+          id: request.params.id
+        })
+        .assign(char)
+        .write();
+        **/
+    response.json({
+      result: true,
+      data: Clocks.getFactionClocks(request.params.id)
+    });
+  } catch (e) {
+    console.log("error", e);
+    response.json({
+      result: false
+    });
+  }
+});
+
 // listen for requests :)
 const listener = app.listen(process.env.PORT, function() {
   console.log("Your app is listening on port " + listener.address().port);

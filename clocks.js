@@ -7,11 +7,17 @@ const tables = (tableName) => {
   return db.get(tableName).value()
 }
 
+const getFaction = (factionName) => {
+  return db.get('factions').find({abrv: factionName}).value()
+}
+
 const getFactionClocks = (factionName) => {
-  return db.get('faction').value()
+  return db.get('factions').find({abrv: factionName}).value().clocks
 }
 
 module.exports = {
   db,
-  tables
+  tables,
+  getFaction,
+  getFactionClocks
 };
