@@ -1,3 +1,21 @@
 {
-  turfs: []
+  "turfs": [
+    {
+      "name": "North Western Upper",
+      "vertical": 1,
+      "horizontal": 1,
+      "control": [
+        {
+          "faction": "EPD",
+          "clock": 7,
+          "status": "control"
+        },
+        {
+          "faction": "HC",
+          "clock": 2,
+          "status": "contested"
+        }
+      ]
+    }
+  ]
 }
