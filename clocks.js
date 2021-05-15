@@ -35,8 +35,8 @@ const setFactionAbrv = (factionName, abrv) => {
   }
 }
 
-const setFactionClocks = (factionName, clockName, level, type) => {
-  if(db.get('factions').has(factionName).value()){
+const setFactionClocks = (factionAbrv, clockName, level, type) => {
+  if(db.get('factions').has({abrv: factionAbrv}).value()){
     
   } else {
     return false
