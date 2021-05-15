@@ -394,12 +394,12 @@ app.post("/faction/:id", function(request, response) {
   }
 });
 
-app.post("/faction/:id/clocks/create", function(request, response) {
+app.post("/faction/:id/clocks/", function(request, response) {
   console.log("param", request.params, "data", request.body);
   try {
     response.json({
       result: true,
-      data: Clocks.setFactionClocks(request.body.name, request.params.id)
+      data: Clocks.setFactionClocks(request.params.id, request.body.name, request.body.level, request.body.type)
     });
   } catch (e) {
     console.log("error", e);

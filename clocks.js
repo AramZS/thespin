@@ -30,7 +30,7 @@ const setFaction = (factionName, abrv) => {
       name: factionName,
       abrv,
       clocks: []
-    }).value() }
+    }).write() }
   }
 }
 
