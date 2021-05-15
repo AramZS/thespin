@@ -26,7 +26,11 @@ const setFaction = (factionName, abrv) => {
       error: 'Faction exists'
     }
   } else {
-    return { update: false, error: 'Abbreviation not found' }
+    return { update: true, error: db.get('factions').push({
+      name: factionName,
+      abrv,
+      clocks: []
+    }).value() }
   }
 }
 
@@ -83,5 +87,9 @@ module.exports = {
   db,
   tables,
   getFaction,
-  getFactionClocks
+  getFactionClocks,
+  setFaction,
+  setFactionName,
+  setFactionAbrv,
+  setFactionClocks
 };
