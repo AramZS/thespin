@@ -37,6 +37,7 @@ const setFactionAbrv = (factionName, abrv) => {
 
 const setFactionClocks = (factionAbrv, clockName, level, type) => {
   if(db.get('factions').has({abrv: factionAbrv}).value()){
+    var clock = db.get('factions').find({abrv: factionAbrv}).get('clocks').find({name: clockName}).value()
     
   } else {
     return {update: false, error: 'Faction Abbreviation not found'}
