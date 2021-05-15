@@ -19,12 +19,14 @@ const getFactionClocks = (factionName) => {
 }
 
 // Sets
-const setFaction = (factionName) => {
+const setFaction = (factionName, abrv) => {
   return db.get('factions').find({abrv: factionName}).value()
 }
 
-const setFactionClocks = (factionName) => {
-  return db.get('factions').find({abrv: factionName}).value().clocks
+const setFactionClocks = (factionName, clockName, level, type) => {
+  if(db.get('factions').has({abrv: factionName}).value()){
+    
+  }
 }
 
 
