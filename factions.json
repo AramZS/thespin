@@ -12,7 +12,7 @@
         {
           "name": "Friction with the Open Enclave",
           "level": 2,
-          "type": "progress"
+          "type": "friction"
         },
         {
           "name": "City Lockdown",
@@ -24,6 +24,48 @@
     {
       "name": "HermitageCorp",
       "abrv": "HC",
+      "clocks": [
+        {
+          "name": "Heat on you",
+          "level": 2,
+          "type": "heat"
+        },
+        {
+          "name": "Attention to protesters",
+          "level": 4,
+          "type": "progress"
+        }
+      ]
+    },
+    {
+      "name": "The Free Battalion",
+      "abrv": "TFB",
+      "clocks": [
+        {
+          "name": "Friction with HC",
+          "level": 1,
+          "type": "friction"
+        },
+        {
+          "name": "Friction with Open Enclave",
+          "level": 4,
+          "type": "friction"
+        },
+        {
+          "name": "Friction with EPD",
+          "level": 2,
+          "type": "friction"
+        },
+        {
+          "name": "Heat on you",
+          "level": 2,
+          "type": "heat"
+        }
+      ]
+    },
+    {
+      "name": "The Colonel",
+      "abrv": "TC",
       "clocks": [
         {
           "name": "Heat on you",

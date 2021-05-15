@@ -26,7 +26,7 @@ const setFaction = (factionName, abrv) => {
       error: 'Faction exists'
     }
   } else {
-    return { update: true, error: db.get('factions').push({
+    return { update: true, result: db.get('factions').push({
       name: factionName,
       abrv,
       clocks: []
