@@ -19,9 +19,23 @@ const getFactionClocks = (factionName) => {
 }
 
 // Sets
+const setFaction = (factionName, abrv) => {
+  if(db.get('factions').has({abrv: abrv}).value() || db.get('factions').has({name: factionName}).value()){
+    return {
+      update: false,
+      error: 'Faction exists'
+    }
+  } else {
+    return { update: false, error: 'Abbreviation not found' }
+  }
+}
+
 const setFactionName = (factionName, abrv) => {
   if(db.get('factions').has({abrv: abrv}).value()){
-    return db.get('factions').find({abrv: abrv}).assign({name: factionName}).write()
+    return {
+      update: true,
+      result: db.get('factions').find({abrv: abrv}).assign({name: factionName}).write()
+    }
   } else {
     return { update: false, error: 'Abbreviation not found' }
   }
@@ -29,7 +43,10 @@ const setFactionName = (factionName, abrv) => {
 
 const setFactionAbrv = (factionName, abrv) => {
   if(db.get('factions').has({name: factionName}).value()){
-    return db.get('factions').find({name: factionName}).assign({abrv: abrv}).write()
+    return {
+      update: true,
+      result: db.get('factions').find({name: factionName}).assign({abrv: abrv}).write()
+    }
   } else {
     return {update: false, error: 'Faction name not found'}
   }
@@ -41,12 +58,20 @@ const setFactionClocks = (factionAbrv, clockName, level, type) => {
     if (clock){
       clock.level = level ? level : clock.level
       clock.type = type ? type : clock.type
+      return { 
+                update: true, 
+                result: db.get('factions').find({abrv: factionAbrv}).get('clocks').find({name: clockName}).update(clock)
+             }
     } else {
-       clock = {
+      clock = {
         name: clockName,
         level,
         type
-       }
+      }
+      return {
+        update: true, 
+        result: db.get('factions').find({abrv: factionAbrv}).get('clocks').push(clock).write()
+      }
     }
   } else {
     return {update: false, error: 'Faction Abbreviation not found'}
