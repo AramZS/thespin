@@ -19,13 +19,27 @@ const getFactionClocks = (factionName) => {
 }
 
 // Sets
-const setFaction = (factionName, abrv) => {
-  return db.get('factions').find({abrv: factionName}).value()
+const setFactionName = (factionName, abrv) => {
+  if(db.get('factions').has(factionName).value()){
+    return db.get('factions').find({abrv: abrv}).update('name', factionName).write()
+  } else {
+    return false
+  }
+}
+
+const setFactionAbrv = (factionName, abrv) => {
+  if(db.get('factions').has(factionName).value()){
+    return db.get('factions').find({name: factionName}).update('abrv', factionName).write()
+  } else {
+    return false
+  }
 }
 
 const setFactionClocks = (factionName, clockName, level, type) => {
-  if(db.get('factions').has({abrv: factionName}).value()){
+  if(db.get('factions').has(factionName).value()){
     
+  } else {
+    return false
   }
 }
 
