@@ -1,6 +1,6 @@
 ---
 title: John Dyer May Have Erased Originator of the Modern Virt
-author: Wrad Marge
+author: Alden Cordell
 wind: 0km/h SSE
 temp: 40°C
 hum: 80%
@@ -11,7 +11,7 @@ headerStart
   
 ## John Dyer May Have Erased Originator of the Modern Virt
 
-##### by Wrad Marge
+##### by Alden Cordell
 
 headerEnd
 
