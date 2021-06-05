@@ -211,7 +211,7 @@ function getDatelineString(dateline) {
     var dateIs = new Date(dateArray.join(' ') + " 12:00 pm");
     var month = new Intl.DateTimeFormat("en-US", options).format(dateIs);
   }
-  console.log("date is", dateIs);
+  //  console.log("date is", dateIs);
 
   var day = window.getWeekDay(dateIs);
   var year = dateIs.getFullYear();
@@ -221,25 +221,33 @@ function getDatelineString(dateline) {
 
 window.goToPrevious = function (selected) {
   console.log(selected)
+  var list = document.getElementById("old-date");
+  var value = list.options[selected].value;
+  console.log(value)
+  window.location = '/archive/' + value
 }
 
-window.createSelectPrevious = function(){
-  var dateSelectStrings = '<option value="now">Today</option>';
+window.dismissSelectPrevious = function () {
+  document.getElementById('select-old-date').remove()
+  document.getElementById("the-dateline").style.display = "block"
+}
+
+window.createSelectPrevious = function () {
+  var dateSelectStrings = '<option value="now">Today</option> ';
   window.pastDays.forEach((oldDate) => {
     var aDateLine = getDatelineString(oldDate)
-    dateStrings.push(`${aDateLine.day} ${aDateLine.month} ${aDateLine.date}, ${aDateLine.year}`)
+    dateSelectStrings += `<option value="${oldDate}">${aDateLine.day} ${aDateLine.month} ${aDateLine.date}, ${aDateLine.year}</option> `
   })
   var selectOld = `
-  <form id="select-old-date" onsubmit="window.dismissSelectPrevious()">
+  <form class="subhead" id="select-old-date" onsubmit="window.dismissSelectPrevious()">
     <label for="old-date">Get old Spin:</label> | 
-    <select name="old-date" id="old-date" onchange="if (this.selectedIndex) doSomething(this.selectedIndex);">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="opel">Opel</option>
-      <option value="audi">Audi</option>
+    <select name="old-date" id="old-date" onchange="if (this.selectedIndex) goToPrevious(this.selectedIndex);">
+      ${dateSelectStrings}
     </select> | <input type="submit" value="X">
   </form>
-  `
+  `;
+  document.getElementById("the-dateline").style.display = "none"
+  document.getElementById("subhead-outer").innerHTML += selectOld;
 }
 
 function fillDay() {

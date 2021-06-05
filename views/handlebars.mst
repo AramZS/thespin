@@ -54,7 +54,7 @@
         </div>
         <header>The Spin</header>
       </div>
-  <div class="subhead-wrapper">
+  <div class="subhead-wrapper" id="subhead-outer">
         <div class="subhead" id="the-dateline" data-date="{{date}}">
               {{#hasLetters}}
                 <!-- check hasLetters -->
