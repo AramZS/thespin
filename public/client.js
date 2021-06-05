@@ -219,6 +219,29 @@ function getDatelineString(dateline) {
   return { day: day, month: month, date: date, year: year }; // `<span class='the-day'>${day}</span> ${month} ${date}, ${year}`
 }
 
+window.goToPrevious = function (selected) {
+  console.log(selected)
+}
+
+window.createSelectPrevious = function(){
+  var dateSelectStrings = '<option value="now">Today</option>';
+  window.pastDays.forEach((oldDate) => {
+    var aDateLine = getDatelineString(oldDate)
+    dateStrings.push(`${aDateLine.day} ${aDateLine.month} ${aDateLine.date}, ${aDateLine.year}`)
+  })
+  var selectOld = `
+  <form id="select-old-date" onsubmit="window.dismissSelectPrevious()">
+    <label for="old-date">Get old Spin:</label> | 
+    <select name="old-date" id="old-date" onchange="if (this.selectedIndex) doSomething(this.selectedIndex);">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="opel">Opel</option>
+      <option value="audi">Audi</option>
+    </select> | <input type="submit" value="X">
+  </form>
+  `
+}
+
 function fillDay() {
   console.log(fillDay);
   const aDay = document.getElementById("the-dateline");
@@ -232,14 +255,10 @@ function fillDay() {
   );
   var dateSelector = '';
   if (window.pastDays) {
-    var dateStrings = [];
-    window.pastDays.forEach((oldDate) => {
-      var aDateLine = getDatelineString(oldDate)
-      dateStrings.push(`${aDateLine.day} ${aDateLine.month} ${aDateLine.date}, ${aDateLine.year}`)
-    })
+    dateSelector = ` | <button type="button" onclick="window.createSelectPrevious()">Previous Issues</button>`
   }
   aDay.innerHTML =
-    `The Enclave - <span class='the-day'>${currentDateStringObj.day}</span> ${currentDateStringObj.month} ${currentDateStringObj.date}, ${currentDateStringObj.year} <br />` +
+    `The Enclave - <span class='the-day'>${currentDateStringObj.day}</span> ${currentDateStringObj.month} ${currentDateStringObj.date}, ${currentDateStringObj.year} ${dateSelector}<br />` +
     '<a id="notification-container" onclick="window.openLetter">' +
     topLine +
     "</a>";
