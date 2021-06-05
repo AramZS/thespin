@@ -17,17 +17,13 @@ headerEnd
 
 Omnibus blue-collar worker group The Laborers' Union broke out in an unannounced and seemingly unplanned strike due to long hours and increasingly difficult to manage security conditions at the primary ColFoods genevat-chicken plant in East Northern Wall. 
 
-The Laborers' Union includes genevat workers and growth supervisors on the factory floor of ColFood's largest Enclave plant. Apparently an unknown organizer spread word of issues and concerns about quality of life issues in the plant via a pamphleting campaign and ColSec was badly positioned and could not intercede before the strike became public knowledge in the overcrowded district. ETAC forces were also apparently out of position at the various borders to EastNoWa, which has been under overall travel restriction since EPD forbade Wall districts' residents from up-city travel.  
+The Laborers' Union includes genevat workers and growth supervisors on the factory floor of ColFood's largest Enclave plant. Apparently an unknown organizer spread word of issues and concerns about quality of life issues in the plant via a pamphleting campaign and ColSec was badly positioned and could not intercede before the strike became public knowledge in the overcrowded district. ETAC forces were also apparently out of position at the various borders to EastNoWa, which has been under overall travel restriction since EPD forbade Wall districts' residents from up-city travel. Other Laborers' Union chapters traveled from districts throughout The Enclave over the course of the day and the strike ended up merging with the protest against travel restrictions that has been active in EastNoWa for a week. The resulting activity spread to most of EastNoWa's common spaces.  
 
-John Dyer has built a legend and a fortune on his role as sole inventor and originator of the modern complex combination of systems that we call The Virtual. HC went from a minor player in gamespaces to a world-class corporation on the power of the Virt and in the process has leveraged that power to build the modern Enclave. It's hard to imagine a part of our lives that Dyer couldn't conceivably take some credit for. But was he really the leader he claims?
-
-Secure records leaked to us from HC encrypted and secured Dataverse systems were verified by experts today, and they seem to tell a very different story. Not only does his role seem far removed from the creation of the modern Virt--less genius, more menial manager--but the cache of data included records that showed there was one single inventor who did have an outsized role in building our modern world. 
-
-Records show code and meetings managed by one HC employee, Antim Quinn, were a prominent factor in building the modern Virt and may even be responsible for the systems that power our Wall. The status of Quinn, either within or without HC, seems a mystery however. Researchers for The Spin dug into Quinn's time at HC. While we could find hiring records, the trail seemed to stop there, lost within the infamously opaque HC Spire. 
+EPD and ETAC both deny it, but our reporters' sensorpacks detected an EMP in the afternoon that was likely the reason ColSec and ETAC were so disorganized at the exit 
 
 pqStart
 
-"Many engineers work on The Virtual but the code that powers many of the utilities and services in our every-day lives, belongs to HC and its CEO John Dyer" - HC Spokesperson Cu Graves
+"The Open Enclave Movement stands with our comrades from The Laborers' Union in their attempt to get better working conditions, we were glad to support them with our voices and presence today" - Kippie Cordatto, organizer for OEM
 
 pqEnd
 
