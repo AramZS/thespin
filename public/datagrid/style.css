@@ -591,6 +591,9 @@ footer {
 .data-box__inner>p:nth-of-type(1n + 2):not(.status) {
   display: none;
 }
+.data-box .data-box__inner li {
+  display: none;
+}
 
 .data-box.magnify {
   --augmented-ui: b-clip-x tr-clip-x l-clip-y r-clip-y exe;
@@ -615,6 +618,9 @@ footer {
   animation: magnifytop 1.5s 1, magnifypulse 2s 1, phaseTextIn 1s 1;
 }
 
+.data-box.magnify .data-box__inner li {
+  display: list-item;
+}
 
 @keyframes magnifypulse {
   0% {
