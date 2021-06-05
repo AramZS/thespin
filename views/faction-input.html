@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Faction Inputs</title>
+    
+  </head>
+  <body>
+    <main>
+      <form id="Faction Input">
+        <input name="passphrase" type="text" maxlength="100" placeholder="Passphrase">
+        <!--
+    {
+      "name": "Enclave Police Department",
+      "abrv": "EPD",
+      "clocks": [
+        {
+          "name": "Heat on you",
+          "level": 2,
+          "type": "heat"
+        },
+        { 
+          "name": "Friction with the Open Enclave",
+          "level": 2,
+          "type": "progress"
+        },
+        {
+          "name": "City Lockdown",
+          "level": 2,
+          "type": "progress"
+        }
+      ]
+    }
+        -->
+        <input type="radio" id="creating-faction" name="creating" value="faction">
+        <label for="creating-faction">Faction</label><br>
+        <input type="radio" id="creating-clock" name="creating" value="clock">
+        <label for="creating-clock">Clock</label>
+        <input name="info-name" type="text" maxlength="100" placeholder="Input Name">
+        <div id="faction-selector">
+          <label for="factions">Choose a faction:</label>
+          <select name="factions" id="factions">
+            <option value="---">---</option>
+          </select> 
+        </div>
+        <div id="faction-build">
+          <input name="info-abrv" type="text" maxlength="100" placeholder="Input Abreviation">
+        </div>
+        <div id="clock-build">
+          <input type="radio" id="level-1" name="level" value="1">
+          <label for="level-1">1</label>|
+          <input type="radio" id="level-2" name="level" value="2">
+          <label for="level-2">2</label>|
+          <input type="radio" id="level-3" name="level" value="3">
+          <label for="level-3">3</label>|
+          <input type="radio" id="level-4" name="level" value="4">
+          <label for="level-4">4</label>|
+          <input type="radio" id="level-5" name="level" value="5">
+          <label for="level-5">5</label>|
+          <input type="radio" id="level-6" name="level" value="6">
+          <label for="level-6">6</label>
+          <label for="clock-type">Choose a clock type:</label>
+          <select name="clock-type" id="clock-type">
+            <option value="progress">Progress</option>
+            <option value="heat">Heat</option>
+          </select> 
+        </div>
+        <button type="submit" id="submit-faction-change">Submit Faction Change</button>
+      </form>
+    </main>
+  </body>
+</html>

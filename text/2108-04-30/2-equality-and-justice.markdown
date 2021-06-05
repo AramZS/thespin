@@ -1,16 +1,20 @@
 headerStart
 
-# HC CEO John Dyer Virts Support of Braedy
+# Equality and Justice: Questions finally asked by others than us.
 
 ###### Tools for your Citizen Reporting Kit
 
 headerEnd
 
-The CEO of HermitageCorp is an elusive figure who has rarely give a public statement since the launch of The Virtual almost 20 years ago. PR flacks tell us he is usually spending his days elbow deep in the work of keeping The Virtual up and running. However, he spoke up this week to support Tuck Braedy, his ex-CFO, who is running as a presidential candidate for the Law and Order party.
+First an especially audacious display of wealth last week. Second: questions about the mistreatment and suppression of their employees in the wake of our HC revelations. Together these events have lent unusual attention to questions of income and the role of the rest of us in a billionaire's presidency. For once, other publications were asking questions about not just the policies of equality but how candidates personally took a role in that process. 
 
-"Tuck is one of the best executives I've ever worked with and, as we all know, he has the corporate leadership skills that helped make HC one of the biggest companies in the world. His leadership of our charity fund also helped make The Enclave what it is today. Those are the skills we need in a leader."
+This has been just in time for us, as FedSec finally caught the codeworm that *somehow mysteriously* kept assigning us credentials. We haven't seen hide or hair of a candidate In The Real in days. Who will high-five Austin Paulsen now that we're gone? At the last debate Braedy wouldn't slap skin with man-of-the-gaming-people Paulsen, leaving him high and dry. We watched Paulsen cry on Thwip about it. It was all very Authentic. 
 
-We gathered a number of on-the-ground reactions to the announcement that you can find in our Virtual Space. If you'd like to join them, we have the tools here! 
+In the mean time, the questions as to what our billionaire candidates have or might personally do to make their companies better or just share the wealth with the rest of us remain unanswered. The Enclave Express asked Lars Weyer if he had considered donating money instead of ammo to the people of the Midway Wastes and actually recorded him refusing to comment! VC Lara Voier was asked if she might invest in more food banks instead of her amazingly profitable algorithmic robotic ghost kitchens and she said she'd consider it! Who knows, someone may get Our Boy Tuck to pledge to handing out soup next. God forbid, he might get some on his suit! 
+
+We can't ask the questions we want (like will the candidates band together to pay us, personally, a living wage) but most events are open to citizens, so you can! 
+
+If you'd like to contribute some questions and capture-data of the presidential candidates' terrible answers, we have the tools here!
 
 You should already have a profile registered with the authorities. Once that's done and you've got the initial work under the belt, you'll likely have to register your new higher level of experience! You'll have to register the new stats that come with joining our great adventure of reporting on morons every day for the next two years.
 

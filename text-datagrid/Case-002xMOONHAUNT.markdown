@@ -1,5 +1,5 @@
 ---
-title: 2/3xMOONHAUNT
+title: 002/3xMOONHAUNT
 topic: Casefiles
 tags: Moonbase, HC
 brief: Moon's haunted, grab shotguns.

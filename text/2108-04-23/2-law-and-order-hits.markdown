@@ -1,16 +1,20 @@
 headerStart
 
-# HC CEO John Dyer Virts Support of Braedy
+# Law and Order is the Pulse Pounding Beat and The Enclave is The Drum
 
 ###### Tools for your Citizen Reporting Kit
 
 headerEnd
 
-The CEO of HermitageCorp is an elusive figure who has rarely give a public statement since the launch of The Virtual almost 20 years ago. PR flacks tell us he is usually spending his days elbow deep in the work of keeping The Virtual up and running. However, he spoke up this week to support Tuck Braedy, his ex-CFO, who is running as a presidential candidate for the Law and Order party.
+It's the Billionaires' Ball! With no sense of irony the five billionaires running for president of the United States have taken a break from their tours of the 34 states and assorted floodplains to raise money for the public election fund, intended to support campaign activities by those unable to self-fund. 
 
-"Tuck is one of the best executives I've ever worked with and, as we all know, he has the corporate leadership skills that helped make HC one of the biggest companies in the world. His leadership of our charity fund also helped make The Enclave what it is today. Those are the skills we need in a leader."
+No worries though, they're here to reach across the theoretical aisle that differentiates these megarich candidates for various parties in order to make sure your local rep can buy a Woogle ad. HC Ex-CFO Tuck Braedy, farmer-cum-governor Ralph White, gun philanthropist Lars Weyer, retired venture capitalist Lara Voier, and virt entertainer Austin Paulsen sold seats at staggering costs to their friends and wannabes and raised some enormous amount of money that is dwarfed by the income they earn off of regular banking interest. 
 
-We gathered a number of on-the-ground reactions to the announcement that you can find in our Virtual Space. If you'd like to join them, we have the tools here! 
+Press was, for some reason, not invited. 
+
+However, leaked recordings show that the primary topic of discussion by the Rich and Richer was the current state of affairs at The Enclave. The malfunctions from The Wall and the various riots have them worried that someone might upset the current state of affairs and potentially topple them from the tippy top. Every candidate (who was worth more than a billion dollars) stood up and gave little speeches about how they would preserve the status quo and our sources assure us that the one thing they all agreed on was bringing down federal enforcement officers should chaos spread beyond The Enclave. HC CEO John Dyer was not in attendance. But when we asked his PR flacks for a comment, considering HC's personal investment in merc enforcers in The Enclave, he declined to give one.  
+
+We gathered a number of on-the-ground reactions to the announcement that you can find in our Virtual Space. If you'd like to join them, we have the tools here!
 
 You should already have a profile registered with the authorities. Once that's done and you've got the initial work under the belt, you'll likely have to register your new higher level of experience! You'll have to register the new stats that come with joining our great adventure of reporting on morons every day for the next two years.
 
