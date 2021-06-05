@@ -15,9 +15,9 @@ headerStart
 
 headerEnd
 
-Omnibus blue-collar worker group The Laborers' Union broke out in an unanounced and seemingly unplanned strike due to long hours and increasinggly difficult to manage security conditions at the primary ColFoods genevat-chicken plant in East Northern Wall. 
+Omnibus blue-collar worker group The Laborers' Union broke out in an unannounced and seemingly unplanned strike due to long hours and increasingly difficult to manage security conditions at the primary ColFoods genevat-chicken plant in East Northern Wall. 
 
-The Laborers' Union includes genevat workers and growth supervisors on the factory floor of ColFood's largest Enclave plant. Apparently an unknown organizer spread word of issues and concerns about quality of life issues in the plant via a pamphlating campaign and ColSec was badly positioned and could not interceed before the strike became public knowledge in the overcrowded district. ETAC forces 
+The Laborers' Union includes genevat workers and growth supervisors on the factory floor of ColFood's largest Enclave plant. Apparently an unknown organizer spread word of issues and concerns about quality of life issues in the plant via a pamphleting campaign and ColSec was badly positioned and could not intercede before the strike became public knowledge in the overcrowded district. ETAC forces were also apparently out of position at the various borders to EastNoWa, which has been under overall travel restriction since EPD forbade Wall districts' residents from up-city travel.  
 
 John Dyer has built a legend and a fortune on his role as sole inventor and originator of the modern complex combination of systems that we call The Virtual. HC went from a minor player in gamespaces to a world-class corporation on the power of the Virt and in the process has leveraged that power to build the modern Enclave. It's hard to imagine a part of our lives that Dyer couldn't conceivably take some credit for. But was he really the leader he claims?
 
