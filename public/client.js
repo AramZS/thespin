@@ -16,7 +16,7 @@ const charForm = document.forms[0];
 const nameInput = document.getElementById("submit-name");
 
 // a helper function that creates a list item for a given dream
-const appendNewCharacter = function(character) {
+const appendNewCharacter = function (character) {
   var buttonText = "Select This Role";
   if (character.player && character.player.length > 0) {
     buttonText = "Selected By " + character.player;
@@ -33,7 +33,7 @@ const appendNewCharacter = function(character) {
 // iterate through every dream and add it to our page
 
 // listen for the form to be submitted and add a new dream when it is
-charForm.onsubmit = function(event) {
+charForm.onsubmit = function (event) {
   // stop our form submission from refreshing the page
   event.preventDefault();
 
@@ -74,7 +74,7 @@ function setUpAPIRequest(aMethod, url) {
   return xhr;
 }
 
-const selectCharacter = function(charId, user) {
+const selectCharacter = function (charId, user) {
   var xhr = setUpAPIRequest("POST", "character/" + encodeURIComponent(charId));
   /**
   var xhr = new XMLHttpRequest(),
@@ -85,7 +85,7 @@ const selectCharacter = function(charId, user) {
   **/
   console.log();
 
-  xhr.onreadystatechange = function() {
+  xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
       var jsonObj = JSON.parse(xhr.responseText);
       console.log(jsonObj);
@@ -103,7 +103,7 @@ const selectCharacter = function(charId, user) {
   xhr.send(JSON.stringify({ user: user }));
 };
 
-var getCharacters = function() {
+var getCharacters = function () {
   try {
     var xhr = setUpAPIRequest("GET", "characters");
     /**
@@ -114,11 +114,11 @@ var getCharacters = function() {
   xhr.open(method, url, true);
   **/
     console.log("GET Characters");
-    xhr.onreadystatechange = function() {
+    xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
         var jsonObj = JSON.parse(xhr.responseText);
         console.log(jsonObj);
-        jsonObj.forEach(function(characterObj) {
+        jsonObj.forEach(function (characterObj) {
           appendNewCharacter(characterObj);
         });
         if (jsonObj.result == false) {
@@ -133,7 +133,7 @@ var getCharacters = function() {
   }
 };
 
-window.openLetter = function() {
+window.openLetter = function () {
   var container = document.getElementById("letter-notifications");
   if (container) {
     var isOpen = container.getAttribute("data-open");
@@ -150,7 +150,7 @@ window.openLetter = function() {
   }
 };
 
-window.activateLetter = function(el) {
+window.activateLetter = function (el) {
   try {
     var container = document.getElementsByClassName(el.value)[0];
     var isOpen = container.getAttribute("data-open");
@@ -175,7 +175,7 @@ window.activateLetter = function(el) {
 
 window.getCharacters = getCharacters;
 
-window.getWeekDay = function(date) {
+window.getWeekDay = function (date) {
   //Create an array containing each day, starting with Sunday.
   var weekdays = new Array(
     "Sunday",
@@ -198,19 +198,13 @@ function getDateline() {
   return aDay.getAttribute("data-date");
 }
 
-function fillDay() {
-  console.log(fillDay);
-  const aDay = document.getElementById("the-dateline");
-  let topLine = "";
-  if (aDay.innerHTML.length > 1) {
-    topLine = aDay.innerHTML;
-  }
+function getDatelineString(dateline) {
   var options = { month: "long" };
   try {
-    var dateIs = new Date(getDateline() + " 12:00 pm");
+    var dateIs = new Date(dateline + " 12:00 pm");
     var month = new Intl.DateTimeFormat("en-US", options).format(dateIs);
   } catch (e) {
-    var dateString = getDateline();
+    var dateString = dateline;
     dateString.split('-')
     var dateArray = [dateString.split('-')[1], dateString.split('-')[2], dateString.split('-')[0]]
     console.log('Date is try 2 ', dateArray.join(' '))
@@ -218,15 +212,34 @@ function fillDay() {
     var month = new Intl.DateTimeFormat("en-US", options).format(dateIs);
   }
   console.log("date is", dateIs);
-  
+
   var day = window.getWeekDay(dateIs);
   var year = dateIs.getFullYear();
   var date = dateIs.getDate();
+  return { day: day, month: month, date: date, year: year }; // `<span class='the-day'>${day}</span> ${month} ${date}, ${year}`
+}
+
+function fillDay() {
+  console.log(fillDay);
+  const aDay = document.getElementById("the-dateline");
+  let topLine = "";
+  if (aDay.innerHTML.length > 1) {
+    topLine = aDay.innerHTML;
+  }
+  var currentDateStringObj = getDatelineString(getDateline())
   console.log(
-    `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year}`
+    `The Enclave - <span class='the-day'>${currentDateStringObj.day}</span> ${currentDateStringObj.month} ${currentDateStringObj.date}, ${currentDateStringObj.year}`
   );
+  var dateSelector = '';
+  if (window.pastDays) {
+    var dateStrings = [];
+    window.pastDays.forEach((oldDate) => {
+      var aDateLine = getDatelineString(oldDate)
+      dateStrings.push(`${aDateLine.day} ${aDateLine.month} ${aDateLine.date}, ${aDateLine.year}`)
+    })
+  }
   aDay.innerHTML =
-    `The Enclave - <span id='the-day'>${day}</span> ${month} ${date}, ${year} <br />` +
+    `The Enclave - <span class='the-day'>${currentDateStringObj.day}</span> ${currentDateStringObj.month} ${currentDateStringObj.date}, ${currentDateStringObj.year} <br />` +
     '<a id="notification-container" onclick="window.openLetter">' +
     topLine +
     "</a>";
@@ -235,7 +248,7 @@ function fillDay() {
 
 fillDay();
 
-const setColHTML = function(colNum, col) {
+const setColHTML = function (colNum, col) {
   try {
     const aDay = getDateline();
     var xhr = setUpAPIRequest("GET", "text/" + aDay + "/" + colNum);
@@ -246,7 +259,7 @@ const setColHTML = function(colNum, col) {
     console.log("GET colHTML");
     xhr.open(method, url, true);
     **/
-    xhr.onreadystatechange = function() {
+    xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
         var jsonObj = JSON.parse(xhr.responseText);
         console.log(jsonObj);
@@ -263,10 +276,10 @@ const setColHTML = function(colNum, col) {
   }
 };
 
-window.fillHTMLCols = function() {
+window.fillHTMLCols = function () {
   var colNum = 1;
   var columns = document.querySelectorAll(".column .colInner");
-  columns.forEach(function(col) {
+  columns.forEach(function (col) {
     setColHTML(colNum++, col);
   });
 };
