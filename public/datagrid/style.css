@@ -516,6 +516,15 @@ footer {
   display: none;
 }
 
+.magnify {
+  position: fixed;
+  opacity: 1 !important;
+  width: 98%;
+  top: 1%;
+  left: 1%;
+  height: 98%;
+}
+
 .data-box h3 {
   margin: 0;
   padding: 20px;
@@ -584,12 +593,6 @@ footer {
 }
 
 .data-box.magnify {
-  position: fixed;
-  opacity: 1 !important;
-  width: 98%;
-  top: 1%;
-  left: 1%;
-  height: 98%;
   --augmented-ui: b-clip-x tr-clip-x l-clip-y r-clip-y exe;
   --aug-tr-width: 40%;
   --aug-tr-height: 20px;

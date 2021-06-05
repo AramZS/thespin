@@ -1,0 +1,184 @@
+{
+  "factions": [
+    {
+      "name": "Enclave Police Department",
+      "abrv": "EPD",
+      "clocks": [
+        {
+          "name": "Heat on you",
+          "level": 2,
+          "type": "heat"
+        },
+        {
+          "name": "Friction with the Open Enclave",
+          "level": 2,
+          "type": "friction"
+        },
+        {
+          "name": "City Lockdown",
+          "level": 2,
+          "type": "progress"
+        }
+      ]
+    },
+    {
+      "name": "HermitageCorp",
+      "abrv": "HC",
+      "clocks": [
+        {
+          "name": "Heat on you",
+          "level": 2,
+          "type": "heat"
+        },
+        {
+          "name": "Attention to protesters",
+          "level": 4,
+          "type": "progress"
+        }
+      ]
+    },
+    {
+      "name": "The Free Battalion",
+      "abrv": "TFB",
+      "clocks": [
+        {
+          "name": "Friction with HC",
+          "level": 1,
+          "type": "friction"
+        },
+        {
+          "name": "Friction with Open Enclave",
+          "level": 4,
+          "type": "friction"
+        },
+        {
+          "name": "Friction with EPD",
+          "level": 2,
+          "type": "friction"
+        },
+        {
+          "name": "Heat on you",
+          "level": 2,
+          "type": "heat"
+        }
+      ]
+    },
+    {
+      "name": "The Colonel",
+      "abrv": "TC",
+      "clocks": [
+        {
+          "name": "Heat on you",
+          "level": 2,
+          "type": "heat"
+        }
+      ]
+    },
+    {
+      "name": "ColCorp and Subsidieries",
+      "abrv": "CC",
+      "clocks": [
+        {
+          "name": "Heat on you",
+          "level": 4,
+          "type": "heat"
+        },
+        {
+          "name": "Friction with Open Enclave",
+          "level": 5,
+          "type": "friction"
+        },
+        {
+          "name": "Friction with EPD",
+          "level": 2,
+          "type": "friction"
+        },
+        {
+          "name": "Friction with The Laborers Union",
+          "level": 5,
+          "type": "friction"
+        }
+      ]
+    },
+    {
+      "name": "Open Enclave Movement",
+      "abrv": "OEM",
+      "clocks": [
+        {
+          "name": "Control of the Borough Council",
+          "level": 2,
+          "type": "progress"
+        },
+        {
+          "name": "Pressure on HC to reform (#quinnForTheWin)",
+          "level": 4,
+          "type": "progress"
+        },
+        {
+          "name": "Heat on you",
+          "level": 1,
+          "type": "heat"
+        }
+      ]
+    },
+    {
+      "name": "Vory v Zakone",
+      "abrv": "VZ",
+      "clocks": [
+        {
+          "name": "Heat on you",
+          "level": 3,
+          "type": "heat"
+        },
+        {
+          "name": "War with the Cosa Nostra",
+          "level": 2,
+          "type": "friction"
+        }
+      ]
+    },
+    {
+      "name": "Cosa Nostra",
+      "abrv": "CN",
+      "clocks": [
+        {
+          "name": "War with the VZ",
+          "level": 3,
+          "type": "friction"
+        },
+        {
+          "name": "Heat on you",
+          "level": 1,
+          "type": "heat"
+        }
+      ]
+    },
+    {
+      "name": "The Laborers Union",
+      "abrv": "TLU",
+      "clocks": [
+        {
+          "name": "Heat on you",
+          "level": 1,
+          "type": "heat"
+        },
+        {
+          "name": "Strike Against ColFoods",
+          "level": 3,
+          "type": "progress"
+        }
+      ]
+    },
+    {
+      "name": "Artria",
+      "abrv": "A",
+      "clocks": [
+        {
+          "name": "Research for Flood Ending",
+          "level": 2,
+          "type": "progress"
+        }
+      ]
+    }
+  ]
+}
