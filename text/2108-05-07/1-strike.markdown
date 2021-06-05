@@ -23,7 +23,7 @@ EPD and ETAC both deny it, but our reporters' sensorpacks detected an EMP in the
 
 pqStart
 
-"The Open Enclave Movement stands with our comrades from The Laborers' Union in their attempt to get better working conditions, we were glad to support them with our voices and presence today" - Kippie Cordatto, organizer for OEM
+"The Open Enclave Movement stands with our comrades from The Laborers' Union in their attempt to get better working conditions." - Kippie Cordatto, organizer for OEM
 
 pqEnd
 
