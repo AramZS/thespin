@@ -35,8 +35,22 @@ body {
 h1 {
   font-style: italic;
   color: #373fff;
-  max-width: calc(100% - 5rem);
+  max-width: calc(80% - 5rem);
   line-height: 1.1;
+}
+
+h1.first-title {
+  display: inline-block;
+}
+
+#to-the-spin {
+  font-style: italic;
+  font-size: 30px;
+  color: var(--neon-hot-pink);
+  width: 200px;
+  line-height: 1.1;
+  display: inline-block;
+  padding: 0 1rem;
 }
 
 form {
@@ -1185,3 +1199,5 @@ body.fadeout #grid-container .magnify * * * {
 @media only all and (max-width: 600px) {}
 
 @media only all and (max-width: 480px) {}
+
+@media only all and (max-width: 477px) {}
