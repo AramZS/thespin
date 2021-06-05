@@ -1,7 +1,7 @@
 ---
-title: John Dyer May Have Erased Originator of the Modern Virt
+title: Wildcat strike leaves chicken raw
 author: Alden Cordell
-wind: 0km/h SSE
+wind: 3.5km/h S
 temp: 40°C
 hum: 80%
 aq: Red
@@ -9,11 +9,15 @@ aq: Red
 
 headerStart
   
-## John Dyer May Have Erased Originator of the Modern Virt
+## Wildcat Strike Leaves Chicken Raw
 
 ##### by Alden Cordell
 
 headerEnd
+
+Omnibus blue-collar worker group The Laborers' Union broke out in an unanounced and seemingly unplanned strike due to long hours and increasinggly difficult to manage security conditions at the primary ColFoods genevat-chicken plant in East Northern Wall. 
+
+The Laborers' Union includes genevat workers and growth supervisors on the factory floor of ColFood's largest Enclave plant. Apparently an unknown organizer spread word of issues and concerns about quality of life issues in the plant via a pamphlating campaign and ColSec was badly positioned and could not interceed before the strike became public knowledge in the overcrowded district. ETAC forces 
 
 John Dyer has built a legend and a fortune on his role as sole inventor and originator of the modern complex combination of systems that we call The Virtual. HC went from a minor player in gamespaces to a world-class corporation on the power of the Virt and in the process has leveraged that power to build the modern Enclave. It's hard to imagine a part of our lives that Dyer couldn't conceivably take some credit for. But was he really the leader he claims?
 
