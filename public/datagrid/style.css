@@ -53,6 +53,11 @@ h1.first-title {
   padding: 0 1rem;
 }
 
+#to-the-spin__link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 form {
   background-color: #eee;
   display: grid;
@@ -1194,10 +1199,23 @@ body.fadeout #grid-container .magnify * * * {
   }
 }
 
+@media only all and (max-width: 862px) {
+  body {
+    margin-right: 0;
+  }
+}
+
 @media only all and (max-width: 775px) {}
 
 @media only all and (max-width: 600px) {}
 
 @media only all and (max-width: 480px) {}
 
-@media only all and (max-width: 477px) {}
+@media only all and (max-width: 478px) {
+  #to-the-spin__seperator {
+    display: none;
+  }
+  #to-the-spin {
+    padding: 4px;
+  }
+}
