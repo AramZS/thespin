@@ -52,7 +52,7 @@
             >Wind: {{wind}}; Temp: {{temp}}; Hum: {{hum}}; Air Quality: {{aq}}</span
           >
         </div>
-        <header>The Spin</header>
+        <header>The Spin</header> <span id="to-the-grid"><a href="/grid">#</a></span>
       </div>
   <div class="subhead-wrapper" id="subhead-outer">
         <div class="subhead" id="the-dateline" data-date="{{date}}">
