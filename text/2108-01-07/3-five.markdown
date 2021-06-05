@@ -1,17 +1,17 @@
 headerStart
 
-### FOLDED FIVE
+### FAST FIVE
 
 #### The five top stories we are keeping in our pockets this week.
 
 headerEnd
 
-**Core Surrounded by Enhanced Security** | With recent unrest shifting towards HC, increasingly seen as a symbol of unfair practices in The Enclave, the Council and HC's Free Battalion Mercs have increased security around all levels of the Core. Authorities have stated that they are worried about violent anti-corporate activities disrupting HC Peak or potentially damaging The Enclave's largest building. 
+**Labor Levels are Low with Mids Workers Failing to Show** | Despite ever-growing positions at factories and offices on the borders of the Wall and the Mids fewer of these positions have been filled than ever before, according to last month's labor report. It is unclear if people are leaving the positions due to bad conditions, if travel restrictions have made getting to the metaphorical office to frustrating to continue or if there's another reason why. We're looking for further comment, ping us if you've recently quit. 
 
 **ColSec Kills, EPD Does Nothing** | EastNoWa's transit station continues to overflow as the final Wall port to stay open under enhanced security. ColFoods has pushed most regular tube times and mass transit events to the lowest priority crossing times as it refuses to compromise its shipping schedule. Instead tubes are cleared for shipping of spicy vat chicken. Their private security firm ColSec has fully taken over the border and pushed out EPD supervisors and Enclave Traffic Enforcement and Control. Multiple reports have come to us of ColSec executing any who dare to disrupt shipping in any way. 
 
 ~fiOpen
-![Emergency Health Providers Forced to Get Creative Around Blocked Travel.](https://media.giphy.com/media/dw4ThMaI0g2o0EnUFV/giphy.gif)
+![Emergency Health Providers Forced to Get Creative Around Blocked Travel.](https://media.giphy.com/media/1l8XUsC73Hm458TkEt/giphy.gif)
   <figcaption class="figcaption">
     <em>Emergency Health Providers Forced to Get Creative Around Blocked Travel.</em>
   </figcaption>

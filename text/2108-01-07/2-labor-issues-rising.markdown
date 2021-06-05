@@ -8,13 +8,9 @@ headerEnd
 
 FedSec has kept labor leaders away from candidate events as part of an unspecified security threat since the beginning of campaigning. However, labor protests have been springing up throughout the Flooded States and, with little individual power, more have been flowing into The Laborers' Union. With the spark of a rare major labor protest inside The Enclave's walls, TLU has used the attention to stage an empty-chair debate. 
 
-Accused of creating security risks throughout the campaign, Labor leaders and individual workers asked 
+With union officials accused of creating security risks throughout the campaign, no candidate would attend the event. So, standing up to empty chairs with static holos of each candidate in them, labor leaders and individual workers asked pointed questions around the possibility of reinstating minimum wage and giving additional powers and staff to the FTC, SEC and CFPB, all of which have basically become hollow shells over the past few decades. At the time of this printing, no answers from any candidate were forthcoming. 
 
-This has been just in time for us, as FedSec finally caught the codeworm that *somehow mysteriously* kept assigning us credentials. We haven't seen hide or hair of a candidate In The Real in days. Who will high-five Austin Paulsen now that we're gone? At the last debate Braedy wouldn't slap skin with man-of-the-gaming-people Paulsen, leaving him high and dry. We watched Paulsen cry on Thwip about it. It was all very Authentic. 
-
-In the mean time, the questions as to what our billionaire candidates have or might personally do to make their companies better or just share the wealth with the rest of us remain unanswered. The Enclave Express asked Lars Weyer if he had considered donating money instead of ammo to the people of the Midway Wastes and actually recorded him refusing to comment! VC Lara Voier was asked if she might invest in more food banks instead of her amazingly profitable algorithmic robotic ghost kitchens and she said she'd consider it! Who knows, someone may get Our Boy Tuck to pledge to handing out soup next. God forbid, he might get some on his suit! 
-
-We can't ask the questions we want (like will the candidates band together to pay us, personally, a living wage) but most events are open to citizens, so you can! 
+As white collar journalists, our staff wasn't on stage, but we can still ask questions or talk to local organizers and workers! And so can you! We continually are looking for citizen and laborers who are willing to write on our pages and in our VR space.
 
 If you'd like to contribute some questions and capture-data of the presidential candidates' terrible answers, we have the tools here!
 
