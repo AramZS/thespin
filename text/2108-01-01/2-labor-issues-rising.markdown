@@ -1,12 +1,14 @@
 headerStart
 
-# Equality and Justice: Questions finally asked by others than us.
+# The Laborers' Union Pushes Candidates to Answer for Conditions
 
 ###### Tools for your Citizen Reporting Kit
 
 headerEnd
 
-First an especially audacious display of wealth last week. Second: questions about the mistreatment and suppression of their employees in the wake of our HC revelations. Together these events have lent unusual attention to questions of income and the role of the rest of us in a billionaire's presidency. For once, other publications were asking questions about not just the policies of equality but how candidates personally took a role in that process. 
+FedSec has kept labor leaders away from candidate events as part of an unspecified security threat since the beginning of campaigning. However, labor protests have been springing up throughout the Flooded States and, with little individual power, more have been flowing into The Laborers' Union. With the spark of a rare major labor protest inside The Enclave's walls, TLU has used the attention to stage an empty-chair debate. 
+
+Accused of creating security risks throughout the campaign, Labor leaders and individual workers asked 
 
 This has been just in time for us, as FedSec finally caught the codeworm that *somehow mysteriously* kept assigning us credentials. We haven't seen hide or hair of a candidate In The Real in days. Who will high-five Austin Paulsen now that we're gone? At the last debate Braedy wouldn't slap skin with man-of-the-gaming-people Paulsen, leaving him high and dry. We watched Paulsen cry on Thwip about it. It was all very Authentic. 
 
