@@ -29,4 +29,4 @@ headerEnd
 
 <hr />
 
-**Rolla Matches Deplayed Due to Flooding** | Upper city Rolla teams have been playing their own, rather boring, games. As a result, the Wall-based teams have monopolized Virt attention with exciting high speed games on a regular basis. However, the last two weeks of scheduled games were delayed due to flooding damage to the rinks. Now that even inter-Wall travel has become difficult, no one is sure when the next Rolla match will be. As we near the end of the season, fans are upset that there may never be a resolution to this year's matches. 
+**Rolla Matches Delayed Due to Flooding** | Upper city Rolla teams have been playing their own, rather boring, games. As a result, the Wall-based teams have monopolized Virt attention with exciting high speed games on a regular basis. However, the last two weeks of scheduled games were delayed due to flooding damage to the rinks. Now that even inter-Wall travel has become difficult, no one is sure when the next Rolla match will be. As we near the end of the season, fans are upset that there may never be a resolution to this year's matches. 
