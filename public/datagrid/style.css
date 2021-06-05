@@ -58,6 +58,12 @@ h1.first-title {
   cursor: pointer;
 }
 
+#to-the-spin__link.glitch {
+  background-color: var(--neon-light-green);
+  color: var(--neon-black);
+  border-radius: 30px 15px 30px 15px;
+}
+
 form {
   background-color: #eee;
   display: grid;
