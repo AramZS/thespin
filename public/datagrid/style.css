@@ -35,8 +35,33 @@ body {
 h1 {
   font-style: italic;
   color: #373fff;
-  max-width: calc(100% - 5rem);
+  max-width: calc(80% - 5rem);
   line-height: 1.1;
+}
+
+h1.first-title {
+  display: inline-block;
+}
+
+#to-the-spin {
+  font-style: italic;
+  font-size: 30px;
+  color: var(--neon-hot-pink);
+  width: 200px;
+  line-height: 1.1;
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+#to-the-spin__link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#to-the-spin__link.glitch {
+  background-color: var(--neon-light-green);
+  color: var(--neon-black);
+  border-radius: 30px 15px 30px 15px;
 }
 
 form {
@@ -591,6 +616,9 @@ footer {
 .data-box__inner>p:nth-of-type(1n + 2):not(.status) {
   display: none;
 }
+.data-box .data-box__inner li {
+  display: none;
+}
 
 .data-box.magnify {
   --augmented-ui: b-clip-x tr-clip-x l-clip-y r-clip-y exe;
@@ -615,6 +643,9 @@ footer {
   animation: magnifytop 1.5s 1, magnifypulse 2s 1, phaseTextIn 1s 1;
 }
 
+.data-box.magnify .data-box__inner li {
+  display: list-item;
+}
 
 @keyframes magnifypulse {
   0% {
@@ -1174,8 +1205,23 @@ body.fadeout #grid-container .magnify * * * {
   }
 }
 
+@media only all and (max-width: 862px) {
+  body {
+    margin-right: 0;
+  }
+}
+
 @media only all and (max-width: 775px) {}
 
 @media only all and (max-width: 600px) {}
 
 @media only all and (max-width: 480px) {}
+
+@media only all and (max-width: 478px) {
+  #to-the-spin__seperator {
+    display: none;
+  }
+  #to-the-spin {
+    padding: 4px;
+  }
+}
