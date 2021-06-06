@@ -3,7 +3,7 @@
 
 console.log("hello world :o");
 
-Array.prototype.move = function(from, to) {
+Array.prototype.move = function (from, to) {
   this.splice(to, 0, this.splice(from, 1)[0]);
 };
 
@@ -14,7 +14,7 @@ function fwdClick(e) {
   var boxesArray = Array.prototype.slice.call(boxes);
   var boxSet = document.createDocumentFragment();
   boxesArray.move(0, boxesArray.length - 1);
-  boxesArray.forEach(function(item, i) {
+  boxesArray.forEach(function (item, i) {
     item.classList.remove("bkwd");
     item.classList.add("fwd");
     boxSet.appendChild(item);
@@ -30,7 +30,7 @@ function bkClick(e) {
   var boxesArray = Array.prototype.slice.call(boxes);
   var boxSet = document.createDocumentFragment();
   boxesArray.move(boxesArray.length - 1, 0);
-  boxesArray.forEach(function(item, i) {
+  boxesArray.forEach(function (item, i) {
     item.classList.add("fwd");
     if (i === 0) {
       item.classList.add("bkwd");
@@ -49,7 +49,7 @@ window.modalCtrl = {
       return true;
     } else {
       window.modalCtrl.returnContainer = event.target.closest(".data-box-collection");
-      document.querySelectorAll(".data-box").forEach(function(e) {
+      document.querySelectorAll(".data-box").forEach(function (e) {
         e.classList.remove("magnify");
       });
       var targetDiv = event.target.closest("div.data-box")
@@ -62,21 +62,29 @@ window.modalCtrl = {
       return false;
     }
   },
-  prependIt: function(el) {
+  prependIt: function (el) {
     console.log(el, window.modalCtrl.returnContainer);
     window.modalCtrl.returnContainer.prepend(el);
   }
 };
 
-window.onload = function() {
-  document.querySelectorAll(".data-box").forEach(function(databox) {
+window.glitchify = function (el) {
+  el.classList.add('glitch')
+}
+
+window.deglitchify = function (el) {
+  el.classList.remove('glitch')
+}
+
+window.onload = function () {
+  document.querySelectorAll(".data-box").forEach(function (databox) {
     databox.addEventListener(
       "click",
       window.modalCtrl.modalDatabox,
       true
     );
   });
-  document.querySelectorAll(".data-box > .close").forEach(function(databox) {
+  document.querySelectorAll(".data-box > .close").forEach(function (databox) {
     databox.addEventListener("click", event => {
       console.log("close", event.target.parentElement);
       if (event.target.parentElement.classList.contains("magnify")) {
