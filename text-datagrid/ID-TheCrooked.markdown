@@ -25,6 +25,8 @@ Drive: Forego a rich profit in order to do the right thing.
 
 Heat: The Colonel is someone with special powers, a person or monster, who you took advantage of. Stealing his magic recipe book and ran off with KF Cindy.
 
+Prepared to Defend: Even truth seekers need to fight some times. Whenever you suffer harm when you kick some ass or protect someone, you suffer 1-harm less.
+
 **You've unlocked a new move:**
 
 **Empowered Circle Maker**: You may now create an empowered circle at will. You will always have with you the appropriate amount of salt and chalk that will allow you to (assuming no one interferes) create and empower a magical circle with the following rules:
