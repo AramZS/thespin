@@ -81,6 +81,30 @@
       "selected": true,
       "name": "The Luchador",
       "player": "Jon"
+    },
+    {
+      "id": "gumshoe",
+      "url": "https://drive.google.com/open?id=1Bqfab3s9bH-CCw-vjL4zalgGciMYLLnmTZFRJ5d44pg",
+      "brief": "I was built, not born. I don’t know by whom, but I know one thing: There’s something wrong in The Virtual., I must use my newfound awareness of the world to keep the system safe.",
+      "selected": false,
+      "name": "The Self Aware",
+      "player": ""
+    },
+    {
+      "id": "hex",
+      "url": "https://drive.google.com/open?id=1Bqfab3s9bH-CCw-vjL4zalgGciMYLLnmTZFRJ5d44pg",
+      "brief": "I’m just a girl who found a way to give herself the strength to fight this war. I don’t have the option of not taking this risk.",
+      "selected": false,
+      "name": "The Self Aware",
+      "player": ""
+    },
+    {
+      "id": "searcher",
+      "url": "https://drive.google.com/file/d/1JUpPpOjLQmIRr4bRJSdv7W7Lp1gwytlU/view?usp=sharing",
+      "brief": "The Things I've Seen",
+      "selected": false,
+      "name": "The Searcher",
+      "player": ""
     }
   ],
   "users": []
