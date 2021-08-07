@@ -1,0 +1,36 @@
+---
+title: Wildcat strike leaves chicken raw
+author: Alden Cordell
+wind: 3.5km/h S
+temp: 40°C
+hum: 80%
+aq: Red
+---
+
+headerStart
+  
+## The Fall of Fivers
+
+##### by Wrad Marge
+
+headerEnd
+
+Middles suburb block 53515, known to residents as Fivers, was the site of a mysterious disaster that has come to light over the last week. Already suffering as one of a number of Mids towns with an unusually high number of comas reported on Ultra Health Clinics LLC (UHC)'s live dashboard that is tracking the rise of an unidentified syndrome that seems to spare no class or position as it spreads throughout the Enclave, easily exceeding the 38 victims of the last year. But that's not all, as reported by The Frame, mysterious disappearances, apparent kidnappings and deaths all followed in the wake of this sudden spike. 
+
+As indicated by midspub Frame and a special dispatch (virt report follows) from cub reporter Madra Meris huge swaths of the adult population have apparently disappeared and a number of further disappearances, when reexamined by our researchers, appear to have occurred exclusively to commuters passing through Fivers. Further, almost every teenager in the town seems to have been kidnapped only to emerge from a still un-found basement that, impossibly, must have existed in the base layer between the mids and the wall regions.  
+
+While the full scope of the conspiracy of kidnappers is unclear, at least two husband and wife pairs in Fivers have been alleged to be involved to EPD. Although her involvement is unclear, the mayer of Fivers, Annie Kor, has been identified as wanted for questioning. The only things connecting this group appears to be a membership in popular Mids non-profit Blockwatch.
+
+pqStart
+
+"Blockwatch stands for protection, safety and community support. We step in where EPD fails, doesn't care or simply isn't there for our communities. If the members concerned did what is alleged, it was not with any approval or instruction from Blockwatch. Their alleged choice to abuse and lock up their community lies entirely with them" - Toni Warzak, Executive Director, Blockwatch Bcorp LTD. 
+
+pqEnd
+
+Investigators also are examining potential involvement by Theta, a semi-religious movement focused on self-empowerment, but have not spoken on what they've found. The Spin reached out to the movement's leader, known only by their alias Zeit Geber, but has--as of publication--not heard anything back.
+
+Until the investigation is concluded, EPD has declared Fivers' school, an apparent site of a number of kidnappings, closed. Students will receive further instruction via Virt programs. 
+
+EPD is reportedly bringing in child counseling and care services as a number of the disappeared were parents.   
+
+*Read the rest of our in-depth report in our Virtual Space...*
