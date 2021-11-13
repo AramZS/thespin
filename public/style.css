@@ -559,6 +559,11 @@ h6:after {
     margin: 0 10%;
     width: 80%;
   }
+  #to-the-grid {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
   
 }
 @media only all and (max-width: 1200px) {
