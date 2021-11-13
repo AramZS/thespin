@@ -2,7 +2,7 @@
 title: Cu Graves
 topic: Contact List
 tags: HC
-status: Unknown
+status: Opposed
 brief: In charge of HC Optics Control - Interviews, Clearances, and Military Right-minding Operations.
 ---
 
