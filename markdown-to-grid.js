@@ -3,7 +3,7 @@ var fs = require("fs");
 // var md = require('markdown-it')();
 const { resolve } = require('path');
 const { readdir } = require('fs').promises;
-
+// via https://stackoverflow.com/questions/5827612/node-js-fs-readdir-recursive-directory-search
 async function getFiles(dir) {
   const dirents = await readdir(dir, { withFileTypes: true });
   const files = await Promise.all(dirents.map((dirent) => {
@@ -49,8 +49,10 @@ const getData = function() {
 };
 
 const getGridSet = async function() {
-  const fileList = getFiles(./text-datagrid/")
-  const data = await getData();
+  const datagridFolder = "./text-datagrid/";
+  const fileList = await getFiles(datagridFolder);
+  const data = fileList.map(filename => convert(fs.readFileSync(filename, "utf-8")))
+  // const data = await getData();
   const gridSet = {};
   data.forEach(dataItem => {
     // console.log(dataItem)
