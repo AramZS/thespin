@@ -47,6 +47,12 @@ Burn Everything: When you use magic to inflict harm, you can choose to inflict 3
 
 You may now roll +Weird to frighten the living daylights out of someone during combat instead. On a 10+ select 1; on a 7 - 9 select 2 or consider it a failure with no effects; on a failure (5 or less) choose three from the list.
 
+**Transmit**: You can go instantly to anywhere you’ve visited before, or to a person you know well as long as they are not isolated from electronics. When you carry one or two people with you, roll +Weird. On a 10+ you all go where you wanted. On a 7-9, you don’t quite manage it. Either you are all separated, or you all appear in the wrong place. 
+
+**What Does Not Kill Me...**: If you have suffered harm in a fight, you gain +1 ongoing until the fight is over.
+
+**The Big Whammy**: You can use your powers to kick some ass: roll +Weird instead of +Tough. The attack has 2-harm close obvious ignore-armour. On a miss, you’ll get a magical backlash.
+
 List:
 
 you scare them so much they will not go near you during the remainder of combat;
