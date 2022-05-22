@@ -53,6 +53,8 @@ You may now roll +Weird to frighten the living daylights out of someone during c
 
 **The Big Whammy**: You can use your powers to kick some ass: roll +Weird instead of +Tough. The attack has 2-harm close obvious ignore-armour. On a miss, you’ll get a magical backlash.
 
+**Force of Will**: When you apply your will to dispelling a magical effect, blocking a spell, or suspending a Phehomenon, roll +Weird. On a hit, momentary magics are cancelled completely, and long-lasting spells and effects are suspended temporarily. On a 10+, you can also spend Luck to instantly snuff out a powerful spell or strange effect. On a 7-9, you take 1-harm as the strain of dismissing magic unravels you.
+
 List:
 
 you scare them so much they will not go near you during the remainder of combat;

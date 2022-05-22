@@ -39,6 +39,9 @@ entities that combine elements from The Real and The Virtual (possessed objects 
 
 You must roll Act Under Pressure to complete a circle during active combat.
 
+**What Does Not Kill Me...**: If you have suffered harm in a fight, you gain +1 ongoing until the fight is over. 
+
+
 **Bonuses**
 
 +Heap Investigation
