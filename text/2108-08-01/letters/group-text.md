@@ -1,6 +1,6 @@
 <em>Yesterday</em>
 
-Elli Cordova: Quinn, I'm glad you are settling in, but please unsummon your Daemon Dogs when you leave. I sat down for lunch and and one ate a sandwich right out of my hand. It left behind a stream of zeros and ones that I had to scrub to get off. 
+Elli Cordova: Quinn, I'm glad you're settling in, but please unsummon your Daemon Dogs when you leave. I sat down for lunch and and one ate a sandwich right out of my hand. It left behind a stream of zeros and ones that I had to scrub to get off. 
 
 Adel Martinez: Can Daemon Dogs digest food? o.0
 
@@ -30,7 +30,7 @@ Quinn: Intentionally I mean
 
 <em>Today</em>
 
-Aethelbert Butler: Have you seen Madra? She's been gone for longer than one of her usual trips. 
+Aethelbert Butler: Have you seen Madra? She's been gone for longer than one of her usual trips. None of the teens seem to know where she is either. I guess it is possible they do know and won't tell me. 
 
 Elli Cordova: We're really not going to be able to pretend we're not noticing her leaving if she keeps pushing it. 
 
@@ -56,9 +56,9 @@ Quinn: Elli, don't be jealous that you didn't think of it first. :P
 
 Adel Martinez: Sorry, but Artria, do you have trackers on all of us? 
 
-<span class="scramble">Artria: <em>There is a tracker built into the standard software and hardware packages that reports to this subroutine yes.</em></span>
+<span class="scramble">Artria: <em>There is a tracker built into the standard software and hardware packages that reports to this subroutine, yes.</em></span>
 
-Aethelbert Butler: I guess we must let her run free. She has been fine thus far. We'll know to get worried if something changes or she's gone for one more full day.
+Aethelbert Butler: I guess we must let her run free. She has been fine thus far. We'll know to get worried if something changes or she's gone for too much longer.
 
 Adel Martinez: Are we all in Privacy Mode?
 
@@ -90,6 +90,6 @@ Quinn: Do you know I haven't? That's my point!
 
 Aethelbert Butler: Could we empower Divi? 
 
-Elli Cordova: Do not give the robot a soul or magic powers. At least not until after we've figured out a way to stop the Enclave from falling into the sea. 
+Elli Cordova: Do not give the robot a soul or etheric powers. At least not until after we've figured out a way to stop the Enclave from falling into the sea. 
 
 Quinn: <3 Fine Elli. You're no fun. :P 
