@@ -17,6 +17,10 @@ const selectLetter = (date, playerName) => {
   return "./text/" + date + "/letters/" + playerName + ".markdown";
 };
 
+const selectText = (date) => {
+  return "./text/" + date + "/letters/group-text.md";
+};
+
 const myext = function () {
   var myext1 = {
     type: 'lang',
@@ -104,8 +108,20 @@ const processLetter = function(date, playerName) {
   }
 };
 
+const processTexts = function(date) {
+  var letterPath = selectText(date)
+  if (fs.existsSync(letterPath)){
+    var text = fs.readFileSync(letterPath).toString();
+    // console.log(text);
+    return convert(text);
+  } else {
+    return false;
+  }
+};
+
 module.exports = {
   process,
   processLetter,
+  processTexts,
   getDateMeta
 };

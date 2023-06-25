@@ -37,6 +37,13 @@ const getMainTemplate = function (date, archive, otherFiles) {
   }
   site.letters = [];
   site.hasLetters = false;
+  site.hasText = false; 
+  site.texts = [];
+  let textsContent = markdownHandler.processTexts(date)
+  if (textsContent){
+    site.texts.push({content: textsContent});
+    site.hasText = true;
+  }
 
   var chars = db
     .get("characters")

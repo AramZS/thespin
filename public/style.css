@@ -76,6 +76,11 @@ footer {
   border-top: 1px solid lightgrey;
 }
 
+.scramble {
+  color: darkgreen;
+  font-style: italic;
+}
+
 /** Newspaper Style via https://codepen.io/silkine/pen/jldif **/
 
 body {
