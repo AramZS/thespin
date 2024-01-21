@@ -60,6 +60,10 @@
                 <!-- check hasLetters -->
                 <br />Hello <strong>User</strong>, You have <span id="notification-link"><span class="notification-count">1</span> notification</span> waiting
               {{/hasLetters}}
+              {{#hasText}}
+                <!-- check hasText -->
+                <br />Hello <strong>User</strong>, You have <span id="notification-link"><span class="notification-count">1</span> notification</span> waiting
+              {{/hasText}}
         </div>
       </div>
     {{#hasLetters}}
@@ -84,6 +88,28 @@
                     {{/letters}}
     </div>
     {{/hasLetters}}
+    {{#hasText}}
+    <div id="letter-notifications">
+      <div id="profile-selection-menu">
+        <label for="profile-select">Select Thread: </label>
+        <select id="profile-select" onchange="window.activateLetter(this)">
+          <option value="---">---</option>
+          {{#texts}}
+            <option value="gt">Group Text: Moon Crew</option>
+          {{/texts}}
+          </div>
+        </select>
+      </div>
+      <div id="letter-close" onclick="window.openLetter()">X</div>
+                    {{#texts}}
+                      <div class="mystery-letter gt">
+                        HCMsg Group <span class="scramble">compromised compromised encoding, reencoded, alter, abort/?*.1234XYZArtria: Encoding Activated</span>: Moon Crew
+                        <br /> <br/>
+                        {{{content}}}
+                      </div>
+                    {{/texts}}
+    </div>
+    {{/hasText}}
   </div>
     <main>
       <div class="content">
