@@ -249,10 +249,14 @@ main {
 
 hr:after {
     background: #f9f7f1;
-    content: '§';
-    padding: 0 4px;
+    content: '§§§';
+    /* padding: 10px 9px; */
     position: relative;
-    top: -13px;
+    /* top: -13px; */
+    border: 0;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
 }
 
 .column + .column {
