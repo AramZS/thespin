@@ -8,7 +8,12 @@
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js",
-		"buildCols": "node -e 'var w = require(\"./build.js\"); w.writeCols().then(() => console.log(\"complete buildCols\"))'"
+		"writeChars": "node -e 'var w = require(\"./build.js\"); w.writeChars().then(() => console.log(\"complete writeChars\"))'",
+		"writeMainPages": "node -e 'var w = require(\"./build.js\"); w.writeMainPages().then(() => console.log(\"complete writeMainPages\"))'",
+		"writeIndex": "node -e 'var w = require(\"./build.js\"); w.writeIndex().then(() => console.log(\"complete writeIndex\"))'",
+		"copyPublic": "node -e 'var w = require(\"./build.js\"); w.copyPublic().then(() => console.log(\"complete copyPublic\"))'",
+		"writeGrid": "node -e 'var w = require(\"./build.js\"); w.writeGrid().then(() => console.log(\"complete writeGrid\"))'",
+		"writeCols": "node -e 'var w = require(\"./build.js\"); w.writeCols().then(() => console.log(\"complete buildCols\"))'"
 	},
 	"dependencies": {
 		"body-parser": "^1.19.0",
