@@ -13,7 +13,8 @@
 		"writeIndex": "node -e 'var w = require(\"./build.js\"); w.writeIndex().then(() => console.log(\"complete writeIndex\"))'",
 		"copyPublic": "node -e 'var w = require(\"./build.js\"); w.copyPublic().then(() => console.log(\"complete copyPublic\"))'",
 		"writeGrid": "node -e 'var w = require(\"./build.js\"); w.writeGrid().then(() => console.log(\"complete writeGrid\"))'",
-		"writeCols": "node -e 'var w = require(\"./build.js\"); w.writeCols().then(() => console.log(\"complete buildCols\"))'"
+		"writeCols": "node -e 'var w = require(\"./build.js\"); w.writeCols().then(() => console.log(\"complete buildCols\"))'",
+		"build": "npm run writeChars && npm run writeMainPages && npm run writeIndex && npm run copyPublic && npm run writeGrid && npm run writeCols"
 	},
 	"dependencies": {
 		"body-parser": "^1.19.0",
