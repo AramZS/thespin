@@ -1,0 +1,13 @@
+{
+	"verbose": true,
+	"ignore": [
+		".git",
+		"node_modules/**/node_modules",
+		"_site/**",
+		"docs/**",
+		"db.json",
+		"datagriddb.json",
+		"factions.json",
+		"turf.json"
+	]
+}
