@@ -162,7 +162,7 @@ window.openLetter = function () {
 };
 
 window.activateLetter = function (el) {
-	consle.log("activateLetter", el);
+	console.log("activateLetter", el);
 	try {
 		var container = document.getElementsByClassName(el.value)[0];
 		var isOpen = container.getAttribute("data-open");
