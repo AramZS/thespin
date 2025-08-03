@@ -9,6 +9,7 @@ const utils = require("./utils");
 
 const adapter = new FileSync("db.json");
 const db = low(adapter);
+const globalData = require("./data");
 // Set some defaults (required if your JSON file is empty)
 db.defaults({
 	characters: [],
