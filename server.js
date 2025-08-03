@@ -23,6 +23,8 @@ var bodyParser = require("body-parser");
 
 const Clocks = require("./clocks");
 
+const utils = require("./utils");
+
 const getMainTemplate = function (date, archive, otherFiles) {
 	var site = {
 		1: "",
@@ -81,22 +83,7 @@ const getMainTemplate = function (date, archive, otherFiles) {
 	return html;
 };
 
-var walkDir = function (dir) {
-	var results = [];
-	var list = fs.readdirSync(dir);
-	list.forEach(function (file) {
-		file = dir + "/" + file;
-		var stat = fs.statSync(file);
-		if (stat && stat.isDirectory()) {
-			/* Recurse into a subdirectory */
-			results = results.concat(walkDir(file));
-		} else {
-			/* Is a file */
-			results.push(file);
-		}
-	});
-	return results;
-};
+var walkDir = utils.walkDir;
 
 var writeJsonToArchive = function (path, data) {
 	fs.writeFile(

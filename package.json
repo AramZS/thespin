@@ -7,7 +7,8 @@
 	"description": "A simple Node app built on Express, instantly up and running.",
 	"main": "server.js",
 	"scripts": {
-		"start": "npx nodemon ./server.js",
+		"start": "npx nodemon --exec 'npm run build && npm run serve'",
+		"serve": "node server.js",
 		"writeChars": "node -e 'var w = require(\"./build.js\"); w.writeChars().then(() => console.log(\"complete writeChars\"))'",
 		"writeMainPages": "node -e 'var w = require(\"./build.js\"); w.writeMainPages().then(() => console.log(\"complete writeMainPages\"))'",
 		"writeIndex": "node -e 'var w = require(\"./build.js\"); w.writeIndex().then(() => console.log(\"complete writeIndex\"))'",
