@@ -57,8 +57,8 @@ function fnSubmitForm(button) {
 function setUpAPIRequest(aMethod, url) {
 	var theUrl = "";
 	var theMethod = "GET";
-	if (location.href.match(/github/g)) {
-		var theUrl = "https://aramzs.github.io/thespin/json/" + url + ".json";
+	if (!location.href.match(/glitch\.me/g)) {
+		var theUrl = window.baseSiteUrl + "json/" + url + ".json";
 	} else {
 		var theUrl = "https://thespin.glitch.me/" + url;
 		theMethod = aMethod;
@@ -149,7 +149,7 @@ window.openLetter = function () {
 	if (container) {
 		var isOpen = container.getAttribute("data-open");
 		if (isOpen != "true") {
-			console.log("open letter box");
+			console.trace("open letter box");
 			document.getElementById("letter-notifications").style =
 				"transform: scale(1,1)";
 			container.setAttribute("data-open", "true");
@@ -162,6 +162,7 @@ window.openLetter = function () {
 };
 
 window.activateLetter = function (el) {
+	consle.log("activateLetter", el);
 	try {
 		var container = document.getElementsByClassName(el.value)[0];
 		var isOpen = container.getAttribute("data-open");
@@ -239,7 +240,7 @@ window.goToPrevious = function (selected) {
 	var list = document.getElementById("old-date");
 	var value = list.options[selected].value;
 	console.log(value);
-	window.location = "/archive/" + value;
+	window.location = window.baseSiteUrl + "/archive/" + value;
 };
 
 window.dismissSelectPrevious = function () {
@@ -247,7 +248,8 @@ window.dismissSelectPrevious = function () {
 	document.getElementById("the-dateline").style.display = "block";
 };
 
-window.createSelectPrevious = function () {
+window.createSelectPrevious = function (el) {
+	console.log("createSelectPrevious", el);
 	var dateSelectStrings = '<option value="now">Today</option> ';
 	window.pastDays.forEach((oldDate) => {
 		var aDateLine = getDatelineString(oldDate);
@@ -263,6 +265,7 @@ window.createSelectPrevious = function () {
   `;
 	document.getElementById("the-dateline").style.display = "none";
 	document.getElementById("subhead-outer").innerHTML += selectOld;
+	//window.preventDefault();
 };
 
 function fillDay() {
@@ -278,14 +281,14 @@ function fillDay() {
 	);
 	var dateSelector = "";
 	if (window.pastDays) {
-		dateSelector = ` | <button type="button" onclick="window.createSelectPrevious()">Previous Issues</button>`;
+		dateSelector = ` | <button type="button" onclick="window.createSelectPrevious(this)">Previous Issues</button>`;
 	}
 	aDay.innerHTML =
-		`The Enclave - <span class='the-day'>${currentDateStringObj.day}</span> ${currentDateStringObj.month} ${currentDateStringObj.date}, ${currentDateStringObj.year} ${dateSelector}<br />` +
-		'<a id="notification-container" onclick="window.openLetter">' +
+		`<div id="spindateline">The Enclave - <span class='the-day'>${currentDateStringObj.day}</span> ${currentDateStringObj.month} ${currentDateStringObj.date}, ${currentDateStringObj.year} ${dateSelector}</div><div class="clear"></div>` +
+		'<p id="notification-graf"><a id="notification-container" onclick="window.openLetter()">' +
 		topLine +
-		"</a>";
-	aDay.onclick = window.openLetter;
+		"</a></p>";
+	// aDay.onclick = window.openLetter;
 }
 
 fillDay();

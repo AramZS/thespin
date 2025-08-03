@@ -14,12 +14,6 @@
     <title>The Spin: {{date}}</title>
     <meta name="description" content="The Spin" />
     <link
-      id="favicon"
-      rel="icon"
-      href="https://glitch.com/edit/favicon-app.ico"
-      type="image/x-icon"
-    />
-    <link
       rel="stylesheet"
       type="text/css"
       href="https://unpkg.com/augmented-ui@2/augmented-ui.min.css"
@@ -37,6 +31,7 @@
     <link rel="stylesheet" href='{{fileDepth}}style.css' />
     <script>
       window.pastDays = {{{days}}}
+	  window.baseSiteUrl = "{{{globalData.site.siteUrl}}}"
     </script>
 
     <!-- import the webpage's client-side javascript file -->
@@ -52,7 +47,7 @@
             >Wind: {{wind}}; Temp: {{temp}}; Hum: {{hum}}; Air Quality: {{aq}}</span
           >
         </div>
-        <header>The Spin</header> <span id="to-the-grid"><a href="/grid">#</a></span>
+        <header>The Spin</header> <span id="to-the-grid"><a href="{{globalData.site.siteUrl}}grid">#</a></span>
       </div>
   <div class="subhead-wrapper" id="subhead-outer">
         <div class="subhead" id="the-dateline" data-date="{{date}}">
@@ -154,7 +149,6 @@
     include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>
     <script src="{{fileDepth}}client.js"></script>
     <script>
     {{#isLive}}

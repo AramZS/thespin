@@ -52,6 +52,7 @@ const getMainTemplate = function (db, date, archive, otherFiles) {
 	site.days = otherFiles ? JSON.stringify(otherFiles) : false;
 	site.fileDepth = archive ? "../../" : "";
 	site.isLive = archive ? false : true;
+	site.globalData = require("../data");
 	Object.assign(site, markdownHandler.getDateMeta(date));
 	var file = fs.readFileSync("./views/handlebars.mst").toString();
 	var html = Mustache.render(file, site);

@@ -3,11 +3,13 @@
 	"ignore": [
 		".git",
 		"node_modules/**/node_modules",
+		"_site",
 		"_site/**",
 		"docs/**",
 		"db.json",
 		"datagriddb.json",
 		"factions.json",
 		"turf.json"
-	]
+	],
+	"ext": "js,css,mst"
 }

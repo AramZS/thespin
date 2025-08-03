@@ -10,7 +10,7 @@ const FileSync = require("lowdb/adapters/FileSync");
 const markdownHandler = require("./markdown-to-col");
 const Mustache = require("mustache");
 const fs = require("fs");
-
+require("dotenv").config();
 const gridHandler = require("./build-grid");
 
 const adapter = new FileSync("db.json");
@@ -24,6 +24,7 @@ var bodyParser = require("body-parser");
 const Clocks = require("./clocks");
 
 const utils = require("./utils");
+const data = require("./data");
 
 const getMainTemplate = function (date, archive, otherFiles) {
 	var site = {
@@ -118,7 +119,14 @@ app.use(cors());
 // app.use(express.static("public"));
 app.use(express.static("_site"));
 
+console.log("Data: ", data);
+
 // listen for requests :)
-const listener = app.listen("60084", function () {
-	console.log("Your app is listening on port " + listener.address().port);
+const listener = app.listen(process.env.PORT, function () {
+	console.log(
+		"Your site " +
+			data.site.siteUrl +
+			" is listening on port " +
+			listener.address().port
+	);
 });

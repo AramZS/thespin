@@ -1,8 +1,6 @@
 const fs = require("fs-extra");
 const path = require("path");
 
-let exportObj = {};
-
 // walk through a directory and return all files
 function getAllFiles(dir) {
 	const files = fs.readdirSync(dir);
@@ -22,10 +20,18 @@ function getAllFiles(dir) {
 	return allFiles;
 }
 
-// walk through this directory and import all the files to a parent object
-const files = getAllFiles(__dirname);
-for (const file of files) {
-	const module = require(file);
-	Object.assign(exportObj, module);
-}
-module.exports = exportObj;
+let expandOutFiles = (objectToExport, base = __dirname) => {
+	const files = getAllFiles(base);
+	for (const file of files) {
+		const module = require(file);
+		Object.assign(objectToExport, module);
+	}
+	return objectToExport;
+};
+
+let exportObj = {
+	getAllFiles,
+	expandOutFiles,
+};
+
+module.exports = expandOutFiles(exportObj);
