@@ -14,14 +14,17 @@
       href="https://glitch.com/edit/favicon-app.ico"
       type="image/x-icon"
     />
+	<script>
+	  window.baseSiteUrl = "{{{globalData.site.siteUrl}}}"
+    </script>
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" type="text/css" href="{{{globalData.site.siteUrl}}}/datagrid/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="{{{globalData.site.siteUrl}}}/datagrid/data-aug.css" />
-    <link rel="stylesheet" href="{{{globalData.site.siteUrl}}}/datagrid/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{{globalData.site.siteUrl}}}datagrid/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="{{{globalData.site.siteUrl}}}datagrid/data-aug.css" />
+    <link rel="stylesheet" href="{{{globalData.site.siteUrl}}}datagrid/style.css" />
   </head>
   <body>
     <header>
-      <h1 class="first-title">HC Personal DB</h1><span id="to-the-spin" onclick="(function(){window.location="{{{globalData.site.siteUrl}}}")()"><span id="to-the-spin__seperator">|&nbsp;&nbsp;</span>(<span id="to-the-spin__link" onmouseout="deglitchify(this)" onmouseover="window.glitchify(this)" data-text="The Spin">The Spin</span>)</span>
+      <h1 class="first-title">HC Personal DB</h1><span id="to-the-spin" onclick="(function(){window.location=window.baseSiteUrl})()"><span id="to-the-spin__seperator">|&nbsp;&nbsp;</span>(<span id="to-the-spin__link" onmouseout="deglitchify(this)" onmouseover="window.glitchify(this)" data-text="The Spin">The Spin</span>)</span>
     </header>
 
     <main id="grid-container">
@@ -29,8 +32,8 @@
     </main>
     
     
-    <script src="/datagrid/aug-splice.js"></script>
+    <script src="{{{globalData.site.siteUrl}}}datagrid/aug-splice.js"></script>
     <!-- import the webpage's client-side javascript file -->
-    <script src="/datagrid/script.js"></script>
+    <script src="{{{globalData.site.siteUrl}}}datagrid/script.js"></script>
   </body>
 </html>

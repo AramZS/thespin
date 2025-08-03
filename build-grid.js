@@ -40,10 +40,11 @@ const gridOfCards = async function () {
 };
 
 const getDatagrid = async function () {
+	const globalData = require("./data");
 	var file = fs.readFileSync("./views/datagrid/grid.mustache").toString();
 	const grid = await gridOfCards();
 	const gridHtml = grid.join("\n");
-	var html = Mustache.render(file, { gridboxes: gridHtml });
+	var html = Mustache.render(file, { gridboxes: gridHtml, globalData });
 	return html;
 };
 
