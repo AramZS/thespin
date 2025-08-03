@@ -239,7 +239,7 @@ window.goToPrevious = function (selected) {
 	var list = document.getElementById("old-date");
 	var value = list.options[selected].value;
 	console.log(value);
-	window.location = "/archive/" + value;
+	window.location = "archive/" + value;
 };
 
 window.dismissSelectPrevious = function () {
