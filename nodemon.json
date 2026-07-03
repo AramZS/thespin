@@ -11,5 +11,5 @@
 		"factions.json",
 		"turf.json"
 	],
-	"ext": "js,css,mst"
+	"ext": "js,css,mst,mustache"
 }
