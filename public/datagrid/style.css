@@ -26,7 +26,7 @@ h1.first-title {
     font-style: italic;
     font-size: 30px;
     color: var(--neon-hot-pink);
-    max-width: 200px;
+    min-width: 205px;
     line-height: 1.1;
     display: inline-block;
     padding: 0 1rem;
@@ -69,6 +69,7 @@ form button {
     line-height: 1.4em;
     padding: 0.25em 1em;
     max-width: 20ch;
+    margin-bottom: 10px;
 }
 
 form button:hover {
@@ -91,6 +92,10 @@ footer {
     background-color: var(--neon-black);
 }
 
+.gridbox {
+    --aug-inset-bg: var(--neon-dark-blue);
+}
+
 .gridbox h2 {
     padding: 5px;
     margin-top: 2px;
@@ -100,6 +105,7 @@ footer {
     padding-right: 30%;
     color: var(--neon-light-blue);
     display: block;
+    --aug-inset-bg: #230408;
 }
 
 .gridbox .header-count {
@@ -127,7 +133,7 @@ footer {
     align-content: start;
     text-align: end;
     margin-top: 4px;
-    margin-right: 6px;
+    margin-right: 46px;
 }
 
 .gridbox:nth-of-type(even) .gridbox-inner {
@@ -142,6 +148,7 @@ footer {
     -webkit-font-smoothing: antialiased;
     cursor: pointer;
     animation-timing-function: linear;
+    background: var(--neon-yellow);
 }
 
 .data-box:first-of-type:not(.magnify) {
@@ -337,7 +344,7 @@ footer {
     --aug-border-bg: #fbe806;
     --aug-inset: 10px;
     --aug-inset-bg: #0b1519;
-    background: var(--goldDark);
+    background: var(--neon-yellow);
     --aug-r-width: 12px;
     --aug-r-height: 20%;
     --aug-r-origin-y: 18%;
@@ -368,7 +375,7 @@ footer {
     max-height: 85%;
     margin: 0 auto;
     --augmented-ui: br-clip tr-clip-x tl-clip-x exe;
-    background: var(--gold);
+    background: var(--neon-yellow);
     --aug-tr-height: 20px;
     --aug-tr-width: 10px;
     --aug-tl-width: 80px;
@@ -428,7 +435,7 @@ body.fadeout #grid-container .magnify * * * {
     float: left;
     width: calc(100%);
     position: absolute;
-    top: calc(100% - 16px);
+    top: calc(100% - 24px);
     text-align: center;
 }
 
