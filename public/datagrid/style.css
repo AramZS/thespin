@@ -159,6 +159,8 @@ footer {
         innerpulse 2s 1,
         phaseTextIn 1s 1;
     color: black;
+    left: 16px;
+    top: 70px;
 }
 
 .data-box:not(.fwd):not(.magnify) {
