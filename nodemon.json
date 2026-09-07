@@ -1,5 +1,5 @@
 {
-	"verbose": true,
+	"verbose": false,
 	"ignore": [
 		".git",
 		"node_modules/**/node_modules",
@@ -9,7 +9,8 @@
 		"db.json",
 		"datagriddb.json",
 		"factions.json",
-		"turf.json"
+		"turf.json",
+		"public/datagrid/augui/*"
 	],
 	"ext": "js,css,mst,mustache"
 }

@@ -1,3 +1,4 @@
+function executeAugStuff(){
 const selectorAugsList = []
 const recursiveRuleCrawl = cssRules => {
   const rulesLen = cssRules.length
@@ -96,3 +97,4 @@ observer.observe(document, {
   childList: true,
   subtree: true
 })
+}
