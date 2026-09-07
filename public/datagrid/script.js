@@ -57,6 +57,9 @@ window.modalCtrl = {
       document.getElementById("grid-container").prepend(targetDiv);
       document.body.style.overflow = "hidden";
       document.body.classList.add("fadeout");
+	  var augs = targetDiv.getAttribute('data-augmented-ui')
+	  var newAugs = augs.replace('both', 'border')
+	  targetDiv.setAttribute('data-augmented-ui', newAugs);
       targetDiv.removeEventListener("click", window.modalCtrl.modalDatabox, true);
       event.stopImmediatePropagation();
       return false;
@@ -91,6 +94,9 @@ window.onload = function () {
         document.body.style.overflow = "auto";
         document.body.classList.remove("fadeout");
         event.target.parentElement.classList.remove("magnify");
+		var augs = event.target.parentElement.getAttribute('data-augmented-ui')
+	  	var newAugs = augs.replace('border', 'both')
+	  	event.target.parentElement.setAttribute('data-augmented-ui', newAugs);
         window.modalCtrl.prependIt(event.target.parentElement);
         event.target.parentElement.addEventListener("click", window.modalCtrl.modalDatabox, true);
         event.stopImmediatePropagation();

@@ -153,7 +153,6 @@ footer {
 
 .data-box:first-of-type:not(.magnify) {
     animation:
-        pulse 0.25s 4,
         slide 1s 1,
         loadtop 1s 1,
         innerpulse 2s 1,
@@ -165,7 +164,6 @@ footer {
 
 .data-box:not(.fwd):not(.magnify) {
     animation:
-        pulse 0.25s 4,
         slide 1s 1,
         loadtop 1s 1,
         innerpulse 2s 1;
@@ -173,7 +171,6 @@ footer {
 
 .data-box.bkwd:first-of-type:not(.magnify) {
     animation:
-        pulse 0.25s 4,
         bkslide 1s 1,
         loadtop 1s 1,
         innerpulse 2s 1,
@@ -355,7 +352,6 @@ footer {
     transition: all 4s;
     animation:
         magnifytop 1.5s 1,
-        magnifypulse 2s 1,
         phaseTextIn 1s 1;
 }
 

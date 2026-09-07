@@ -635,3 +635,18 @@
 }
 
 /* end glitch css from css-tricks.com */
+
+@keyframes in-circle-swoop {
+	from {
+		clip-path: circle(0% at top right);
+	}
+	to {
+		clip-path: circle(150% at bottom right);
+	}
+}
+
+.circle-swoop {
+	height: 100vh;
+	background-color: black;
+	animation: in-circle-swoop 3s;
+}
